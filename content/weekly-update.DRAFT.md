@@ -5,11 +5,9 @@ published-by: mwesolowski@axon.com
 
 # Program change
 
-- Updated Patrol, Investigations and Records permissions to be able to view ATF Crime Gun form
-
-- Granted Brandon Wahl Fusus permissions, Brandon assisting in troubleshooting Verkada LPR integration
-
-- Wilson Lindelof, NIBRS UCR Engineer, Training access for NIBRS troubleshooting
+- Training Only
+  - CID form adjustments made - ready for testing 
+  - Motor Fatality form  - New permission team created (TrafficFatality) - granted permissions to Lt Brendehoft, Sgt Bell and Sgt Brotherton. Ready for testing.
 
 # Data store
 
@@ -37,16 +35,10 @@ published-by: mwesolowski@axon.com
 
 ## ATF/NESS Import
 
-- Production test ran Tues, June 16
+- Issue: Ease of searchability to tie forms to incident - Still in progress 
 
-- All historical Crime Guns were ingested successfully the same day.
+# MNI Deduplication (Senzing): 
 
-- TPD to validate and notify Axon of any issues found.
+- First production test was ingested and validated successfully.
+- Second test ingested Friday, June 26. Validation in progress. 
 
-# Senzing
-
-- TPD reviewed the test subset before loading into Production Tues, June 16
-
-- MNI Subset loaded into Production Thurs, June 18
-
-- TPD review completing review before Mon, June 22
