@@ -1,0 +1,133 @@
+{
+  "id": "2026-04-27",
+  "weekOf": "2026-04-27",
+  "title": "Axon Weekly Update — Week of April 27, 2026",
+  "publishedAt": "2026-05-01T17:00:00Z",
+  "publishedBy": "mwesolowski",
+  "sections": [
+    {
+      "id": "4e483d40-e419-4b59-b2de-29451140817e",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "108d2ffc-db53-42b6-8f67-0c31dafbe0fb",
+          "title": "",
+          "bullets": [
+            {
+              "id": "e24657e7-5b68-455e-ad70-4c2ad33d411c",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ce8cd4d0-1d78-4174-a8eb-e3611e71ba92",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "ec5191c6-6e2f-4bbe-b1c6-473da6bec6ad",
+          "title": "",
+          "bullets": [
+            {
+              "id": "c775aa2b-4047-400e-b6e2-91e4834fb2d8",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "62417cfa-06f9-4c35-9f9c-3f25800b5364",
+      "title": "Integrations",
+      "subsections": [
+        {
+          "id": "12a7db67-13d9-4c56-9a2e-0f4cda9fe0d9",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "b11e48a7-ba11-495e-8a88-745f1a5a5a60",
+              "content": "<p>Sample format file of 300 passed parsing and FETT testing</p>"
+            },
+            {
+              "id": "bc78e233-2095-4d37-93a1-a1c4f1824a98",
+              "content": "<p>Outstanding: Load 300 into Training once training integration incident resolved completely</p>"
+            },
+            {
+              "id": "744d58e1-529c-45fb-bdad-caa03ce177d7",
+              "content": "<p>In progress — full set example file going through parsing and FETT testing</p>"
+            },
+            {
+              "id": "26da632b-1329-4d3d-a9e6-3b18ffbc6f61",
+              "content": "<p>Once complete, if no issues found, then TPD to provide full set Production file</p>"
+            },
+            {
+              "id": "98065b2a-b099-43bc-adb0-35aa24b095cf",
+              "content": "<p>In progress — Engineering evaluating if the file needs split into smaller loads</p>"
+            }
+          ]
+        },
+        {
+          "id": "535464b7-609b-4bc2-b297-5f728ab8a5ad",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "03bd2b8e-4f7a-417e-b44d-50a92bfad1bf",
+              "content": "<p>Internal Decision to continue still Pending</p>"
+            },
+            {
+              "id": "0e4c80b7-b150-45b0-b1f5-a8a4a3514e60",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.</p>"
+            },
+            {
+              "id": "0b6c2989-d3f8-49a6-ac78-821ba1c7b320",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</p>"
+            },
+            {
+              "id": "4c9a29af-b18a-427e-b09d-b9d514e3fdda",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI</p>"
+            }
+          ]
+        },
+        {
+          "id": "31b81da9-8c10-4523-a52f-06a8c0b41284",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "b941d18a-891e-48f9-8b3f-4442cfc90f68",
+              "content": "<p>NESS file dump complete in Training</p>"
+            },
+            {
+              "id": "cd7d9508-4552-4732-961e-6b45aafd9581",
+              "content": "<p>TPD validation complete</p>"
+            },
+            {
+              "id": "e40bff9a-2c55-40ee-8a67-24479ae6d70a",
+              "content": "<p>Axon / ATF to review validation feedback</p>"
+            },
+            {
+              "id": "dfce8cfe-072d-42fd-88f4-78a994e6bf8c",
+              "content": "<p>Next Axon/Agency/ ATF meeting TBD</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5329770e-c615-477e-8aee-26a0d1d62be2",
+      "title": "Senzing",
+      "subsections": [
+        {
+          "id": "226cb9c4-a3d7-4046-a1fe-4e1dc398a49b",
+          "title": "",
+          "bullets": [
+            {
+              "id": "67620d9c-40d4-45b6-b85f-0e243efb9bcb",
+              "content": "<p>In Progress — No new update</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

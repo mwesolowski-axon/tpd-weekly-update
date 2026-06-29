@@ -1,0 +1,147 @@
+{
+  "id": "2026-06-08",
+  "weekOf": "2026-06-08",
+  "title": "Axon Weekly Update — Week of June 8, 2026",
+  "publishedAt": "2026-06-12T17:00:00Z",
+  "publishedBy": "alarsh",
+  "sections": [
+    {
+      "id": "9437f6f8-d527-48d0-8d00-2d4152d417c4",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "d7e6c66b-eccb-43df-a135-bd6fb2345b76",
+          "title": "",
+          "bullets": [
+            {
+              "id": "16da82aa-c0ed-458d-a5a6-a86710d3ac63",
+              "content": "<p>Turned on updated Master Charge Table tool</p>"
+            },
+            {
+              "id": "1e7d739a-f7cc-476a-b461-3d4edc8327db",
+              "content": "<p>Updated TC20-501A charge description to match Pima County Court</p>"
+            },
+            {
+              "id": "72806a60-3a0b-4e3e-b802-6705500d97f5",
+              "content": "<p>RTA updated 4 additional charges</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1ca0aa63-db73-4bdb-aff9-6c661e4f8119",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "1d02c500-0887-4f3d-906a-9f530f51beaa",
+          "title": "",
+          "bullets": [
+            {
+              "id": "65cd60c9-a307-402f-922f-d9243d021c94",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5816c57f-a404-4eb8-93e8-4d045cf8cb99",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "590c523e-9df1-4ddb-a87f-fd2a0a2b4ec8",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "f4645fea-67aa-41ad-bd9d-3573a7ba68fe",
+              "content": "<p><strong>Issues:</strong> Integration Ticket entered for issues below</p><ul><li>Certain charges coming as the correct charge but with DV incorrectly</li><li>Shoplifting charges coming in as felony version instead of misdemeanor</li><li>13-1203A1(M1)(DV) coming in as 13-1203A1 (M2)</li></ul>"
+            },
+            {
+              "id": "60b76887-fbd7-4712-ba8c-2c58f98d36fd",
+              "content": "<p><strong>Workaround:</strong> Records specialist updates warrant to correct charge</p>"
+            }
+          ]
+        },
+        {
+          "id": "6b133079-7320-4fc2-814c-8023d2bc7edf",
+          "title": "Area Restrictions",
+          "bullets": [
+            {
+              "id": "4befe1c9-b67d-4d9d-96fe-22b429ff8db7",
+              "content": "<p>Completed</p>"
+            }
+          ]
+        },
+        {
+          "id": "f4d0a921-a283-4f2a-b2ed-414964c19b6b",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "796f384e-feaa-4047-9248-af09eed03fd4",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "bc880628-5426-44f0-aba9-6f4d8a939949",
+              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "d454f940-f11b-48c7-b9d8-3b6a80621d54",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "e3585aa2-aa9e-406f-b949-700ec5d3ca60",
+              "content": "<p>ATF/TPD and Axon meet on Thurs, June 11</p>"
+            },
+            {
+              "id": "cddd13a5-1bed-4ac8-a6f0-5121e12a4044",
+              "content": "<p>Issue: ATF models data around the LE Case ID and not the Gun Crime ID.</p>"
+            },
+            {
+              "id": "5ddb6966-cff6-4ba1-a57e-5560230c1297",
+              "content": "<p><strong>Resolution Complete:</strong> ATF changed API feed model to link to Crime Gun.</p>"
+            },
+            {
+              "id": "7ef2ddf3-35b6-4eff-a62c-38407251715d",
+              "content": "<p>TPD validation complete — no issues found</p>"
+            },
+            {
+              "id": "854dfbb9-aa72-486d-a342-c9f7d18cbff2",
+              "content": "<p>Production test to be done and validated on Tues, June 16</p>"
+            },
+            {
+              "id": "842cef9c-a4b5-49e2-bcfe-a1afce1f0597",
+              "content": "<p>If successful, will load all historical Crime Guns for TPD Tuesday.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "236b75bb-b188-4061-a3ce-83390f531bc7",
+      "title": "Senzing",
+      "subsections": [
+        {
+          "id": "779cce2f-259c-4724-87a7-a533c88ea86d",
+          "title": "",
+          "bullets": [
+            {
+              "id": "51778cd4-8ae7-4b93-9576-086f85dae2be",
+              "content": "<p>Training test loaded on Wed, June 10</p>"
+            },
+            {
+              "id": "ecc99c29-c380-43e6-b700-7ee2499007ad",
+              "content": "<p>Subset provided for validation is from Production</p>"
+            },
+            {
+              "id": "87c08ab0-ec99-4d7b-b328-a3bef2d3587d",
+              "content": "<p><strong>Needed:</strong> TPD approval to load test subset into Production for Records validation</p><ul><li>If test is unsuccessful, MNIs can be unmerged</li></ul>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

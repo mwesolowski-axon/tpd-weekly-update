@@ -1,0 +1,125 @@
+{
+  "id": "2026-06-15",
+  "weekOf": "2026-06-15",
+  "title": "Axon Weekly Update — Week of June 15, 2026",
+  "publishedAt": "2026-06-18T22:28:00Z",
+  "publishedBy": "alarsh",
+  "sections": [
+    {
+      "id": "fd34b675-05ce-4683-8b23-790bbb56deb0",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "a6a36728-f78b-4bf4-8170-b877f3f2f9aa",
+          "title": "",
+          "bullets": [
+            {
+              "id": "a2bcb6d9-04b7-4938-b969-7eb9f21fceef",
+              "content": "<p>Updated Patrol, Investigations and Records permissions to be able to view ATF Crime Gun form</p>"
+            },
+            {
+              "id": "dd8a59bd-faf2-412d-8e02-0e8e95f4a31d",
+              "content": "<p>Granted Brandon Wahl Fusus permissions — Brandon assisting in troubleshooting Verkada LPR integration</p>"
+            },
+            {
+              "id": "32282a2d-4319-4810-ad8d-f415024f5859",
+              "content": "<p>Wilson Lindelof — NIBRS UCR Engineer — Training access for NIBRS troubleshooting</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5edbac1e-1de5-448c-b142-e2e70a0199bd",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "04c5bb77-ae80-4ee7-a50f-1880beb752c6",
+          "title": "",
+          "bullets": [
+            {
+              "id": "5b2affac-eef4-4593-8e47-7c40076e0821",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6fea3a6e-e961-40c7-a632-a7cefcda2f54",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "0b5b44ea-be2b-49dd-b3dc-8fdd1884bab5",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "495b70ef-015f-4d38-86b8-c2be6d73160a",
+              "content": "<p><strong>Issues:</strong> Integration Ticket entered for issues below</p><ul><li>Certain charges coming as the correct charge but with DV incorrectly</li><li>Shoplifting charges coming in as felony version instead of misdemeanor</li><li>13-1203A1(M1)(DV) coming in as 13-1203A1 (M2)</li></ul>"
+            },
+            {
+              "id": "ae42fdeb-a23a-4289-939d-6aeff0a2d743",
+              "content": "<p><strong>Workaround:</strong> Records specialist updates warrant to correct charge</p>"
+            }
+          ]
+        },
+        {
+          "id": "bd1745ad-f1f8-4a4a-8533-a68e13fdab56",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "82b83ddd-cbb3-4f20-a342-72606d4a1d12",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "641a422e-e4c4-4713-bb97-a51003730c48",
+              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "30e767ff-3652-49f7-bf3f-fb28be61972f",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "29edff10-3596-4aeb-9b45-e3c354ef4e6d",
+              "content": "<p>Production test ran Tues, June 16</p>"
+            },
+            {
+              "id": "0db909bd-5aaa-4a12-90f6-2b72d957a706",
+              "content": "<p>All historical Crime Guns were ingested successfully the same day.</p>"
+            },
+            {
+              "id": "b38d9b71-30d5-45e3-8fde-1a69d607b0c4",
+              "content": "<p>TPD to validate and notify Axon of any issues found.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bbb010c6-4d30-4425-84eb-0fa79f07a22a",
+      "title": "Senzing",
+      "subsections": [
+        {
+          "id": "f6974386-d8b2-46f8-b9f7-5e4862ef2633",
+          "title": "",
+          "bullets": [
+            {
+              "id": "752c0e8a-55f3-4de0-9d32-29e0cc3fedcd",
+              "content": "<p>TPD reviewed the test subset before loading into Production Tues, June 16</p>"
+            },
+            {
+              "id": "1c6bf9f5-3107-4afc-863e-9df1b41364a6",
+              "content": "<p>MNI Subset loaded into Production Thurs, June 18</p>"
+            },
+            {
+              "id": "40df6994-8fb5-428d-bec0-eb898d06a849",
+              "content": "<p>TPD review completing review before Mon, June 22</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

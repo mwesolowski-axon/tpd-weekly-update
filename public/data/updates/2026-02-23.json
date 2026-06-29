@@ -1,0 +1,119 @@
+{
+  "id": "2026-02-23",
+  "weekOf": "2026-02-23",
+  "title": "Axon Weekly Update — Week of February 23, 2026",
+  "publishedAt": "2026-02-27T17:00:00Z",
+  "publishedBy": "alarsh",
+  "sections": [
+    {
+      "id": "414124c9-b18e-4b31-aac2-1d47ce0e50a8",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "dd3bce85-2b3a-4d5d-b093-18959c1c5ddc",
+          "title": "",
+          "bullets": [
+            {
+              "id": "9a78ffaa-61cc-427f-b546-e9923f178896",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c94eca15-86df-45f2-85f2-eb252d514ce0",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "732a4f95-458a-4093-ba86-d9698d57b2a0",
+          "title": "",
+          "bullets": [
+            {
+              "id": "ed672311-7679-4701-b2dc-12abdc065e5e",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bec9e742-4273-41d5-ae68-7adf0d815560",
+      "title": "Data conversion ( 01 RAIL - Tucson Conv - Smartsheet.com)",
+      "subsections": [
+        {
+          "id": "8c7df2cf-466a-4de9-a3cc-711993f702ca",
+          "title": "",
+          "bullets": [
+            {
+              "id": "3a04fcdb-eacc-4a91-91c0-f3e2d9a08164",
+              "content": "<p>*** All Groups successfully ingested into Production</p>"
+            },
+            {
+              "id": "0de32f1c-3df1-4ea0-b624-8f01a4638de4",
+              "content": "<p>Group A</p>"
+            },
+            {
+              "id": "a041a33c-04b6-4c5c-ad2d-72bfb9cf96ef",
+              "content": "<p>Group C</p>"
+            },
+            {
+              "id": "9800607d-3ca7-4bdd-93b0-8ccf91d96a56",
+              "content": "<p>Group D</p>"
+            },
+            {
+              "id": "c1f6f631-fd4a-44dd-86df-d0ab542f652f",
+              "content": "<p>Group E</p>"
+            },
+            {
+              "id": "2b286be0-89ba-40ac-8c20-61e8a26b53b5",
+              "content": "<p>Expungement of 127K in progress — 48K remaining; to complete over the weekend.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9c319916-a2a3-481b-b64f-21caae4a4ac0",
+      "title": "Integrations",
+      "subsections": [
+        {
+          "id": "18932af3-c859-4a14-a749-700b4220348c",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "3b69bbc7-0c26-4cbb-8d51-580af2d76b79",
+              "content": "<p>Production testing successful</p>"
+            },
+            {
+              "id": "730b087f-9f39-4671-b4f4-9cae2ea0353a",
+              "content": "<p>TPD to validate all active warrants in iLeads match active warrants with Court</p>"
+            },
+            {
+              "id": "9304af97-11b6-4713-afcb-ec5e6fb1b5f5",
+              "content": "<p>Once validated, file (in integration format) to be ingested into Production before Go Live</p>"
+            },
+            {
+              "id": "948811a3-d0b9-4833-abac-77915945fe2e",
+              "content": "<p>TPD to determine Warrant Go Live date</p>"
+            }
+          ]
+        },
+        {
+          "id": "73b27f76-9fb1-4e6d-8a1a-320e3796affe",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "f82d40a9-e0ed-449b-b795-375c58700fc7",
+              "content": "<p>No change from last week</p>"
+            },
+            {
+              "id": "49cd2595-4402-4ac8-a1de-92cb9e405335",
+              "content": "<p>Final Production testing scheduled Tues, March 3 with Anna Badilla</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+@layer components {
+  .prose-update ul {
+    @apply list-disc pl-5 my-2 space-y-1;
+  }
+
+  .prose-update p {
+    @apply my-1;
+  }
+
+  .prose-update strong {
+    @apply font-semibold;
+  }
+
+  .tiptap-editor .ProseMirror {
+    @apply min-h-[4rem] rounded border border-slate-200 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .tiptap-editor .ProseMirror ul {
+    @apply list-disc pl-5 my-1;
+  }
+
+  .tiptap-editor .ProseMirror ol {
+    @apply list-decimal pl-5 my-1;
+  }
+}

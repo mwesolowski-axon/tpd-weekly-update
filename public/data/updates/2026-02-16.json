@@ -1,0 +1,135 @@
+{
+  "id": "2026-02-16",
+  "weekOf": "2026-02-16",
+  "title": "Axon Weekly Update — Week of February 16, 2026",
+  "publishedAt": "2026-02-20T17:00:00Z",
+  "publishedBy": "mwesolowski",
+  "sections": [
+    {
+      "id": "968d87fa-2be0-4bae-a8a3-c29b76bcaa05",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "81a6068e-7ba6-4c29-a11c-06b1a2b01601",
+          "title": "",
+          "bullets": [
+            {
+              "id": "eaa6033e-5aae-43b1-9072-fad5d4810b17",
+              "content": "<p>UCR  1708 ( Sex Offenses — Sextortion) Loaded to Production.</p>"
+            },
+            {
+              "id": "abb0a285-9226-460b-a5c5-b40182dd6ed2",
+              "content": "<p>Warrants — Updated form and entity in Production to match Training</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "681bac57-bd2c-487a-a58c-29dba67e9f32",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "79df06f4-7d1b-42bc-a8f1-1eb3726dfc16",
+          "title": "",
+          "bullets": [
+            {
+              "id": "07d6c9e6-a71f-41c3-8f73-0e4b9da4ffcf",
+              "content": "<p>Initial meeting with Data Engineers concerning V2 migration</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "859de158-90f9-4427-8f73-33a2a02e3dec",
+      "title": "Data conversion ( 01 RAIL - Tucson Conv - Smartsheet.com)",
+      "subsections": [
+        {
+          "id": "91ddb883-0d73-4ef4-8650-bf80baee584c",
+          "title": "Group C",
+          "bullets": [
+            {
+              "id": "be9b333f-fbfa-4f67-9abd-da5b89209e13",
+              "content": "<p>Expungement CM is ready for review</p>"
+            },
+            {
+              "id": "a0f76585-0966-4b46-bc15-b78744816320",
+              "content": "<p>Finalization of ~530 reports would be done next week through CM</p>"
+            },
+            {
+              "id": "11cad438-3d88-4705-bf48-4633815856f1",
+              "content": "<p>After expungement — Ingest 5422 Incident reports back in Tucson PROD env and ensure \"New Person card\" is resolved</p>"
+            }
+          ]
+        },
+        {
+          "id": "62e77649-7fea-49d1-b45a-a20c99c96032",
+          "title": "Group D",
+          "bullets": [
+            {
+              "id": "b8d393ef-f7cd-4d77-bae8-dc7e8a9a4802",
+              "content": "<p>Narrative Only load completed</p>"
+            },
+            {
+              "id": "66a132d6-9fdc-4657-b917-d12fe80d19fe",
+              "content": "<p>18 reports are not present in datastore — requested DS team to run backfill</p>"
+            },
+            {
+              "id": "4b90a8e0-688f-4eda-b8fa-8d8c670bdb8d",
+              "content": "<p>TPD running data quality validations on ingested data set</p>"
+            },
+            {
+              "id": "682f15c5-638e-4265-960d-16b2eabb9ceb",
+              "content": "<p>Once 5422 Incident reports from Group C are re-ingested we have to ingest ~6k Narrative Only reports — to complete this Group</p>"
+            }
+          ]
+        },
+        {
+          "id": "f2426d53-8c2b-408d-85c2-c69185041bd4",
+          "title": "Group E",
+          "bullets": [
+            {
+              "id": "97dacfae-aabd-4348-829a-4d02772d88b3",
+              "content": "<p>Received approval to proceed with the remaining load into PROD following successful confidence testing. However, we will defer execution until Group C is complete to avoid rework, as some secondary arrest supplements are linked to the 5,422 reports planned for expunging and re-ingestion</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "81fcc310-2e69-4dae-a3b7-6f7595c2fc88",
+      "title": "Integrations",
+      "subsections": [
+        {
+          "id": "479bdb0c-b66e-4bd2-ae50-cb338e7cb015",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "4d22d591-2e68-491d-b670-edad8ec8405e",
+              "content": "<p>Training version of Warrant JSON moved to Production</p>"
+            },
+            {
+              "id": "1014ca81-910c-42f8-b031-56766970ad23",
+              "content": "<p>Training version of Warrant Entity JSON moved to Production</p>"
+            },
+            {
+              "id": "6ada077d-feb8-44aa-a672-a10a113bc67d",
+              "content": "<p>Need to schedule another production test</p>"
+            }
+          ]
+        },
+        {
+          "id": "a09d3e5a-a6d2-4a16-be83-0b9a1da6e2d8",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "8a6ba88a-ffb1-4932-8e07-8fe36d3ff73f",
+              "content": "<p>No change from last week</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

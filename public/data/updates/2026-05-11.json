@@ -1,0 +1,129 @@
+{
+  "id": "2026-05-11",
+  "weekOf": "2026-05-11",
+  "title": "Axon Weekly Update — Week of May 11, 2026",
+  "publishedAt": "2026-05-15T17:00:00Z",
+  "publishedBy": "alarsh",
+  "sections": [
+    {
+      "id": "89e415cd-2d34-44c0-be23-96bdfcde242f",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "0a65b4bf-725c-48a4-bf13-cb642e69e9fe",
+          "title": "",
+          "bullets": [
+            {
+              "id": "46345372-c506-42da-9d63-de9dde7807ca",
+              "content": "<p>No Changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9b92a9ec-13f0-4f8b-951a-ade4353d60dc",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "3f3b7bdf-c561-48ee-abc3-053a595bcbf9",
+          "title": "",
+          "bullets": [
+            {
+              "id": "ebbe6ee8-3f25-4471-889a-b3b917763788",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eff26389-5d59-4a5b-82bd-7ce7e76d50b8",
+      "title": "Integrations",
+      "subsections": [
+        {
+          "id": "468477c8-9cec-482e-9be6-fc47fdb73728",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "9d830e1b-3c66-440a-8b1b-279e3f5eb69a",
+              "content": "<p>Ingestion file completed Monday, May 11</p>"
+            },
+            {
+              "id": "fadc099c-4b11-4028-8780-f2f92d937e95",
+              "content": "<p>Delta file ingested Wednesday, May 13</p>"
+            },
+            {
+              "id": "b98f3257-b380-4d33-b26b-134fdcd47081",
+              "content": "<p>Integration ran manually Thursday, May 14 and trigger set</p>"
+            },
+            {
+              "id": "d4a23bf7-a732-46a3-a447-f439653dec52",
+              "content": "<p>Live integration ran Friday, May 15 without issues</p>"
+            },
+            {
+              "id": "425c84c5-96d4-4067-9442-8004362f6789",
+              "content": "<p><strong>Integration Details:</strong></p><ul><li>City IT (Harrison) has a cleanup script that runs each morning at 3:00am to archive the previous day's file (to prevent duplicate ingestion)</li><li>The integration file from the Court is sent to the server Axon has access to at 3:15am</li><li>Axon picks up the file at 5:00am</li><li>Records team begins working the warrants at 6:00am</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "4dc0bcac-61d3-4a3e-b84f-c10fee96e83a",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "e0dc3a7c-6494-4f4d-a056-9ba2eba1ab8b",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "c531323a-845f-421e-8855-b0ed049fe1eb",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.</p>"
+            },
+            {
+              "id": "9f95fa7b-8ef4-4f62-8ba8-1a1fb1e441ed",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</p>"
+            },
+            {
+              "id": "a165eba5-9fa9-4d51-83aa-37d8f6c33127",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI</p>"
+            }
+          ]
+        },
+        {
+          "id": "cf76caea-b2ca-4a77-879f-425f5cb5e72c",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "f01038fa-4a8d-49a7-810c-877f93dbf6e9",
+              "content": "<p>Axon and ATF meet Wednesday, May 13 to discuss second round of validation</p>"
+            },
+            {
+              "id": "5d746024-52a8-40dd-8202-d36e847f96c0",
+              "content": "<p>Keith to craft a response email for TPD</p>"
+            },
+            {
+              "id": "07c82083-77e8-494e-94e6-2f2df9137a1a",
+              "content": "<p>Meeting between ATF/ TPD and Axon scheduled for Thurs, May 28 for final integration review</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9be2e722-6415-4b33-b2c2-021dd4555e63",
+      "title": "Senzing",
+      "subsections": [
+        {
+          "id": "cec95e19-0a3e-4ead-8329-f69d0cec1416",
+          "title": "",
+          "bullets": [
+            {
+              "id": "8aad2a6b-f425-4521-bfd4-4c08a9d9368c",
+              "content": "<p>Output file provided to Axon on Thurs, May 14</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "id": "2026-03-16",
+  "weekOf": "2026-03-16",
+  "title": "Axon Weekly Update — Week of March 16, 2026",
+  "publishedAt": "2026-03-20T17:00:00Z",
+  "publishedBy": "alarsh",
+  "sections": [
+    {
+      "id": "6bbdb48e-1846-4f66-90b2-6db2adddb4e8",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "55e31e33-2d09-46e3-a9cf-0ff79e458e37",
+          "title": "",
+          "bullets": [
+            {
+              "id": "ad4b1ee2-5cf1-4074-816d-9f53fac6923f",
+              "content": "<p>\"Blue Team Required\" case factor added to Training for review</p>"
+            },
+            {
+              "id": "b2915153-4c3b-4dc2-a563-d87396129bde",
+              "content": "<p>Motor Vehicle Fatality form created in Training for Analysis Division discussion</p>"
+            },
+            {
+              "id": "38e88f4d-35b4-46e1-8490-3f6f2cd0ce6e",
+              "content": "<p>Focus Officer — PCRIT — drafted in training. Working through NIBRS issue before go live.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b17b3f21-ebac-453d-87b2-f45573bf194b",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "fba20b4a-4593-426c-a420-5d0885530dfb",
+          "title": "",
+          "bullets": [
+            {
+              "id": "0359f4ed-aeec-42be-85bb-3bfc3133773d",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "62ff3e66-ded5-4c3e-9343-4bae01246a65",
+      "title": "Integrations",
+      "subsections": [
+        {
+          "id": "074f9e9d-77e8-4115-990b-b5df45a7b639",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "448f90ca-d703-4ac8-9ddf-7198bb3c7ab3",
+              "content": "<p>Outstanding — Court contact on vacation this week. Unable to get Live warrant file for comparison.</p>"
+            },
+            {
+              "id": "bc06c2a9-d915-4fe4-abbd-c30fe11c27fb",
+              "content": "<p>Outstanding — Go live date</p>"
+            }
+          ]
+        },
+        {
+          "id": "0940fc86-549e-41d1-befa-86ae44bf1d8e",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "50b3ea69-9fac-4483-8abe-be2cc6ca4863",
+              "content": "<p>No change from last week</p>"
+            },
+            {
+              "id": "0dc6e064-e0ab-4d52-b08f-f4d1737c91df",
+              "content": "<p>Testing — export payload sending. Diagnosing missing fields or workflow issue.</p>"
+            },
+            {
+              "id": "09db9e87-fc77-4840-a535-ed3a8fe41a06",
+              "content": "<p>Unable to test upload of mug shots.</p>"
+            },
+            {
+              "id": "602b0218-6472-4061-bcc6-6d4e8f1fcbdc",
+              "content": "<p>Request to test next Wed while the process is being worked to see end to end.</p>"
+            },
+            {
+              "id": "df4224a9-6f72-463b-b959-b9d535bb5d3f",
+              "content": "<p>Jason Danielle to send out more detailed email.</p>"
+            }
+          ]
+        },
+        {
+          "id": "6eb9254a-7e2c-4dba-b824-3840b167344d",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "a961f6bc-d0b1-46eb-a1ba-68c091e4a582",
+              "content": "<p>Refer to Email sent Friday, Mar 6</p>"
+            },
+            {
+              "id": "302be128-24a7-4a7a-987e-b1bab894e915",
+              "content": "<p>Engineering still on track for March 31st</p>"
+            },
+            {
+              "id": "f012e63c-a65c-480e-b168-1d57694b1f75",
+              "content": "<p>Meeting with TPD / Axon / ATF to be set first week of April</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3042d70c-9451-4ed5-9540-cb1d9603d298",
+      "title": "SENZING",
+      "subsections": [
+        {
+          "id": "8e57d1f5-86ca-4c66-a10f-1a512462826c",
+          "title": "",
+          "bullets": [
+            {
+              "id": "b7ce3e58-4f04-464c-8ebe-8af7721d6e42",
+              "content": "<p>TPD DEs pulled updated axon.persons to ingest into the Senzing program</p>"
+            },
+            {
+              "id": "ce13bb19-58e2-49d3-ad9c-9b1432062720",
+              "content": "<p>DEs working with Senzing on results and validations</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "33e19489-c708-42d5-bde5-98fab3f23b8c",
+      "title": "IMPORTANT ISSUES IDENTIFIED",
+      "subsections": [
+        {
+          "id": "353ba10c-7eeb-4488-8683-7aa549d693f8",
+          "title": "TRACS Citations",
+          "bullets": [
+            {
+              "id": "56283776-1fb1-48c0-8258-65c6fd3493ac",
+              "content": "<p>Missing Citation Numbers in axon.citation Datastore view — FINDINGS</p>"
+            },
+            {
+              "id": "ea5a4a7c-d2ea-4ad1-8710-063f0dd4f294",
+              "content": "<p>The TRACS integration initially recognizes the citation number, then checks for an associated incident. If an incident exists, a custom field replaces the citation number with the incident number as the unique identifier.</p>"
+            },
+            {
+              "id": "84f50770-458e-48b8-8843-b0667c737fad",
+              "content": "<p>If no incident number is available, the custom field uses the event ID entered by the officer in the Agency Report Number field in TRACS.</p>"
+            },
+            {
+              "id": "dd63b812-0ab0-45d5-82e2-24b0a8190c82",
+              "content": "<p>Because the custom field overwrites the citation number with either the incident number or event ID, the citation number is not retained in the UI or the datastore.</p>"
+            },
+            {
+              "id": "14cb8e31-9a8f-4cbd-b983-62a93f14708b",
+              "content": "<p>If needed, the integration can be updated to preserve the citation number through the Integrations Scope Change process.</p>"
+            }
+          ]
+        },
+        {
+          "id": "feacb9dc-9a62-4a81-baa6-adcc430936ec",
+          "title": "DORS",
+          "bullets": [
+            {
+              "id": "5299c3da-d5a9-4362-9999-abaa5cedd79f",
+              "content": "<p>Engineering determining root cause — RESOLVED</p>"
+            },
+            {
+              "id": "ac60b9bd-311a-4b7b-845e-ff54a722cd86",
+              "content": "<p>A bug was identified in a recent deployment. This has been resolved.</p>"
+            },
+            {
+              "id": "8f0c45c4-1283-4e56-a417-cac2255555e3",
+              "content": "<p>All Shoplifting reports affected have been fixed. They now show the address in the search cards as expected.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e184e8d1-c715-47a5-8ab9-0064f421b027",
+      "title": "COMPLETED",
+      "subsections": [
+        {
+          "id": "e36dbb14-ee82-4132-ad11-cbbded8599fc",
+          "title": "",
+          "bullets": [
+            {
+              "id": "27f90809-fabb-4748-a470-be9691a054f2",
+              "content": "<p>Data conversion ( 01 RAIL - Tucson Conv - Smartsheet.com)</p>"
+            },
+            {
+              "id": "7cb0bb3b-c06d-4cea-afa8-3a493145ab73",
+              "content": "<p>*** All Groups successfully ingested into Production</p>"
+            },
+            {
+              "id": "1bec0f1f-7c09-4136-8c29-2af2f5f98534",
+              "content": "<p>Group A</p>"
+            },
+            {
+              "id": "9a634e68-3803-405e-9588-fb7c7d30ce77",
+              "content": "<p>Group C</p>"
+            },
+            {
+              "id": "b6165ce9-e461-46a1-8e01-d35d6aed39f0",
+              "content": "<p>Group D</p>"
+            },
+            {
+              "id": "e176d608-b509-4c62-b6d0-d702b6d7565f",
+              "content": "<p>Group E</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

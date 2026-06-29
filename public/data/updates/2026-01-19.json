@@ -1,0 +1,123 @@
+{
+  "id": "2026-01-19",
+  "weekOf": "2026-01-19",
+  "title": "Axon Weekly Update — Week of January 19, 2026",
+  "publishedAt": "2026-01-23T17:00:00Z",
+  "publishedBy": "alarsh",
+  "sections": [
+    {
+      "id": "b5d9b5f2-5dfb-4339-93e6-6b6ff24c1ede",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "71985294-1c45-413d-b12b-f67a67acffe3",
+          "title": "",
+          "bullets": [
+            {
+              "id": "781f3664-88ae-412d-90a2-79065ee5b86c",
+              "content": "<p>Quality Control Inventory feature live in Training early next week.</p>"
+            },
+            {
+              "id": "b8f65dca-931d-4f63-97f6-231eee80c197",
+              "content": "<p>Charge 13-1203A2 (M3) (DV) added to MCT</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "633fe7dc-080e-456f-8970-50a40f81553c",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "95863c2d-d92d-4702-a100-7fa4acaed565",
+          "title": "",
+          "bullets": [
+            {
+              "id": "b50ea7d0-8b88-4f57-98c6-abcdbeaea63f",
+              "content": "<p>Datastore team / Luis meet Wednesday to discuss latency</p>"
+            },
+            {
+              "id": "3ccc03f1-c687-423c-9271-57cd0e1301f9",
+              "content": "<p>Troubleshoot plan identified to prove / disprove network data transfer as the root cause</p>"
+            },
+            {
+              "id": "e4239590-dea5-4196-b2b0-b62f9fb6ece1",
+              "content": "<p>Datastore team coordinating troubleshooting efforts with Microsoft</p>"
+            },
+            {
+              "id": "2cfe28c6-cd5c-44b3-bb2d-b73e1d6accc6",
+              "content": "<p>Follow up meeting next week — TBD</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1b57fa68-1bd6-4ab9-8a37-10b2c75227b0",
+      "title": "Data conversion ( 01 RAIL - Tucson Conv - Smartsheet.com)",
+      "subsections": [
+        {
+          "id": "edfd17b5-debd-43bf-a918-89f0e581e57f",
+          "title": "",
+          "bullets": [
+            {
+              "id": "cf85b4bc-0846-45a4-a63b-44b42e2b970f",
+              "content": "<p>Incident ingestion — production payloads:</p>"
+            },
+            {
+              "id": "86b5ffa5-b377-4b2e-a289-0f936fd1a9c7",
+              "content": "<p><strong>Group C:</strong> ~127k GO reports are remaining to be ingested</p>"
+            },
+            {
+              "id": "c055749a-4929-43f4-942f-3454f042e8c9",
+              "content": "<p><strong>Group D:</strong> Narrative Only payloads being created; will be ingested after Group C completion</p>"
+            },
+            {
+              "id": "edbca65f-afed-4f7b-8778-0b53a70838c9",
+              "content": "<p><strong>Group E:</strong> Ingested 40+ new secondary arrests in training after fixing issues from initial feedback — awaiting TPD validation on new load</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8be7652f-3c15-475b-9c52-43a037ea97ec",
+      "title": "Integrations",
+      "subsections": [
+        {
+          "id": "e0410fdb-299e-43c9-acac-e3f2c6f0e809",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "9cd04ca2-ff3a-44c0-a461-cf7b502659c0",
+              "content": "<p>Jason D to verify engineering completion and test plan</p>"
+            },
+            {
+              "id": "f5c87dbb-cd1c-449f-aad9-8d3200d6d6e0",
+              "content": "<p>Once confirmed, April to set up meeting with Records, RTU, Harrison and Jack for final testing.</p>"
+            }
+          ]
+        },
+        {
+          "id": "ed70c992-4907-46c4-bf7d-cc6c70bca9e4",
+          "title": "Tech 5 Import",
+          "bullets": [
+            {
+              "id": "0fd8e50d-d921-4c9d-90d4-c0b91dc66430",
+              "content": "<p>Export issue resolved</p>"
+            },
+            {
+              "id": "cb48d765-195a-42f1-82b0-9081ca067942",
+              "content": "<p>Import issue being worked on</p>"
+            },
+            {
+              "id": "583080c4-bda3-4a3f-96a7-04d38c9a0e8e",
+              "content": "<p>Once complete, will test mug shot ingestion with Anna and Team</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

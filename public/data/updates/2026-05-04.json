@@ -1,0 +1,121 @@
+{
+  "id": "2026-05-04",
+  "weekOf": "2026-05-04",
+  "title": "Axon Weekly Update — Week of May 4, 2026",
+  "publishedAt": "2026-05-08T17:00:00Z",
+  "publishedBy": "mwesolowski",
+  "sections": [
+    {
+      "id": "434d5824-2324-47fe-bd9f-13bbd0002110",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "c54842f1-9733-441a-a43d-55ff89448e22",
+          "title": "",
+          "bullets": [
+            {
+              "id": "42768fd6-6946-429f-9800-fee99b4f56a9",
+              "content": "<p>Warrant Permissions updates</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6505858d-ef9b-4001-8e44-703c6aff1ea0",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "86322eb7-0469-4a39-a772-d7c5a54d546e",
+          "title": "",
+          "bullets": [
+            {
+              "id": "8638e112-f337-4820-9d68-583b5aaa92ee",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f68996f7-4be7-4fc9-aa2c-12ebbd80a5e4",
+      "title": "Integrations",
+      "subsections": [
+        {
+          "id": "d2e7e94b-15d3-489f-91fa-6f0bfd406f7e",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "1dc36a97-3c48-48af-a979-aff92327d61d",
+              "content": "<p>Full Production warrant file received and parsed successfully with no errors</p>"
+            },
+            {
+              "id": "04399484-26af-4dfe-b0b6-46c923948c37",
+              "content": "<p>Production ingest is in progress; initial batches completed successfully and team received clearance to run the remaining full ingest</p>"
+            },
+            {
+              "id": "2442e4c5-03fc-408b-90e4-4802a568a40d",
+              "content": "<p>As of latest update, ~6.5k warrants remain to be loaded</p>"
+            },
+            {
+              "id": "e3e4d82d-ad4b-4037-a52c-af45a1987e71",
+              "content": "<p>Expected: Friday through Monday catch-up, then live integration can be turned on</p>"
+            }
+          ]
+        },
+        {
+          "id": "96b00ed8-795b-475a-ac7b-ab8e81a6b657",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "446885fb-38a5-4d83-a95b-fa003dfa8b84",
+              "content": "<p>Internal Decision to continue still Pending</p>"
+            },
+            {
+              "id": "f0f20dba-bdcb-4742-a0f9-50f44254c1f4",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.</p>"
+            },
+            {
+              "id": "36f6dd43-09b1-44c7-98db-1d75a8442104",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</p>"
+            },
+            {
+              "id": "a3a24c99-e028-4e0f-9db4-cdf362bb453f",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI</p>"
+            }
+          ]
+        },
+        {
+          "id": "a0e57416-e0e2-4735-8b02-c7112d4687ba",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "e80da126-c93e-45fe-86c3-9fbe4ea838e5",
+              "content": "<p>Pending: Axon / ATF to review validation feedback</p>"
+            },
+            {
+              "id": "a55244c3-0813-496c-87e5-f9d5993a8485",
+              "content": "<p>Next Axon/Agency/ ATF meeting TBD</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17157e59-f12d-46ac-8dc9-2aa0fa9e785c",
+      "title": "Senzing",
+      "subsections": [
+        {
+          "id": "b4dc4f7a-dbcb-465b-844c-b9ead3b2267f",
+          "title": "",
+          "bullets": [
+            {
+              "id": "7fc56f2f-2ac9-420d-a0cb-3f3cf2a1ba73",
+              "content": "<p>Output file is ready, when warrants are ingested, Senzing will be purged and the script run again to generate a new deduped file with new MNIs</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

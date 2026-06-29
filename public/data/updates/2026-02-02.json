@@ -1,0 +1,135 @@
+{
+  "id": "2026-02-02",
+  "weekOf": "2026-02-02",
+  "title": "Axon Weekly Update — Week of February 2, 2026",
+  "publishedAt": "2026-02-06T17:00:00Z",
+  "publishedBy": "alarsh",
+  "sections": [
+    {
+      "id": "42821787-7da2-4c70-b41e-21a410668bd9",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "ac20ffb8-2967-4e7a-85bf-9a6ada4bb5e6",
+          "title": "",
+          "bullets": [
+            {
+              "id": "3751a300-c0a6-4083-9cf6-5a7725c39bc1",
+              "content": "<p>Charge Entity schema: Corrected Offense Categories mapping for Incident searching (both Trn and Prod)</p>"
+            },
+            {
+              "id": "b15209aa-170f-4772-b304-520d4cdf260c",
+              "content": "<p>Livescan Name Check: Added Mug ID to the Mug ID field in Production and implemented a DOB validation rule that rejects dates before 1900 or in the future (Production).</p>"
+            },
+            {
+              "id": "4ad36a0f-c070-404a-93b8-72c62639528f",
+              "content": "<p>Warrant Supplement: Added Legacy Person ID for the data conversion (Training and Production).</p>"
+            },
+            {
+              "id": "5dd5354c-dcb6-4e54-b907-b02a83fe212e",
+              "content": "<p>Person View schema: Updated to display Mug ID within MNIs (Production).</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "94d874e3-271f-443b-b7cc-809fcf60c503",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "37a8d760-3e0b-4419-9c11-3fe71cbb18ce",
+          "title": "",
+          "bullets": [
+            {
+              "id": "5ef24c67-65c8-4bfc-966f-41436781b6e1",
+              "content": "<p>N/A</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a30c33c0-e0a6-4627-83e8-9e067635e31c",
+      "title": "Data conversion ( 01 RAIL - Tucson Conv - Smartsheet.com)",
+      "subsections": [
+        {
+          "id": "1708ae24-e6ef-45fd-9092-cd044bb13ee9",
+          "title": "Group C",
+          "bullets": [
+            {
+              "id": "ac6a3178-137a-4575-87e1-5406fdcf898e",
+              "content": "<p>All legacy GO reports (1,201,441) are available in both the UI and the datastore.</p>"
+            },
+            {
+              "id": "3bce538b-5150-4218-a4b1-5e7b2565a14d",
+              "content": "<p>Approximately 500 reports are marked \"In Progress\" in the datastore but appear finalized in the UI; this discrepancy will be resolved via a backfill next week.</p>"
+            }
+          ]
+        },
+        {
+          "id": "543c69e7-0504-4a88-8b38-f7af91372726",
+          "title": "Group D",
+          "bullets": [
+            {
+              "id": "8b6d5943-039c-48a6-89df-08647461666b",
+              "content": "<p>Derrick confirmed ingestion of 1,864,575 narrative-only payloads from legacy into Axon.</p>"
+            },
+            {
+              "id": "573dac2f-1133-4fd5-a8c0-56f34df2c872",
+              "content": "<p>Confidence testing completed; payloads currently being sent to Production. We will provide an update when ingestion is fully complete.</p>"
+            }
+          ]
+        },
+        {
+          "id": "0de73a98-6a92-464f-83c5-8e7181a2de5f",
+          "title": "Group E",
+          "bullets": [
+            {
+              "id": "ceaa4480-acf1-40d4-b9d1-6eb649d882a6",
+              "content": "<p>Awaiting Derrick's confirmation on the final small batch of payloads.</p>"
+            },
+            {
+              "id": "e0e250c9-fb5e-4059-9d90-146c9b413914",
+              "content": "<p>After confirmation, we will run a ~100-payload validation before approving the group for Production load.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b1ad9be4-4670-4544-aa3e-fc13ab2d08f2",
+      "title": "Integrations",
+      "subsections": [
+        {
+          "id": "096262d0-e1fc-42d5-a2be-87c39849a165",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "905665b0-82d1-45ec-b190-1c3f5218d264",
+              "content": "<p>Form schema mismatches across environments blocked ingestion.</p>"
+            },
+            {
+              "id": "5bdb31b0-ea5e-486d-8df5-8fb86cfea540",
+              "content": "<p>Internal TPD discussion required to determine whether the Training form can be moved to Production without issues.</p>"
+            }
+          ]
+        },
+        {
+          "id": "4b855f93-d91b-4f51-af82-cd615c007d29",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "963027a2-12d4-4caa-8999-341a32efa3d1",
+              "content": "<p>Import: All test scenarios passed. Preparing to test into Production.</p>"
+            },
+            {
+              "id": "294bf7ed-477a-4cda-bcbc-682327f6c7a7",
+              "content": "<p><strong>Export:</strong></p><ul><li>Training-environment pipeline was turned off, causing apparent test failures; the pipeline needs to be re-enabled.</li><li>Production pipeline is working; additional testing will be performed.</li></ul>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

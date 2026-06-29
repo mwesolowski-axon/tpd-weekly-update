@@ -1,0 +1,125 @@
+{
+  "id": "2026-03-30",
+  "weekOf": "2026-03-30",
+  "title": "Axon Weekly Update — Week of March 30, 2026",
+  "publishedAt": "2026-04-03T17:00:00Z",
+  "publishedBy": "mwesolowski",
+  "sections": [
+    {
+      "id": "10554be4-8b0e-49e0-b151-9f9f0ed6650a",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "36ee1571-dfb9-4301-a62d-5a7f25dfa344",
+          "title": "",
+          "bullets": [
+            {
+              "id": "09bf83ed-8af2-45ee-97e9-8864424a4a76",
+              "content": "<p>Cartographer enabled for Tucson</p>"
+            },
+            {
+              "id": "f9f47c9a-7582-4954-be19-290f07266115",
+              "content": "<p>In progress — MCT clean up following data migration</p>"
+            },
+            {
+              "id": "82611e79-a93e-4614-b18c-349cff2fa75b",
+              "content": "<p>ATF Crime Gun Form published in Prod (admin only until April 10 — not viewable except Admins while testing continues in Training)</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5413176f-c836-4e0e-928a-91974033e4b7",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "dded1a2e-c3ab-463f-9401-e0941533ae7c",
+          "title": "",
+          "bullets": [
+            {
+              "id": "7b17bf06-0aca-4b64-bf43-525f202428f8",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b97c261a-af74-41bb-a7e3-a07bc5dcc42d",
+      "title": "Integrations",
+      "subsections": [
+        {
+          "id": "609a08c8-6576-4101-b324-30b2bfa0faf5",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "0b07ed0b-8e2c-430c-a189-0cfa37eb1f34",
+              "content": "<p>In Progress — Combined / Validated file in integration format</p>"
+            },
+            {
+              "id": "1bf07c0e-3cfd-4e82-a5b6-63b846442dda",
+              "content": "<p>Outstanding — Ingestion of validated live warrant file</p>"
+            },
+            {
+              "id": "b491a6dc-371b-46a9-ac5f-4c505c888a96",
+              "content": "<p>Outstanding — Go live date</p>"
+            }
+          ]
+        },
+        {
+          "id": "9912672b-10e4-408e-a169-de75d362ed45",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "cfc7a20a-594c-4490-b501-4015db6d95f6",
+              "content": "<p>Meeting scheduled to go over potential workflow changes</p>"
+            },
+            {
+              "id": "8d4cc172-b8ea-475e-a82a-29846f14348d",
+              "content": "<p>Outstanding — endpoint configuration issues from Tech 5</p>"
+            },
+            {
+              "id": "bc6eb514-37cf-49a9-8702-96792f57a4ce",
+              "content": "<p>Outstanding — pending confirmation on excluding all but offenders in the MNIs import</p>"
+            }
+          ]
+        },
+        {
+          "id": "0a899839-b74f-459b-902f-022acd0cdde2",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "2c2ddd81-2e1a-47c3-88d3-4357de00fe78",
+              "content": "<p>Live data into training as of April 2</p>"
+            },
+            {
+              "id": "9601076f-51f7-4418-b65c-8b8726a630ae",
+              "content": "<p>Meeting with TPD / Axon / ATF to be set first week of April</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1c5307fa-4a11-493d-a0e7-5feff9c34424",
+      "title": "SENZING",
+      "subsections": [
+        {
+          "id": "fdaecc9e-c106-4c20-9820-dbef7cd0e84b",
+          "title": "",
+          "bullets": [
+            {
+              "id": "b2e936b2-fe5b-440e-933d-7b5a2a033096",
+              "content": "<p>In Progress</p>"
+            },
+            {
+              "id": "3ae5747a-eb2d-4ff3-acd5-a6081a8e373e",
+              "content": "<p>Form 4C taking priority at the moment.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

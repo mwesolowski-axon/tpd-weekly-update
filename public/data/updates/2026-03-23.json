@@ -1,0 +1,185 @@
+{
+  "id": "2026-03-23",
+  "weekOf": "2026-03-23",
+  "title": "Axon Weekly Update — Week of March 23, 2026",
+  "publishedAt": "2026-03-27T17:00:00Z",
+  "publishedBy": "alarsh",
+  "sections": [
+    {
+      "id": "74aaeebf-f06b-455c-bd4f-66f912f65d6c",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "89029d51-a259-4892-b031-602dd90816cb",
+          "title": "",
+          "bullets": [
+            {
+              "id": "5b1d6c07-4c1b-4182-96fa-db3c130b433f",
+              "content": "<p>FOCUS_OFFICER_PRCIT role added to the Incident Form -TRN and PROD</p>"
+            },
+            {
+              "id": "e8f769da-58f0-4ddc-ba3c-c453c92d67da",
+              "content": "<p>New case closure codes have went live in Production</p>"
+            },
+            {
+              "id": "44dde569-7c10-472a-b505-fc3d8576608a",
+              "content": "<p>PDF Search feature turned on for Production — ability to search PDFs loaded from today forward</p>"
+            },
+            {
+              "id": "fe2c19d6-d3ce-402e-be9c-612cc67e4932",
+              "content": "<p>13-3623 (B3) (DV) — charge format updated to reflect TRACS update</p>"
+            },
+            {
+              "id": "60243ed8-573e-4743-8a2c-bd58fd617eea",
+              "content": "<p>NIBRS 26C to UCR 1104</p>"
+            },
+            {
+              "id": "0fdc1f14-cb7f-47a3-a56d-22aeb9aea64d",
+              "content": "<p>13-2506A (M1), 13-2506A1 (M1) and 13-2506A2 (M2) deprecated because they did not pop required NIBRS fields properly</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3a01e10e-5c56-4434-ab2b-6c3571a4d82e",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "01af4227-fb6b-4d94-931e-2b2aaaccf43c",
+          "title": "",
+          "bullets": [
+            {
+              "id": "069f2728-37fd-418d-afcb-13ad38d76ff7",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab345471-d79e-4c8a-8453-42f4d075cdfc",
+      "title": "Integrations",
+      "subsections": [
+        {
+          "id": "796b6d73-007c-443c-890f-d7a677f4df91",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "8b787937-9daf-43d8-8232-6a704a7341c0",
+              "content": "<p>Live warrant file received from Kiet for TPD comparison.</p>"
+            },
+            {
+              "id": "4d3f012f-80d4-4823-873f-ba34f6cc4dda",
+              "content": "<p>Outstanding — Combined / Validated file in integration format</p>"
+            },
+            {
+              "id": "d6ef6cea-7d5b-49a9-8b73-08e29d8a81ca",
+              "content": "<p>Outstanding — Ingestion of validated live warrant file</p>"
+            },
+            {
+              "id": "f81f5167-4ff4-40ca-aa9d-98a363d0acdf",
+              "content": "<p>Outstanding — Go live date</p>"
+            }
+          ]
+        },
+        {
+          "id": "cef54b91-8fe3-4bb0-a36a-08f7281c40df",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "96c33e2f-8ff4-429f-a955-dd9e8311bd8c",
+              "content": "<p>No change from last week</p>"
+            },
+            {
+              "id": "fc561aff-a2ac-4251-80e5-2d35ab581d96",
+              "content": "<p>Outstanding — Live review of workflow process when exporting — assist in diagnosis of missing fields sent to Tech 5</p>"
+            },
+            {
+              "id": "f25d1b25-9007-4a6f-a0c6-6db9b69f34d1",
+              "content": "<p>Anna to send email to Tech 5 about excluding all but offenders in te MNIs import</p>"
+            },
+            {
+              "id": "5b87015f-df45-480e-b8a4-4856056eeaea",
+              "content": "<p>Jason D to send detailed email from last week</p>"
+            }
+          ]
+        },
+        {
+          "id": "9b267b96-d255-4cc3-b6ed-37e14da2a4a5",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "93b6e3d3-b58b-49ad-8ee3-e1eb15fd5c82",
+              "content": "<p>Refer to Email sent Friday, Mar 6</p>"
+            },
+            {
+              "id": "5499cac7-dd11-4881-94f9-178245fde23f",
+              "content": "<p>Engineering still on track for March 31st</p>"
+            },
+            {
+              "id": "f133afd4-d6ec-4173-a86d-b530073e32ce",
+              "content": "<p>Meeting with TPD / Axon / ATF to be set first week of April</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "859eeda9-0dcd-44e7-b441-f7d9c3c2505c",
+      "title": "SENZING",
+      "subsections": [
+        {
+          "id": "1b81fcac-4a5e-479f-8db9-da4ab83ec3e9",
+          "title": "",
+          "bullets": [
+            {
+              "id": "07780acc-b210-422f-9834-f7c50f1889f0",
+              "content": "<p>In Progress</p>"
+            },
+            {
+              "id": "c18494b3-86eb-4dbe-a126-c54a60a6d333",
+              "content": "<p>Form 4C taking priority at the moment. Will revisit in a week or so.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "21368263-1829-4d59-b733-3f8f7f4dae6b",
+      "title": "COMPLETED",
+      "subsections": [
+        {
+          "id": "e84115ba-b52a-4af5-a698-6217124404c4",
+          "title": "",
+          "bullets": [
+            {
+              "id": "0b6268f5-2222-45be-b14b-5064403b777a",
+              "content": "<p>Data conversion ( 01 RAIL - Tucson Conv - Smartsheet.com)</p>"
+            },
+            {
+              "id": "3acec1a0-d1a2-421a-b291-f870e57219ce",
+              "content": "<p>*** All Groups successfully ingested into Production</p>"
+            },
+            {
+              "id": "155f922d-2299-41af-8dd4-4ef76676e3ae",
+              "content": "<p>Group A</p>"
+            },
+            {
+              "id": "af53caa6-d6f6-4fbd-b2f1-caaa1be8403c",
+              "content": "<p>Group C</p>"
+            },
+            {
+              "id": "abd27342-ce1a-447a-945d-919095d60dd3",
+              "content": "<p>Group D</p>"
+            },
+            {
+              "id": "e52eff35-0e46-4772-8a7f-6d09bbaa33b6",
+              "content": "<p>Group E</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

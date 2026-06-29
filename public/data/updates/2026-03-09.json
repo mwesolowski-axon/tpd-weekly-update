@@ -1,0 +1,219 @@
+{
+  "id": "2026-03-09",
+  "weekOf": "2026-03-09",
+  "title": "Axon Weekly Update — Week of March 9, 2026",
+  "publishedAt": "2026-03-13T17:00:00Z",
+  "publishedBy": "alarsh",
+  "sections": [
+    {
+      "id": "a1225375-bd6c-4f05-b1dc-2ed8bece7d46",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "0961ae69-863e-44b4-9943-54479b16572a",
+          "title": "",
+          "bullets": [
+            {
+              "id": "c9d0b92c-b7ab-4b4d-b895-3f63f54c816d",
+              "content": "<p>Case closure codes updated in Training — awaiting review before pushing live</p>"
+            },
+            {
+              "id": "c7f3d9cb-fa03-4e81-bc12-c1757596e8b3",
+              "content": "<p>Added Axon NIBRS specialist Christina Swenson to TRN to assist with NIBRS mapping for the new Incident Role of \"Focus Officer — PCRIT\"</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "38a676ec-6c57-40e7-b8b5-a01152ab64e8",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "f2d9854a-6543-4f67-b7c1-140dcb4c7da4",
+          "title": "",
+          "bullets": [
+            {
+              "id": "5374cfb6-7b66-4ec2-95a5-640116cb05c4",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2474aa81-3271-43fd-9d42-accf67388853",
+      "title": "Integrations",
+      "subsections": [
+        {
+          "id": "a1993707-eb1d-4512-9141-a87baff0f783",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "4c058d13-824b-4ee9-a3d6-c85a001be1fa",
+              "content": "<p>Area Restrictions testing done this week with TPD / Hexagon</p>"
+            },
+            {
+              "id": "d7d34683-7d88-4245-94e7-1611b72dc8e5",
+              "content": "<p>Hexagon doing some view adjustments</p>"
+            },
+            {
+              "id": "396f2f0f-9c2b-42b0-b62e-9bc9ae9900ef",
+              "content": "<p>Outstanding — Court and iLeads live warrants validation — for the ingestion file</p>"
+            },
+            {
+              "id": "5b0451df-bc57-42e2-b491-e6efd60301e1",
+              "content": "<p>Outstanding — Go live date</p>"
+            }
+          ]
+        },
+        {
+          "id": "2b6a474b-4fc9-4f79-a8f4-bb314426ce1c",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "0a1cfc5a-2e13-451e-85e1-225fc6bc4f1f",
+              "content": "<p>No change from last week</p>"
+            },
+            {
+              "id": "9875d0a4-52e5-451b-bbbb-1fa6c17a8323",
+              "content": "<p>Tech 5 to change import endpoint to Production</p>"
+            },
+            {
+              "id": "423b576d-f86d-4a5d-8207-7f624f0b5c77",
+              "content": "<p>Final test scheduled Tues, Mar 17 at 9:00am</p>"
+            }
+          ]
+        },
+        {
+          "id": "09e09551-8e10-4dcb-9c91-a545afceb9e6",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "a869a08a-4bd2-4829-810e-7a2500fd76ae",
+              "content": "<p>Refer to Email sent Friday, Mar 6</p>"
+            },
+            {
+              "id": "143b1522-67d8-472a-bcd0-297045eb0c52",
+              "content": "<p>Timeline provided for testing and deployment</p>"
+            },
+            {
+              "id": "4e60ea77-eb47-4976-ae6b-81756399b5a0",
+              "content": "<p>No revisions or additions provided for the Test plans</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d70ad724-2f6c-4e2c-82ab-05d55916002a",
+      "title": "Data conversion ( 01 RAIL - Tucson Conv - Smartsheet.com)",
+      "subsections": [
+        {
+          "id": "d8d3a43b-49a0-408b-88b9-ab7faa324d23",
+          "title": "",
+          "bullets": [
+            {
+              "id": "ff3404f3-4a93-4d69-9362-6506d51561ef",
+              "content": "<p>*** All Groups successfully ingested into Production</p>"
+            },
+            {
+              "id": "371cfcb0-7bf0-4163-9a83-8c6df6e46a58",
+              "content": "<p>Group A</p>"
+            },
+            {
+              "id": "d7681d26-bf89-441f-81c4-8304f85b1aae",
+              "content": "<p>Group C</p>"
+            },
+            {
+              "id": "ab739969-edbf-423d-ac66-0963b6bcb55d",
+              "content": "<p>Group D</p>"
+            },
+            {
+              "id": "19bd7924-ef00-4ca8-8822-85d800492cc6",
+              "content": "<p>Group E</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ecc7557b-5a94-4ca2-af99-de9d5bbb6526",
+      "title": "SENZING",
+      "subsections": [
+        {
+          "id": "7302b960-74f4-4b61-86b2-e5f8a2788096",
+          "title": "",
+          "bullets": [
+            {
+              "id": "a3945cd3-d170-48fe-9759-452088829694",
+              "content": "<p>TPD DEs pulled updated axon.persons to ingest into the Senzing program</p>"
+            },
+            {
+              "id": "b6e68711-b967-4824-b487-6369faf727cc",
+              "content": "<p>DEs working with Senzing on results and validations</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9a905f96-62e4-46ac-9328-0ae3bc3aa186",
+      "title": "IMPORTANT ISSUES IDENTIFIED",
+      "subsections": [
+        {
+          "id": "55ab8541-45fb-42dd-ac66-51a4486373ae",
+          "title": "TRACS Citations",
+          "bullets": [
+            {
+              "id": "0b9688c0-83af-42c9-bc1a-d1e30cf7360f",
+              "content": "<p>Citation numbers missing from datastore axon.citations view</p>"
+            },
+            {
+              "id": "327922b1-22f2-444b-82bb-026c02e67bb5",
+              "content": "<p>Not missing for all reports but most</p>"
+            },
+            {
+              "id": "8eed7c4c-b64e-4dd4-9cd8-84ae5a285d05",
+              "content": "<p>RTU TRACS/Records review — no common denominator for when missing or showing</p>"
+            },
+            {
+              "id": "646491fe-f671-4e43-89fe-14239eba88d5",
+              "content": "<p>Ticket entered with Axon engineering for diagnosis / resolution</p>"
+            }
+          ]
+        },
+        {
+          "id": "6d1c9f91-b4a1-4d36-a280-b6eda13cb701",
+          "title": "DORS",
+          "bullets": [
+            {
+              "id": "6c976bed-5a65-4930-ba9b-513a7517f6e9",
+              "content": "<p>Shoplifting reports are missing the incident address on the Incident Overview and on the Search card within Records</p>"
+            },
+            {
+              "id": "c6b9094c-f0db-4963-a25d-f1f999cb71b3",
+              "content": "<p>This is happening only on Shoplifting reports</p>"
+            },
+            {
+              "id": "962f8a09-280e-4a46-a4c1-b3b9c559f681",
+              "content": "<p>Incident address is showing correctly within the -1 report</p>"
+            },
+            {
+              "id": "2fcaf2df-681e-4d4b-8f00-0b2a030503ef",
+              "content": "<p>Began happening on March 4</p>"
+            },
+            {
+              "id": "c446a6c9-3a23-4623-88d3-798de63477c4",
+              "content": "<p>Lexis Nexis is currently in the midst of a migration that began March 4 — March 13.</p>"
+            },
+            {
+              "id": "e448832d-210f-4fde-a918-c4f113c0a63e",
+              "content": "<p>Working with TPD DORS contact as well as Axon engineering to determine root cause</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "2026-03-03",
+  "weekOf": "2026-03-03",
+  "title": "Axon Weekly Update — Week of March 3, 2026",
+  "publishedAt": "2026-03-06T17:00:00Z",
+  "publishedBy": "alarsh",
+  "sections": [
+    {
+      "id": "60ac11da-c6db-4c05-b7f3-0f8f34b00caa",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "e69ec62f-7503-4ef8-b578-3de77f35b733",
+          "title": "",
+          "bullets": [
+            {
+              "id": "f170bdc6-e2e7-4c5e-9904-db183f3433b9",
+              "content": "<p>Replaced Auto Theft Tracker Dashboard with notice of redirection (from Anthony S)</p>"
+            },
+            {
+              "id": "9848fd1b-4a5f-4224-b9dc-ee9b20e87a50",
+              "content": "<p>Updated spelling for \"Recovered by Agency\" and \"Recovered by TPD\" (Trn & Pro)</p>"
+            },
+            {
+              "id": "6ba00885-8234-46e6-8dc4-b205b145356d",
+              "content": "<p>Changed Primary MNI Flag Description to read \"VERIFIED BY THE AFIS UNIT</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "66de19f9-12f3-4546-ae54-f8089b36411a",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "12939a72-52c3-4a35-8a06-c66f2135a005",
+          "title": "",
+          "bullets": [
+            {
+              "id": "2d704724-64c8-4df0-956d-9508819047c5",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16582f3b-9615-4977-9cf8-d562ed3e8187",
+      "title": "Integrations",
+      "subsections": [
+        {
+          "id": "79d864e0-41d7-43c2-9f66-1ae398baeca6",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "a9a40b18-f17d-44a8-b396-5a5e303b3fd7",
+              "content": "<p>TPD Owner needed to work with Court & Molly to validate all active warrants in iLeads match active warrants with Court</p>"
+            },
+            {
+              "id": "f5199bd7-1aaf-498d-9d4a-f3052938a9da",
+              "content": "<p>Once validated, file (in integration format) to be ingested into Production before Go Live</p>"
+            },
+            {
+              "id": "f1b07fb1-ca4d-4159-afc7-73ce051eef8a",
+              "content": "<p>Outstanding: TPD to provide Warrant Go Live date</p>"
+            },
+            {
+              "id": "e706070f-a3e4-4a73-9d22-a647d454744d",
+              "content": "<p>Molly and Bethany met this week to talk through Dept communication regarding Warrants to be sent out before Go Live.</p>"
+            }
+          ]
+        },
+        {
+          "id": "f5f35bc5-7ec2-416a-bbff-eec86bbafa7e",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "3cfde0c6-c346-489f-8b11-53656479005b",
+              "content": "<p>No change from last week</p>"
+            },
+            {
+              "id": "cb822657-1a75-43e1-ae09-8e80acc99aa0",
+              "content": "<p>Testing on Tues, March 3.</p>"
+            },
+            {
+              "id": "79151beb-e889-48dc-b4d7-1c8dba6acdad",
+              "content": "<p>Tech 5 import pointing to Training environment</p>"
+            },
+            {
+              "id": "7be7c933-4c31-4cae-969f-7efca06e9c20",
+              "content": "<p>Engineering working with Tech 5 to point to Production</p>"
+            },
+            {
+              "id": "f742e96e-165b-45ab-a176-90bc8923d2a1",
+              "content": "<p>Final test to be rescheduled</p>"
+            }
+          ]
+        },
+        {
+          "id": "989e60cf-45bb-47a9-8c59-8799793c9f7b",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "b7ce5273-ea44-4aac-9ce4-17c00c7bc433",
+              "content": "<p>Refer to Email sent Friday 4:38pm</p>"
+            },
+            {
+              "id": "37cf0de5-6977-4048-a41a-815d5f93d244",
+              "content": "<p>Timeline provided for testing and deployment</p>"
+            },
+            {
+              "id": "8daa90b1-f6f5-46c1-af19-5483de3c85ab",
+              "content": "<p>Test plans provided for review / needed additions</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "969d587a-e1d3-4141-bf5b-c1454a63fda0",
+      "title": "Data conversion ( 01 RAIL - Tucson Conv - Smartsheet.com)",
+      "subsections": [
+        {
+          "id": "e491e8cd-f8f8-4716-80aa-d5b850f64ad8",
+          "title": "",
+          "bullets": [
+            {
+              "id": "d8c9934a-69e6-4b0d-9a42-b3bb2bb8ef2e",
+              "content": "<p>*** All Groups successfully ingested into Production</p>"
+            },
+            {
+              "id": "7554c4f4-a137-44fc-812b-da1b0efadb0e",
+              "content": "<p>Group A</p>"
+            },
+            {
+              "id": "c3904b72-93e8-4175-9079-68bd27bafedc",
+              "content": "<p>Group C</p>"
+            },
+            {
+              "id": "73a5a7e9-d15c-4117-a5c6-1b5d421eac87",
+              "content": "<p>Group D</p>"
+            },
+            {
+              "id": "6ac36794-c6cd-492c-8549-9f4ca1ae778e",
+              "content": "<p>Group E</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "2026-01-12",
+  "weekOf": "2026-01-12",
+  "title": "Axon Weekly Update — Week of January 12, 2026",
+  "publishedAt": "2026-01-16T17:00:00Z",
+  "publishedBy": "alarsh",
+  "sections": [
+    {
+      "id": "1400a1d9-32cd-4c20-b002-789a790170b5",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "334862e7-f69a-40dd-92b2-4d190cf5aaa3",
+          "title": "",
+          "bullets": [
+            {
+              "id": "3ae9f5c7-4e42-4f50-88ba-d478e3c98a38",
+              "content": "<p>Property module enabled in Training (per Lt. Perrin; request from Bill Brantley & Heather Wellborn).</p>"
+            },
+            {
+              "id": "ba4bd652-bdfc-4bc4-b23b-9f92b89d3204",
+              "content": "<p>Quality Control Inventory feature scheduled to go live in Training early next week.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "088d8e95-f0ad-4c12-aadd-b635a6d0b9e2",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "0afc58b1-eb15-43d6-8976-ddd5496a0c75",
+          "title": "",
+          "bullets": [
+            {
+              "id": "d946e9bb-27d0-4f7d-8b47-ef54050f02c6",
+              "content": "<p>Incident opened with DataStore team to troubleshoot nightly Glue job failures. Investigation ongoing with DataStore team and Luis Romero.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a654a854-51d4-4e0c-9326-f505249820bb",
+      "title": "Data conversion ( 01 RAIL - Tucson Conv - Smartsheet.com)",
+      "subsections": [
+        {
+          "id": "c29adcdc-16bf-4c90-9ab0-fd68637023d7",
+          "title": "",
+          "bullets": [
+            {
+              "id": "b73e7c33-e930-4e44-832c-8b8fc2111faa",
+              "content": "<p>Incident ingestion — production payloads:</p>"
+            },
+            {
+              "id": "60787cb8-e864-418c-b08f-891e38af01c7",
+              "content": "<p><strong>Group C:</strong> 90th percentile high; Aniket to finish today or early next week, then TPD due audit.</p>"
+            },
+            {
+              "id": "f7065900-347e-425a-909a-e879377f1653",
+              "content": "<p><strong>Decision pending</strong> for handling ~127K existing 2022 records in Records (options: append with \"Z\" suffix or alternative). Discussions ongoing.</p>"
+            },
+            {
+              "id": "1976d2c7-de4d-474b-8421-8c54c83e758c",
+              "content": "<p><strong>Sequence:</strong> after Group C → Group E → Group D.</p>"
+            },
+            {
+              "id": "e027fb9b-327d-45af-8928-f05f055c970c",
+              "content": "<p><strong>Group F (Area Restrictions):</strong> new file to be generated after Records alignment (target: ~1 week).</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "137d520b-ba4a-47f6-87cf-1a68e42ce862",
+      "title": "Integrations",
+      "subsections": [
+        {
+          "id": "223b8017-acf8-416c-a092-c214790492ef",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "5332a8e4-e8c2-4daa-8d55-e4c89854e516",
+              "content": "<p>Waiting on Area Restrictions ingestion into Records.</p>"
+            },
+            {
+              "id": "5192f478-b548-4737-9ea8-c11d06117923",
+              "content": "<p>Jason D to approve deployment of the integration from Training to Prod during the next engineering sprint. This is prework only; integration will not go live until AR ingestion exists in Prod. Timing TBD.</p>"
+            }
+          ]
+        },
+        {
+          "id": "86200634-1609-42c5-a692-be505430d8b4",
+          "title": "Tech 5 Import",
+          "bullets": [
+            {
+              "id": "d825c2b9-fc70-4658-942f-24932d7fb0f8",
+              "content": "<p>Annie B provided test cases this week. Validation in progress.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

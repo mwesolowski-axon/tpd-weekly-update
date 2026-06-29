@@ -1,0 +1,139 @@
+{
+  "id": "2026-06-01",
+  "weekOf": "2026-06-01",
+  "title": "Axon Weekly Update — Week of June 1, 2026",
+  "publishedAt": "2026-06-05T17:00:00Z",
+  "publishedBy": "alarsh",
+  "sections": [
+    {
+      "id": "9a87c031-9676-4024-abfe-ec4dcc41a0c2",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "762e9d9d-c6f3-4833-b2e4-c9ff9c4efd87",
+          "title": "",
+          "bullets": [
+            {
+              "id": "81940aaf-2fa8-4946-9f22-eb36247dd3cc",
+              "content": "<p>Added additional filters ( including Alias filter) to the Warrants Module in Agency Court Papers section</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "96734e1d-af05-4392-954c-ad2629d9d0cf",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "45cb4eca-334a-4f82-b9b8-5f46f4e01240",
+          "title": "",
+          "bullets": [
+            {
+              "id": "2ff3c40f-d1f0-4c4e-b14e-0180356b2550",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4d9d6e1a-c0cc-4a4f-87f7-58bb2b52fbd7",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "5fabcd6e-ad60-4d94-a9c4-664a4ce84eb4",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "a7ec2e9a-3bfe-4fd3-a7a0-e9ca1b22704f",
+              "content": "<p><strong>Issue:</strong> Some charges missing in Axon from the warrants that are on the paper warrants — Ex: TC21</p><ul><li>Harrison was able to determine that the city codes are not coming over in the payload</li><li>Need a TPD contact to reach out to the Court to discuss</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "35a58605-7cc4-442a-a4a3-482d0ba4567c",
+          "title": "Area Restrictions",
+          "bullets": [
+            {
+              "id": "e2c633c9-b7ac-4302-a2b9-23cfddec084a",
+              "content": "<p>Fix went into place on Tuesday evening</p>"
+            },
+            {
+              "id": "a4c3bfa3-e14a-46f1-a5e3-c7937c8532b8",
+              "content": "<p>Notified Molly and Team Wed</p>"
+            },
+            {
+              "id": "05aec9a4-4cc1-4f87-981d-5d1cda530e5c",
+              "content": "<p>No issue identified</p>"
+            }
+          ]
+        },
+        {
+          "id": "719e0f09-1338-4ac6-9e83-6bda52877b20",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "5b0b977a-9f38-44a4-80f9-cba8b706f20e",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "8e893b7d-2fe2-4e39-94f4-30c35ee05b1d",
+              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "a2e07c8c-6556-4330-95f3-3201a29fa939",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "37aacbac-1e2d-429a-9c8b-6dc10e0a8e4f",
+              "content": "<p>ATF/TPD and Axon meet on Thurs, May 28</p>"
+            },
+            {
+              "id": "92571083-a8b9-4d86-b0b3-4f70c385d390",
+              "content": "<p>Issue: Different shell casing are coming into the form that do not match the gun.</p>"
+            },
+            {
+              "id": "62552b27-d574-4ef5-9fe7-eec8d5b37e04",
+              "content": "<p> ATF models data around the LE Case ID and not the Gun Crime ID.</p>"
+            },
+            {
+              "id": "8300649f-a054-4e67-af98-6d2e7e958a42",
+              "content": "<p>Resolution: ATF to change API feed model so casings are linked to guns which are then linked to the LE Case #.</p>"
+            },
+            {
+              "id": "b034ebc6-8cf1-4440-b477-5220df74204a",
+              "content": "<p>Follow up meeting scheduled for Thurs, June 11.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d0787675-a1f6-4d0a-a49a-27ee47b0df02",
+      "title": "Senzing",
+      "subsections": [
+        {
+          "id": "cf919751-d65c-4c0f-b0d8-e13088bb13c3",
+          "title": "",
+          "bullets": [
+            {
+              "id": "1f2885bc-adb2-4252-88c1-c951e415a513",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "b6dca5d7-5b2d-4636-af58-9804d20afdc6",
+              "content": "<p>New Senzing file provided to Axon based on Canonical External ID on Thurs, May 21.</p>"
+            },
+            {
+              "id": "c14dd7dd-1f1e-41c0-98c6-856bbc61cc90",
+              "content": "<p>Axon to begin work on week of June 8th</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
