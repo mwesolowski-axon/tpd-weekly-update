@@ -10,12 +10,17 @@ interface SearchableUpdate extends UpdateIndexEntry {
 }
 
 const PAGE_SIZES = [10, 25, 50] as const
+type SortOrder = 'newest' | 'oldest'
+
+const fieldLabelClass = 'flex flex-col gap-1 text-sm text-slate-600'
+const fieldInputClass = 'rounded border border-slate-300 px-3 py-2 text-sm text-slate-900'
 
 export function ArchivePage() {
   const [searchable, setSearchable] = useState<SearchableUpdate[]>([])
   const [query, setQuery] = useState('')
   const [dateFrom, setDateFrom] = useState('')
   const [dateTo, setDateTo] = useState('')
+  const [sortOrder, setSortOrder] = useState<SortOrder>('newest')
   const [pageSize, setPageSize] = useState<(typeof PAGE_SIZES)[number]>(10)
   const [page, setPage] = useState(1)
   const [loading, setLoading] = useState(true)
@@ -61,15 +66,22 @@ export function ArchivePage() {
     if (dateTo) {
       results = results.filter((u) => u.weekOf <= dateTo)
     }
+
+    results.sort((a, b) =>
+      sortOrder === 'newest'
+        ? b.weekOf.localeCompare(a.weekOf)
+        : a.weekOf.localeCompare(b.weekOf),
+    )
+
     return results
-  }, [searchable, fuse, query, dateFrom, dateTo])
+  }, [searchable, fuse, query, dateFrom, dateTo, sortOrder])
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize))
   const currentPage = Math.min(page, totalPages)
 
   useEffect(() => {
     setPage(1)
-  }, [query, dateFrom, dateTo, pageSize])
+  }, [query, dateFrom, dateTo, pageSize, sortOrder])
 
   const paginated = useMemo(() => {
     const start = (currentPage - 1) * pageSize
@@ -89,34 +101,37 @@ export function ArchivePage() {
       <h2 className="text-2xl font-bold text-slate-900 mb-6">Update Archive</h2>
 
       <div className="mb-6 grid gap-4 sm:grid-cols-3">
-        <input
-          type="search"
-          placeholder="Search update content…"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          className="rounded border border-slate-300 px-3 py-2 text-sm sm:col-span-1"
-        />
-        <label className="flex flex-col gap-1 text-sm text-slate-600">
+        <label className={fieldLabelClass}>
+          <span className="font-medium">Search update content</span>
+          <input
+            type="search"
+            placeholder="Search…"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            className={fieldInputClass}
+          />
+        </label>
+        <label className={fieldLabelClass}>
           <span className="font-medium">From</span>
           <input
             type="date"
             value={dateFrom}
             onChange={(e) => setDateFrom(e.target.value)}
-            className="rounded border border-slate-300 px-3 py-2 text-sm text-slate-900"
+            className={fieldInputClass}
           />
         </label>
-        <label className="flex flex-col gap-1 text-sm text-slate-600">
+        <label className={fieldLabelClass}>
           <span className="font-medium">To</span>
           <input
             type="date"
             value={dateTo}
             onChange={(e) => setDateTo(e.target.value)}
-            className="rounded border border-slate-300 px-3 py-2 text-sm text-slate-900"
+            className={fieldInputClass}
           />
         </label>
       </div>
 
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-3 text-sm text-slate-500">
+      <div className="mb-4 flex flex-wrap items-end justify-between gap-3 text-sm text-slate-500">
         <p>
           {filtered.length} update(s)
           {filtered.length > 0 && (
@@ -126,18 +141,15 @@ export function ArchivePage() {
             </span>
           )}
         </p>
-        <label className="flex items-center gap-2">
-          <span>Per page</span>
+        <label className={`${fieldLabelClass} min-w-[12rem]`}>
+          <span className="font-medium">Sort</span>
           <select
-            value={pageSize}
-            onChange={(e) => setPageSize(Number(e.target.value) as (typeof PAGE_SIZES)[number])}
-            className="rounded border border-slate-300 px-2 py-1 text-sm text-slate-900"
+            value={sortOrder}
+            onChange={(e) => setSortOrder(e.target.value as SortOrder)}
+            className={fieldInputClass}
           >
-            {PAGE_SIZES.map((size) => (
-              <option key={size} value={size}>
-                {size}
-              </option>
-            ))}
+            <option value="newest">Newest to oldest</option>
+            <option value="oldest">Oldest to newest</option>
           </select>
         </label>
       </div>
@@ -154,7 +166,7 @@ export function ArchivePage() {
                 <p className="font-semibold text-slate-900">{UPDATE_TITLE}</p>
                 <p className="text-sm text-slate-500">Week of {formatWeekOf(entry.weekOf)}</p>
               </div>
-              {entry.id === latestId && !query && !dateFrom && !dateTo && currentPage === 1 && (
+              {entry.id === latestId && !query && !dateFrom && !dateTo && (
                 <span className="shrink-0 rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800">
                   Latest
                 </span>
@@ -168,27 +180,45 @@ export function ArchivePage() {
         <p className="mt-6 text-center text-sm text-slate-500">No updates match your filters.</p>
       )}
 
-      {filtered.length > 0 && totalPages > 1 && (
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-          <button
-            type="button"
-            onClick={() => setPage((p) => Math.max(1, p - 1))}
-            disabled={currentPage === 1}
-            className="rounded border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            Previous
-          </button>
-          <span className="text-sm text-slate-600">
-            Page {currentPage} of {totalPages}
-          </span>
-          <button
-            type="button"
-            onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
-            disabled={currentPage === totalPages}
-            className="rounded border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            Next
-          </button>
+      {filtered.length > 0 && (
+        <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+          <div className="flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              onClick={() => setPage((p) => Math.max(1, p - 1))}
+              disabled={currentPage === 1}
+              className="rounded border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              Previous
+            </button>
+            <span className="text-sm text-slate-600">
+              Page {currentPage} of {totalPages}
+            </span>
+            <button
+              type="button"
+              onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+              disabled={currentPage === totalPages}
+              className="rounded border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              Next
+            </button>
+          </div>
+          <label className="flex items-center gap-2 text-sm text-slate-600">
+            <span className="font-medium">Per page</span>
+            <select
+              value={pageSize}
+              onChange={(e) =>
+                setPageSize(Number(e.target.value) as (typeof PAGE_SIZES)[number])
+              }
+              className="rounded border border-slate-300 px-2 py-1.5 text-sm text-slate-900"
+            >
+              {PAGE_SIZES.map((size) => (
+                <option key={size} value={size}>
+                  {size}
+                </option>
+              ))}
+            </select>
+          </label>
         </div>
       )}
     </div>

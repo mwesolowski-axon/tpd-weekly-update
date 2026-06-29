@@ -28,7 +28,7 @@ export function UpdateRenderer({
           </p>
           {update.publishedBy && (
             <p className="mt-1 text-sm text-slate-500">
-              published-by: {update.publishedBy}
+              published by: {update.publishedBy}
             </p>
           )}
         </header>
