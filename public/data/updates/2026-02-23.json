@@ -1,7 +1,7 @@
 {
   "id": "2026-02-23",
   "weekOf": "2026-02-23",
-  "title": "Axon Weekly Update — Week of February 23, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-02-27T17:00:00Z",
   "publishedBy": "alarsh",
   "sections": [
@@ -67,7 +67,7 @@
             },
             {
               "id": "2b286be0-89ba-40ac-8c20-61e8a26b53b5",
-              "content": "<p>Expungement of 127K in progress — 48K remaining; to complete over the weekend.</p>"
+              "content": "<p>Expungement of 127K in progress : 48K remaining; to complete over the weekend.</p>"
             }
           ]
         }

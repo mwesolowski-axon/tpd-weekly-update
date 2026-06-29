@@ -1,6 +1,5 @@
 import { useEffect, useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import Fuse from 'fuse.js'
 import { fetchIndex, fetchUpdate } from '../lib/content'
 import { formatWeekOf, UPDATE_TITLE, updateBodyText } from '../lib/utils'
 import type { UpdateIndexEntry } from '../lib/types'
@@ -44,20 +43,10 @@ export function ArchivePage() {
     load().catch(console.error)
   }, [])
 
-  const fuse = useMemo(
-    () =>
-      new Fuse(searchable, {
-        keys: ['body'],
-        threshold: 0.4,
-        ignoreLocation: true,
-        minMatchCharLength: 2,
-      }),
-    [searchable],
-  )
-
   const filtered = useMemo(() => {
-    let results = query.trim()
-      ? fuse.search(query.trim()).map((r) => r.item)
+    const q = query.trim().toLowerCase()
+    let results = q
+      ? searchable.filter((u) => u.body.toLowerCase().includes(q))
       : searchable
 
     if (dateFrom) {
@@ -74,7 +63,7 @@ export function ArchivePage() {
     )
 
     return results
-  }, [searchable, fuse, query, dateFrom, dateTo, sortOrder])
+  }, [searchable, query, dateFrom, dateTo, sortOrder])
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize))
   const currentPage = Math.min(page, totalPages)

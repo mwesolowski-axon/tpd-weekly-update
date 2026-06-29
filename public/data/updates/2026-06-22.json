@@ -19,11 +19,11 @@
             },
             {
               "id": "2b8093c1-e0a0-4b3c-b0e7-518a7f0e725a",
-              "content": "<p>Granted Brandon Wahl Fusus permissions — Brandon assisting in troubleshooting Verkada LPR integration</p>"
+              "content": "<p>Granted Brandon Wahl Fusus permissions, Brandon assisting in troubleshooting Verkada LPR integration</p>"
             },
             {
               "id": "eb1161cd-93bc-4083-8f75-1abf69850078",
-              "content": "<p>Wilson Lindelof — NIBRS UCR Engineer — Training access for NIBRS troubleshooting</p>"
+              "content": "<p>Wilson Lindelof, NIBRS UCR Engineer, Training access for NIBRS troubleshooting</p>"
             }
           ]
         }
@@ -73,7 +73,7 @@
             },
             {
               "id": "c59edd4c-cee3-4319-9512-d8d6c50c95b4",
-              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
+              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
             }
           ]
         },

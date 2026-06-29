@@ -1,7 +1,7 @@
 {
   "id": "2026-06-01",
   "weekOf": "2026-06-01",
-  "title": "Axon Weekly Update — Week of June 1, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-06-05T17:00:00Z",
   "publishedBy": "alarsh",
   "sections": [
@@ -47,7 +47,7 @@
           "bullets": [
             {
               "id": "a7ec2e9a-3bfe-4fd3-a7a0-e9ca1b22704f",
-              "content": "<p><strong>Issue:</strong> Some charges missing in Axon from the warrants that are on the paper warrants — Ex: TC21</p><ul><li>Harrison was able to determine that the city codes are not coming over in the payload</li><li>Need a TPD contact to reach out to the Court to discuss</li></ul>"
+              "content": "<p><strong>Issue:</strong> Some charges missing in Axon from the warrants that are on the paper warrants, Ex: TC21</p><ul><li>Harrison was able to determine that the city codes are not coming over in the payload</li><li>Need a TPD contact to reach out to the Court to discuss</li></ul>"
             }
           ]
         },
@@ -79,7 +79,7 @@
             },
             {
               "id": "8e893b7d-2fe2-4e39-94f4-30c35ee05b1d",
-              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
+              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
             }
           ]
         },

@@ -7,9 +7,9 @@ published-by: mwesolowski@axon.com
 
 - Updated Patrol, Investigations and Records permissions to be able to view ATF Crime Gun form
 
-- Granted Brandon Wahl Fusus permissions — Brandon assisting in troubleshooting Verkada LPR integration
+- Granted Brandon Wahl Fusus permissions, Brandon assisting in troubleshooting Verkada LPR integration
 
-- Wilson Lindelof — NIBRS UCR Engineer — Training access for NIBRS troubleshooting
+- Wilson Lindelof, NIBRS UCR Engineer, Training access for NIBRS troubleshooting
 
 # Data store
 
@@ -31,7 +31,7 @@ published-by: mwesolowski@axon.com
 - No New Update
 
 - Luis scheduling meeting with AFIS Leadership to discuss process changes
-  - Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.
+  - Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.
   - Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints
   - Outstanding: Testing for mug shots coming into correct MNI
 

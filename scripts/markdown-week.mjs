@@ -1,5 +1,6 @@
 import { marked } from 'marked'
 import { formatWeekOf, newId } from './week-utils.mjs'
+import { replaceEmDashes } from './replace-em-dashes.mjs'
 
 marked.setOptions({ gfm: true, breaks: false })
 
@@ -24,6 +25,10 @@ function markdownToHtml(markdown) {
   if (!trimmed) return '<p></p>'
   const html = marked.parse(trimmed, { async: false })
   return html.trim().replace(/\n/g, '')
+}
+
+function cleanText(text) {
+  return replaceEmDashes(text)
 }
 
 function isStructuralLine(line) {
@@ -81,7 +86,7 @@ function parseBullets(lines, startIndex) {
 
     bullets.push({
       id: newId(),
-      content: markdownToHtml(markdown),
+      content: cleanText(markdownToHtml(markdown)),
     })
   }
 
@@ -102,7 +107,7 @@ export function parseMarkdownWeek(markdown) {
   let i = 0
 
   function ensureSection(title) {
-    currentSection = { id: newId(), title, subsections: [] }
+    currentSection = { id: newId(), title: cleanText(title), subsections: [] }
     sections.push(currentSection)
     currentSubsection = null
   }
@@ -111,7 +116,7 @@ export function parseMarkdownWeek(markdown) {
     if (!currentSection) {
       throw new Error('Content found before the first # section heading')
     }
-    currentSubsection = { id: newId(), title, bullets: [] }
+    currentSubsection = { id: newId(), title: cleanText(title), bullets: [] }
     currentSection.subsections.push(currentSubsection)
   }
 

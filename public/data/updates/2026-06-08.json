@@ -1,7 +1,7 @@
 {
   "id": "2026-06-08",
   "weekOf": "2026-06-08",
-  "title": "Axon Weekly Update — Week of June 8, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-06-12T17:00:00Z",
   "publishedBy": "alarsh",
   "sections": [
@@ -83,7 +83,7 @@
             },
             {
               "id": "bc880628-5426-44f0-aba9-6f4d8a939949",
-              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
+              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
             }
           ]
         },
@@ -105,7 +105,7 @@
             },
             {
               "id": "7ef2ddf3-35b6-4eff-a62c-38407251715d",
-              "content": "<p>TPD validation complete — no issues found</p>"
+              "content": "<p>TPD validation complete: no issues found</p>"
             },
             {
               "id": "854dfbb9-aa72-486d-a342-c9f7d18cbff2",

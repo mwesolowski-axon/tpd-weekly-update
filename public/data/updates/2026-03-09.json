@@ -1,7 +1,7 @@
 {
   "id": "2026-03-09",
   "weekOf": "2026-03-09",
-  "title": "Axon Weekly Update — Week of March 9, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-03-13T17:00:00Z",
   "publishedBy": "alarsh",
   "sections": [
@@ -15,11 +15,11 @@
           "bullets": [
             {
               "id": "c9d0b92c-b7ab-4b4d-b895-3f63f54c816d",
-              "content": "<p>Case closure codes updated in Training — awaiting review before pushing live</p>"
+              "content": "<p>Case closure codes updated in Training: awaiting review before pushing live</p>"
             },
             {
               "id": "c7f3d9cb-fa03-4e81-bc12-c1757596e8b3",
-              "content": "<p>Added Axon NIBRS specialist Christina Swenson to TRN to assist with NIBRS mapping for the new Incident Role of \"Focus Officer — PCRIT\"</p>"
+              "content": "<p>Added Axon NIBRS specialist Christina Swenson to TRN to assist with NIBRS mapping for the new Incident Role of \"Focus Officer, PCRIT\"</p>"
             }
           ]
         }
@@ -59,11 +59,11 @@
             },
             {
               "id": "396f2f0f-9c2b-42b0-b62e-9bc9ae9900ef",
-              "content": "<p>Outstanding — Court and iLeads live warrants validation — for the ingestion file</p>"
+              "content": "<p>Outstanding: Court and iLeads live warrants validation: for the ingestion file</p>"
             },
             {
               "id": "5b0451df-bc57-42e2-b491-e6efd60301e1",
-              "content": "<p>Outstanding — Go live date</p>"
+              "content": "<p>Outstanding: Go live date</p>"
             }
           ]
         },
@@ -175,7 +175,7 @@
             },
             {
               "id": "8eed7c4c-b64e-4dd4-9cd8-84ae5a285d05",
-              "content": "<p>RTU TRACS/Records review — no common denominator for when missing or showing</p>"
+              "content": "<p>RTU TRACS/Records review: no common denominator for when missing or showing</p>"
             },
             {
               "id": "646491fe-f671-4e43-89fe-14239eba88d5",
@@ -205,7 +205,7 @@
             },
             {
               "id": "c446a6c9-3a23-4623-88d3-798de63477c4",
-              "content": "<p>Lexis Nexis is currently in the midst of a migration that began March 4 — March 13.</p>"
+              "content": "<p>Lexis Nexis is currently in the midst of a migration that began March 4 to March 13.</p>"
             },
             {
               "id": "e448832d-210f-4fde-a918-c4f113c0a63e",

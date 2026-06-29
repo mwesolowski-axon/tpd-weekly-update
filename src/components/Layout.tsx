@@ -18,7 +18,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <Link
               to="/"
               className="shrink-0 bg-transparent transition-opacity hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md"
-              aria-label="Home — Axon Weekly Update"
+              aria-label="Home, Axon Weekly Update"
             >
               <img
                 src={iconUrl}
@@ -56,7 +56,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </header>
       <main className="flex-1 mx-auto w-full max-w-5xl px-4 py-8">{children}</main>
       <footer className="border-t border-slate-200 bg-white py-4 text-center text-sm text-slate-500">
-        Tucson Police Department — Axon Program Weekly Updates
+        Tucson Police Department, Axon Program Weekly Updates
       </footer>
     </div>
   )

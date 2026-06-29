@@ -1,7 +1,7 @@
 {
   "id": "2026-03-30",
   "weekOf": "2026-03-30",
-  "title": "Axon Weekly Update — Week of March 30, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-04-03T17:00:00Z",
   "publishedBy": "mwesolowski",
   "sections": [
@@ -19,11 +19,11 @@
             },
             {
               "id": "f9f47c9a-7582-4954-be19-290f07266115",
-              "content": "<p>In progress — MCT clean up following data migration</p>"
+              "content": "<p>In progress : MCT clean up following data migration</p>"
             },
             {
               "id": "82611e79-a93e-4614-b18c-349cff2fa75b",
-              "content": "<p>ATF Crime Gun Form published in Prod (admin only until April 10 — not viewable except Admins while testing continues in Training)</p>"
+              "content": "<p>ATF Crime Gun Form published in Prod (admin only until April 10: not viewable except Admins while testing continues in Training)</p>"
             }
           ]
         }
@@ -55,15 +55,15 @@
           "bullets": [
             {
               "id": "0b07ed0b-8e2c-430c-a189-0cfa37eb1f34",
-              "content": "<p>In Progress — Combined / Validated file in integration format</p>"
+              "content": "<p>In Progress : Combined / Validated file in integration format</p>"
             },
             {
               "id": "1bf07c0e-3cfd-4e82-a5b6-63b846442dda",
-              "content": "<p>Outstanding — Ingestion of validated live warrant file</p>"
+              "content": "<p>Outstanding: Ingestion of validated live warrant file</p>"
             },
             {
               "id": "b491a6dc-371b-46a9-ac5f-4c505c888a96",
-              "content": "<p>Outstanding — Go live date</p>"
+              "content": "<p>Outstanding: Go live date</p>"
             }
           ]
         },
@@ -77,11 +77,11 @@
             },
             {
               "id": "8d4cc172-b8ea-475e-a82a-29846f14348d",
-              "content": "<p>Outstanding — endpoint configuration issues from Tech 5</p>"
+              "content": "<p>Outstanding: endpoint configuration issues from Tech 5</p>"
             },
             {
               "id": "bc6eb514-37cf-49a9-8702-96792f57a4ce",
-              "content": "<p>Outstanding — pending confirmation on excluding all but offenders in the MNIs import</p>"
+              "content": "<p>Outstanding: pending confirmation on excluding all but offenders in the MNIs import</p>"
             }
           ]
         },

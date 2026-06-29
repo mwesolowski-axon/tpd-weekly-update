@@ -1,7 +1,7 @@
 {
   "id": "2026-04-27",
   "weekOf": "2026-04-27",
-  "title": "Axon Weekly Update — Week of April 27, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-05-01T17:00:00Z",
   "publishedBy": "mwesolowski",
   "sections": [
@@ -55,7 +55,7 @@
             },
             {
               "id": "744d58e1-529c-45fb-bdad-caa03ce177d7",
-              "content": "<p>In progress — full set example file going through parsing and FETT testing</p>"
+              "content": "<p>In progress : full set example file going through parsing and FETT testing</p>"
             },
             {
               "id": "26da632b-1329-4d3d-a9e6-3b18ffbc6f61",
@@ -63,7 +63,7 @@
             },
             {
               "id": "98065b2a-b099-43bc-adb0-35aa24b095cf",
-              "content": "<p>In progress — Engineering evaluating if the file needs split into smaller loads</p>"
+              "content": "<p>In progress : Engineering evaluating if the file needs split into smaller loads</p>"
             }
           ]
         },
@@ -77,7 +77,7 @@
             },
             {
               "id": "0e4c80b7-b150-45b0-b1f5-a8a4a3514e60",
-              "content": "<p>Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.</p>"
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
             },
             {
               "id": "0b6c2989-d3f8-49a6-ac78-821ba1c7b320",
@@ -123,7 +123,7 @@
           "bullets": [
             {
               "id": "67620d9c-40d4-45b6-b85f-0e243efb9bcb",
-              "content": "<p>In Progress — No new update</p>"
+              "content": "<p>In Progress : No new update</p>"
             }
           ]
         }

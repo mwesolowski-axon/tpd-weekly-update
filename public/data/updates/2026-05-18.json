@@ -1,7 +1,7 @@
 {
   "id": "2026-05-18",
   "weekOf": "2026-05-18",
-  "title": "Axon Weekly Update — Week of May 18, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-05-22T17:00:00Z",
   "publishedBy": "alarsh",
   "sections": [
@@ -15,7 +15,7 @@
           "bullets": [
             {
               "id": "9bfdeaf1-7fd4-41cd-89af-bcc0495d18d2",
-              "content": "<p>Updated Training for ATF Crime Gun form — hide the Nibin POE ID field</p>"
+              "content": "<p>Updated Training for ATF Crime Gun form: hide the Nibin POE ID field</p>"
             },
             {
               "id": "b359ec58-57af-4dd5-935d-b21a08ef33b2",
@@ -51,11 +51,11 @@
           "bullets": [
             {
               "id": "5cf6c352-766e-4cc7-9836-56ff20ffeba0",
-              "content": "<p><strong>Issue:</strong> Aliases are not searchable within the Warrants &gt; Agency Court Papers search</p><ul><li>To find all warrants with aliases, you have to utilize the Omni box search within the Search module</li><li>Additional filters are being added into Training to test out search ability including an Alias filter — ID and Alias fixes in progress</li><li>If the filter is not supported in the module, Axon will enter a product feature request</li></ul>"
+              "content": "<p><strong>Issue:</strong> Aliases are not searchable within the Warrants &gt; Agency Court Papers search</p><ul><li>To find all warrants with aliases, you have to utilize the Omni box search within the Search module</li><li>Additional filters are being added into Training to test out search ability including an Alias filter, ID and Alias fixes in progress</li><li>If the filter is not supported in the module, Axon will enter a product feature request</li></ul>"
             },
             {
               "id": "229d7821-118b-4e77-bc5d-6abcd3f7e517",
-              "content": "<p><strong>Issue:</strong> Some charges missing in Axon from the warrants that are on the paper warrants — Ex: TC21</p><ul><li>Molly to send examples to RTU to research specific charges and get them added into Axon</li><li>April to work with Harrison to see if those charges were sent in the payload</li></ul>"
+              "content": "<p><strong>Issue:</strong> Some charges missing in Axon from the warrants that are on the paper warrants, Ex: TC21</p><ul><li>Molly to send examples to RTU to research specific charges and get them added into Axon</li><li>April to work with Harrison to see if those charges were sent in the payload</li></ul>"
             }
           ]
         },
@@ -87,7 +87,7 @@
             },
             {
               "id": "95bb89aa-069e-47c8-afd1-ff5dcc96429f",
-              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
+              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
             }
           ]
         },

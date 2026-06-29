@@ -1,7 +1,7 @@
 {
   "id": "2026-03-23",
   "weekOf": "2026-03-23",
-  "title": "Axon Weekly Update — Week of March 23, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-03-27T17:00:00Z",
   "publishedBy": "alarsh",
   "sections": [
@@ -23,11 +23,11 @@
             },
             {
               "id": "44dde569-7c10-472a-b505-fc3d8576608a",
-              "content": "<p>PDF Search feature turned on for Production — ability to search PDFs loaded from today forward</p>"
+              "content": "<p>PDF Search feature turned on for Production: ability to search PDFs loaded from today forward</p>"
             },
             {
               "id": "fe2c19d6-d3ce-402e-be9c-612cc67e4932",
-              "content": "<p>13-3623 (B3) (DV) — charge format updated to reflect TRACS update</p>"
+              "content": "<p>13-3623 (B3) (DV): charge format updated to reflect TRACS update</p>"
             },
             {
               "id": "60243ed8-573e-4743-8a2c-bd58fd617eea",
@@ -71,15 +71,15 @@
             },
             {
               "id": "4d3f012f-80d4-4823-873f-ba34f6cc4dda",
-              "content": "<p>Outstanding — Combined / Validated file in integration format</p>"
+              "content": "<p>Outstanding: Combined / Validated file in integration format</p>"
             },
             {
               "id": "d6ef6cea-7d5b-49a9-8b73-08e29d8a81ca",
-              "content": "<p>Outstanding — Ingestion of validated live warrant file</p>"
+              "content": "<p>Outstanding: Ingestion of validated live warrant file</p>"
             },
             {
               "id": "f81f5167-4ff4-40ca-aa9d-98a363d0acdf",
-              "content": "<p>Outstanding — Go live date</p>"
+              "content": "<p>Outstanding: Go live date</p>"
             }
           ]
         },
@@ -93,7 +93,7 @@
             },
             {
               "id": "fc561aff-a2ac-4251-80e5-2d35ab581d96",
-              "content": "<p>Outstanding — Live review of workflow process when exporting — assist in diagnosis of missing fields sent to Tech 5</p>"
+              "content": "<p>Outstanding: Live review of workflow process when exporting: assist in diagnosis of missing fields sent to Tech 5</p>"
             },
             {
               "id": "f25d1b25-9007-4a6f-a0c6-6db9b69f34d1",

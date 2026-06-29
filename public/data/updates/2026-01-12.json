@@ -1,7 +1,7 @@
 {
   "id": "2026-01-12",
   "weekOf": "2026-01-12",
-  "title": "Axon Weekly Update — Week of January 12, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-01-16T17:00:00Z",
   "publishedBy": "alarsh",
   "sections": [
@@ -51,7 +51,7 @@
           "bullets": [
             {
               "id": "b73e7c33-e930-4e44-832c-8b8fc2111faa",
-              "content": "<p>Incident ingestion — production payloads:</p>"
+              "content": "<p>Incident ingestion: production payloads:</p>"
             },
             {
               "id": "60787cb8-e864-418c-b08f-891e38af01c7",

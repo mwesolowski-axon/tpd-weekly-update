@@ -1,7 +1,7 @@
 {
   "id": "2026-03-16",
   "weekOf": "2026-03-16",
-  "title": "Axon Weekly Update — Week of March 16, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-03-20T17:00:00Z",
   "publishedBy": "alarsh",
   "sections": [
@@ -23,7 +23,7 @@
             },
             {
               "id": "38e88f4d-35b4-46e1-8490-3f6f2cd0ce6e",
-              "content": "<p>Focus Officer — PCRIT — drafted in training. Working through NIBRS issue before go live.</p>"
+              "content": "<p>Focus Officer, PCRIT: drafted in training. Working through NIBRS issue before go live.</p>"
             }
           ]
         }
@@ -55,11 +55,11 @@
           "bullets": [
             {
               "id": "448f90ca-d703-4ac8-9ddf-7198bb3c7ab3",
-              "content": "<p>Outstanding — Court contact on vacation this week. Unable to get Live warrant file for comparison.</p>"
+              "content": "<p>Outstanding: Court contact on vacation this week. Unable to get Live warrant file for comparison.</p>"
             },
             {
               "id": "bc06c2a9-d915-4fe4-abbd-c30fe11c27fb",
-              "content": "<p>Outstanding — Go live date</p>"
+              "content": "<p>Outstanding: Go live date</p>"
             }
           ]
         },
@@ -73,7 +73,7 @@
             },
             {
               "id": "0dc6e064-e0ab-4d52-b08f-f4d1737c91df",
-              "content": "<p>Testing — export payload sending. Diagnosing missing fields or workflow issue.</p>"
+              "content": "<p>Testing: export payload sending. Diagnosing missing fields or workflow issue.</p>"
             },
             {
               "id": "09db9e87-fc77-4840-a535-ed3a8fe41a06",
@@ -139,7 +139,7 @@
           "bullets": [
             {
               "id": "56283776-1fb1-48c0-8258-65c6fd3493ac",
-              "content": "<p>Missing Citation Numbers in axon.citation Datastore view — FINDINGS</p>"
+              "content": "<p>Missing Citation Numbers in axon.citation Datastore view: FINDINGS</p>"
             },
             {
               "id": "ea5a4a7c-d2ea-4ad1-8710-063f0dd4f294",
@@ -165,7 +165,7 @@
           "bullets": [
             {
               "id": "5299c3da-d5a9-4362-9999-abaa5cedd79f",
-              "content": "<p>Engineering determining root cause — RESOLVED</p>"
+              "content": "<p>Engineering determining root cause: RESOLVED</p>"
             },
             {
               "id": "ac60b9bd-311a-4b7b-845e-ff54a722cd86",

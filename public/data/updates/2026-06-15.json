@@ -1,7 +1,7 @@
 {
   "id": "2026-06-15",
   "weekOf": "2026-06-15",
-  "title": "Axon Weekly Update — Week of June 15, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-06-18T22:28:00Z",
   "publishedBy": "alarsh",
   "sections": [
@@ -19,11 +19,11 @@
             },
             {
               "id": "dd8a59bd-faf2-412d-8e02-0e8e95f4a31d",
-              "content": "<p>Granted Brandon Wahl Fusus permissions — Brandon assisting in troubleshooting Verkada LPR integration</p>"
+              "content": "<p>Granted Brandon Wahl Fusus permissions, Brandon assisting in troubleshooting Verkada LPR integration</p>"
             },
             {
               "id": "32282a2d-4319-4810-ad8d-f415024f5859",
-              "content": "<p>Wilson Lindelof — NIBRS UCR Engineer — Training access for NIBRS troubleshooting</p>"
+              "content": "<p>Wilson Lindelof, NIBRS UCR Engineer, Training access for NIBRS troubleshooting</p>"
             }
           ]
         }
@@ -73,7 +73,7 @@
             },
             {
               "id": "641a422e-e4c4-4713-bb97-a51003730c48",
-              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
+              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
             }
           ]
         },

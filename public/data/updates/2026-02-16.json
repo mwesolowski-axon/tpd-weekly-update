@@ -1,7 +1,7 @@
 {
   "id": "2026-02-16",
   "weekOf": "2026-02-16",
-  "title": "Axon Weekly Update — Week of February 16, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-02-20T17:00:00Z",
   "publishedBy": "mwesolowski",
   "sections": [
@@ -15,11 +15,11 @@
           "bullets": [
             {
               "id": "eaa6033e-5aae-43b1-9072-fad5d4810b17",
-              "content": "<p>UCR  1708 ( Sex Offenses — Sextortion) Loaded to Production.</p>"
+              "content": "<p>UCR  1708 ( Sex Offenses, Sextortion) Loaded to Production.</p>"
             },
             {
               "id": "abb0a285-9226-460b-a5c5-b40182dd6ed2",
-              "content": "<p>Warrants — Updated form and entity in Production to match Training</p>"
+              "content": "<p>Warrants: Updated form and entity in Production to match Training</p>"
             }
           ]
         }
@@ -59,7 +59,7 @@
             },
             {
               "id": "11cad438-3d88-4705-bf48-4633815856f1",
-              "content": "<p>After expungement — Ingest 5422 Incident reports back in Tucson PROD env and ensure \"New Person card\" is resolved</p>"
+              "content": "<p>After expungement: Ingest 5422 Incident reports back in Tucson PROD env and ensure \"New Person card\" is resolved</p>"
             }
           ]
         },
@@ -73,7 +73,7 @@
             },
             {
               "id": "66a132d6-9fdc-4657-b917-d12fe80d19fe",
-              "content": "<p>18 reports are not present in datastore — requested DS team to run backfill</p>"
+              "content": "<p>18 reports are not present in datastore: requested DS team to run backfill</p>"
             },
             {
               "id": "4b90a8e0-688f-4eda-b8fa-8d8c670bdb8d",
@@ -81,7 +81,7 @@
             },
             {
               "id": "682f15c5-638e-4265-960d-16b2eabb9ceb",
-              "content": "<p>Once 5422 Incident reports from Group C are re-ingested we have to ingest ~6k Narrative Only reports — to complete this Group</p>"
+              "content": "<p>Once 5422 Incident reports from Group C are re-ingested we have to ingest ~6k Narrative Only reports: to complete this Group</p>"
             }
           ]
         },

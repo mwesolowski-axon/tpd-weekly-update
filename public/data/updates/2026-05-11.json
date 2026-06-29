@@ -1,7 +1,7 @@
 {
   "id": "2026-05-11",
   "weekOf": "2026-05-11",
-  "title": "Axon Weekly Update — Week of May 11, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-05-15T17:00:00Z",
   "publishedBy": "alarsh",
   "sections": [
@@ -77,7 +77,7 @@
             },
             {
               "id": "c531323a-845f-421e-8855-b0ed049fe1eb",
-              "content": "<p>Outstanding: Tech 5 change in endpoint configuration — we export to Tech 5.</p>"
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
             },
             {
               "id": "9f95fa7b-8ef4-4f62-8ba8-1a1fb1e441ed",

@@ -1,7 +1,7 @@
 {
   "id": "2026-01-19",
   "weekOf": "2026-01-19",
-  "title": "Axon Weekly Update — Week of January 19, 2026",
+  "title": "Axon Weekly Update",
   "publishedAt": "2026-01-23T17:00:00Z",
   "publishedBy": "alarsh",
   "sections": [
@@ -47,7 +47,7 @@
             },
             {
               "id": "2cfe28c6-cd5c-44b3-bb2d-b73e1d6accc6",
-              "content": "<p>Follow up meeting next week — TBD</p>"
+              "content": "<p>Follow up meeting next week, TBD</p>"
             }
           ]
         }
@@ -63,7 +63,7 @@
           "bullets": [
             {
               "id": "cf85b4bc-0846-45a4-a63b-44b42e2b970f",
-              "content": "<p>Incident ingestion — production payloads:</p>"
+              "content": "<p>Incident ingestion: production payloads:</p>"
             },
             {
               "id": "86b5ffa5-b377-4b2e-a289-0f936fd1a9c7",
@@ -75,7 +75,7 @@
             },
             {
               "id": "edbca65f-afed-4f7b-8778-0b53a70838c9",
-              "content": "<p><strong>Group E:</strong> Ingested 40+ new secondary arrests in training after fixing issues from initial feedback — awaiting TPD validation on new load</p>"
+              "content": "<p><strong>Group E:</strong> Ingested 40+ new secondary arrests in training after fixing issues from initial feedback: awaiting TPD validation on new load</p>"
             }
           ]
         }
