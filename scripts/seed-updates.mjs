@@ -777,10 +777,4 @@ const index = {
 fs.writeFileSync(path.join(updatesDir, 'index.json'), `${JSON.stringify(index, null, 2)}\n`)
 filesWritten++
 
-fs.writeFileSync(
-  path.join(dataDir, 'admin-allowlist.json'),
-  `${JSON.stringify(['mwesolowski@axon.com'], null, 2)}\n`,
-)
-filesWritten++
-
-console.log(`Wrote ${filesWritten} files (${updates.length} updates + index.json + admin-allowlist.json)`)
+console.log(`Wrote ${filesWritten} files (${updates.length} updates + index.json)`)

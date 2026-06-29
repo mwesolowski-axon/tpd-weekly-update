@@ -1,24 +1,36 @@
 import type { WeeklyUpdate } from '../lib/types'
-import { formatPublishedDate, formatWeekOf } from '../lib/utils'
+import { formatPublishedDate, formatWeekOf, UPDATE_TITLE } from '../lib/utils'
 
 interface Props {
   update: WeeklyUpdate
   showHeader?: boolean
+  headerLabel?: string
 }
 
-export function UpdateRenderer({ update, showHeader = true }: Props) {
+export function UpdateRenderer({
+  update,
+  showHeader = true,
+  headerLabel = 'Current Update',
+}: Props) {
   return (
     <article>
       {showHeader && (
         <header className="mb-8 border-b border-slate-200 pb-6">
-          <p className="text-sm font-medium text-blue-700 uppercase tracking-wide">Current Update</p>
-          <h2 className="mt-1 text-3xl font-bold text-slate-900">
-            Week of {formatWeekOf(update.weekOf)}
-          </h2>
+          {headerLabel && (
+            <p className="text-sm font-medium text-blue-700 uppercase tracking-wide">
+              {headerLabel}
+            </p>
+          )}
+          <h2 className="mt-1 text-3xl font-bold text-slate-900">{UPDATE_TITLE}</h2>
+          <p className="mt-2 text-lg text-slate-700">Week of {formatWeekOf(update.weekOf)}</p>
           <p className="mt-2 text-sm text-slate-500">
             Published {formatPublishedDate(update.publishedAt)}
-            {update.publishedBy && ` · ${update.publishedBy}`}
           </p>
+          {update.publishedBy && (
+            <p className="mt-1 text-sm text-slate-500">
+              published-by: {update.publishedBy}
+            </p>
+          )}
         </header>
       )}
 

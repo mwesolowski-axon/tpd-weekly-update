@@ -3,7 +3,6 @@ import { Layout } from './components/Layout'
 import { HomePage } from './pages/HomePage'
 import { ArchivePage } from './pages/ArchivePage'
 import { UpdatePage } from './pages/UpdatePage'
-import { AdminPage } from './pages/AdminPage'
 
 export default function App() {
   return (
@@ -13,7 +12,6 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/archive" element={<ArchivePage />} />
           <Route path="/update/:id" element={<UpdatePage />} />
-          <Route path="/admin" element={<AdminPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

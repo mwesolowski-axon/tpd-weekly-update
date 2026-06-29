@@ -1,0 +1,37 @@
+---
+description: Run weekly update scripts when the user asks to prepare, edit, or publish a week
+alwaysApply: true
+---
+
+# Weekly update publishing
+
+Project root: `tpd-weekly-update/`. Draft file: `content/weekly-update.DRAFT.md`.
+
+## User intent → actions
+
+| User says (examples) | Run |
+|----------------------|-----|
+| Prepare new week, new draft, start next week | `npm run new-week` |
+| Edit week of June 15, fix the June 15 update, edit 2026-06-15 | `npm run edit-week -- --week-of=YYYY-MM-DD` |
+| Publish, push update, ship it, publish the week | Full publish flow below |
+
+## New week
+
+1. `npm run new-week` (optional: `-- --week-of=YYYY-MM-DD --by=email@axon.com`)
+2. Tell the user to edit `content/weekly-update.DRAFT.md`, then ask to publish.
+
+## Edit an existing week
+
+1. Resolve the date to `YYYY-MM-DD` (check `public/data/updates/index.json` if unsure).
+2. `npm run edit-week -- --week-of=YYYY-MM-DD`
+3. Tell the user to edit the draft, then ask to publish.
+
+## Publish flow (when user asks to publish or push)
+
+1. Skim `content/weekly-update.DRAFT.md` frontmatter `week-of` so the commit message is correct.
+2. `npm run publish-week`
+3. `git add public/data/updates/{week-of}.json public/data/updates/index.json`
+4. Commit: `Publish weekly update: week of {Month D, YYYY}`
+5. `git push`
+
+Only push when the user explicitly asks to publish/push. Do not hand-edit `public/data/updates/*.json` when publishing from the draft — always use `publish-week`.

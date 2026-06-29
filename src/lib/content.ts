@@ -1,4 +1,4 @@
-import type { UpdateIndex, WeeklyUpdate } from './types'
+import type { UpdateIndex, UpdateIndexEntry, WeeklyUpdate } from './types'
 
 const REPO = import.meta.env.VITE_GITHUB_REPO as string | undefined
 const BRANCH = (import.meta.env.VITE_GITHUB_BRANCH as string) || 'main'
@@ -30,10 +30,6 @@ export async function fetchUpdate(id: string, cacheBust = false): Promise<Weekly
   return fetchJson<WeeklyUpdate>(`updates/${id}.json`, cacheBust)
 }
 
-export async function fetchAllowlist(): Promise<string[]> {
-  return fetchJson<string[]>('admin-allowlist.json')
-}
-
 export async function fetchLatestUpdate(cacheBust = false): Promise<WeeklyUpdate | null> {
   const index = await fetchIndex(cacheBust)
   const published = index.updates
@@ -41,4 +37,23 @@ export async function fetchLatestUpdate(cacheBust = false): Promise<WeeklyUpdate
     .sort((a, b) => b.weekOf.localeCompare(a.weekOf))
   if (published.length === 0) return null
   return fetchUpdate(published[0].id, cacheBust)
+}
+
+export function publishedUpdates(index: UpdateIndex): UpdateIndexEntry[] {
+  return index.updates
+    .filter((u) => u.status !== 'draft')
+    .sort((a, b) => b.weekOf.localeCompare(a.weekOf))
+}
+
+export function adjacentUpdates(
+  index: UpdateIndex,
+  id: string,
+): { prev: UpdateIndexEntry | null; next: UpdateIndexEntry | null } {
+  const published = publishedUpdates(index)
+  const i = published.findIndex((u) => u.id === id)
+  if (i === -1) return { prev: null, next: null }
+  return {
+    next: i > 0 ? published[i - 1] : null,
+    prev: i < published.length - 1 ? published[i + 1] : null,
+  }
 }
