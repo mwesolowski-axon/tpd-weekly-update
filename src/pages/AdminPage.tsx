@@ -3,7 +3,7 @@ import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { saveUpdateToRepo } from '../lib/admin-api'
 import { isAllowlisted } from '../lib/allowlist'
 import { fetchAllowlist, fetchIndex, fetchLatestUpdate, fetchUpdate } from '../lib/content'
-import { useMe } from '../lib/useMe'
+import { useMe, identityErrorMessage } from '../lib/useMe'
 import { SectionEditor } from '../components/SectionEditor'
 import { cloneUpdateForNewWeek, ensureIds, formatWeekOf } from '../lib/utils'
 import type { UpdateIndex, WeeklyUpdate } from '../lib/types'
@@ -14,6 +14,7 @@ export function AdminPage() {
   const navigate = useNavigate()
   const [searchParams] = useSearchParams()
   const { user, loading, error: identityError } = useMe()
+  const identityMessage = identityErrorMessage(identityError)
   const [view, setView] = useState<View>('gate')
   const [gateError, setGateError] = useState<string | null>(null)
   const [index, setIndex] = useState<UpdateIndex | null>(null)
@@ -105,11 +106,11 @@ export function AdminPage() {
     }
   }
 
-  if (loading || (user && view === 'gate' && !gateError && !identityError)) {
+  if (loading || (user && view === 'gate' && !gateError && !identityMessage)) {
     return <p className="text-slate-500">Verifying your Axon identity…</p>
   }
 
-  if (!user || gateError || identityError) {
+  if (!user || gateError || identityMessage) {
     return (
       <div className="max-w-lg">
         <h2 className="text-2xl font-bold text-slate-900 mb-2">Admin Access</h2>
@@ -118,13 +119,13 @@ export function AdminPage() {
           <span className="font-medium">@axon.com</span> email addresses.
         </p>
 
-        {(gateError || identityError) && (
+        {(gateError || identityMessage) && (
           <div className="mb-4 rounded border border-red-200 bg-red-50 p-3 text-sm text-red-800">
-            {gateError || identityError}
+            {gateError || identityMessage}
           </div>
         )}
 
-        {!user && !identityError && (
+        {!user && !identityMessage && (
           <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm text-sm text-slate-600 space-y-3">
             <p>
               Sign in through your organization&apos;s Axon portal (Okta). There is no separate

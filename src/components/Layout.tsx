@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 const nav = [
   { to: '/', label: 'Latest' },
   { to: '/archive', label: 'Archive' },
-  { to: '/admin', label: 'Admin' },
+  // Admin is direct-URL only (/admin) — not listed in nav until hosting supports SSO/API.
 ]
 
 const iconUrl = `${import.meta.env.BASE_URL}icon.png?v=${import.meta.env.VITE_ICON_VERSION}`
