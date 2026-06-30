@@ -23,7 +23,7 @@ Or run manually:
 
 To fix a past week: `npm run edit-week -- --week-of=YYYY-MM-DD`, edit, then publish.
 
-The live site loads content from `raw.githubusercontent.com`, so new weeks appear after push without waiting for a full redeploy.
+After you push, GitHub Actions rebuilds and deploys the site. New weeks go live when that deploy finishes (usually 1–2 minutes). The repo can be **private**; the GitHub Pages site stays public to anyone with the link.
 
 ### Push from Cursor
 
@@ -43,7 +43,11 @@ Open `http://localhost:5173/tpd-weekly-update/`
 
 ## Deploy
 
-Push to `main`. GitHub Actions builds and publishes to GitHub Pages automatically.
+Push to `main`. GitHub Actions builds the app (including `public/data/updates/`) and publishes to GitHub Pages.
+
+### Private repository
+
+The site loads update JSON from the deployed Pages bundle, not from `raw.githubusercontent.com`. You can make the repository private while keeping the Pages URL public (requires GitHub Pro, Team, or Enterprise).
 
 ## Project structure
 
@@ -66,5 +70,3 @@ src/                         # React site (read-only)
 | Variable | Description |
 |----------|-------------|
 | `VITE_BASE_PATH` | Base URL path (default: `/tpd-weekly-update/`) |
-| `VITE_GITHUB_REPO` | `owner/repo` for production content URLs |
-| `VITE_GITHUB_BRANCH` | Branch for content files (default: `main`) |

@@ -75,7 +75,7 @@ This converts the markdown to JSON, writes `public/data/updates/YYYY-MM-DD.json`
 3. Commit, e.g. `Publish weekly update: week of June 29, 2026`
 4. **Sync** / **Push**
 
-## Typical section layout
+GitHub Actions rebuilds and deploys the site. Updates go live when the deploy finishes (usually 1–2 minutes).
 
 | Section | Subsections |
 |---------|-------------|

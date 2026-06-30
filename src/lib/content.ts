@@ -1,15 +1,6 @@
 import type { UpdateIndex, UpdateIndexEntry, WeeklyUpdate } from './types'
 
-const REPO = import.meta.env.VITE_GITHUB_REPO as string | undefined
-const BRANCH = (import.meta.env.VITE_GITHUB_BRANCH as string) || 'main'
-
 function dataBaseUrl(): string {
-  if (import.meta.env.DEV) {
-    return `${import.meta.env.BASE_URL}data`
-  }
-  if (REPO) {
-    return `https://raw.githubusercontent.com/${REPO}/${BRANCH}/public/data`
-  }
   return `${import.meta.env.BASE_URL}data`
 }
 

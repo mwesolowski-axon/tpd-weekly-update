@@ -55,4 +55,4 @@ console.log(`  git add public/data/updates/${published.id}.json public/data/upda
 console.log(`  git commit -m "Publish weekly update: week of ${formatWeekOf(published.weekOf)}"`)
 console.log('  git push')
 console.log('')
-console.log('The live site picks up content from GitHub within a minute (no redeploy needed).')
+console.log('GitHub Actions will rebuild and deploy the site after you push (usually 1–2 minutes).')
