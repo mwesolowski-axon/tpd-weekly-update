@@ -10,7 +10,7 @@ Public site for Tucson Police Department Axon program weekly updates, hosted on 
 
 ## Publishing a new week
 
-See **[content/README.md](content/README.md)** for step-by-step instructions (non-technical).
+See **[content/README.md](content/README.md)** for step-by-step instructions.
 
 Technical details: **[content/README.technical.md](content/README.technical.md)**.
 
