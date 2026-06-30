@@ -10,27 +10,11 @@ Public site for Tucson Police Department Axon program weekly updates, hosted on 
 
 ## Publishing a new week
 
-See **[content/README.md](content/README.md)** for the full workflow.
+See **[content/README.md](content/README.md)** for step-by-step instructions (non-technical).
+
+Technical details: **[content/README.technical.md](content/README.technical.md)**.
 
 **In Cursor chat:** say *Prepare a new week update* → edit the draft → say *Publish*.
-
-Or run manually:
-
-1. `npm run new-week` — copy last week's content into `content/weekly-update.DRAFT.md`
-2. Edit the markdown draft
-3. `npm run publish-week` — convert to JSON and update `index.json`
-4. Commit and push (or ask the agent to publish)
-
-To fix a past week: `npm run edit-week -- --week-of=YYYY-MM-DD`, edit, then publish.
-
-After you push, GitHub Actions rebuilds and deploys the site. New weeks go live when that deploy finishes (usually 1–2 minutes). The repo can be **private**; the GitHub Pages site stays public to anyone with the link.
-
-### Push from Cursor
-
-1. Click the **Source Control** icon in the left sidebar
-2. Stage `public/data/updates/*.json` and `public/data/updates/index.json`
-3. Enter a commit message (e.g. `Publish weekly update: week of June 29, 2026`)
-4. Click **Commit**, then **Sync Changes** / **Push**
 
 ## Local development
 
@@ -54,7 +38,8 @@ The site loads update JSON from the deployed Pages bundle, not from `raw.githubu
 ```
 content/
   weekly-update.DRAFT.md     # Edit this each week
-  README.md                  # Publishing instructions
+  README.md                  # Publishing instructions (non-technical)
+  README.technical.md        # Scripts, markdown, git, deploy
 public/data/updates/
   index.json                 # Archive list (newest first)
   YYYY-MM-DD.json            # One file per week

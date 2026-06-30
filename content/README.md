@@ -1,85 +1,47 @@
-# Weekly update draft
+# Weekly update instructions
 
-Edit **`weekly-update.DRAFT.md`** in this folder, then publish to the site.
+This folder holds the working draft for each week's Axon update. You do not need to use the terminal or know how the site is built.
 
-## Ask the agent (Cursor)
+## Create a new week
 
-You can run the whole workflow from chat — no terminal needed:
+1. In **Cursor chat**, say: **Prepare a new week update**
+2. Open **`weekly-update.DRAFT.md`** in this folder (the agent creates or refreshes it from last week).
+3. Edit the text for the new week. Update the **week-of** date at the top to the Monday for that week.
+4. When you are done, say: **Publish**
 
-| Say this | What happens |
-|----------|----------------|
-| **Prepare a new week update** | Creates a fresh draft from the latest week |
-| **Edit the week of June 15** (any date) | Loads that week into the draft for editing |
-| **Publish** (after you finish editing) | Converts draft → JSON, commits, and pushes to GitHub |
+The site updates after the publish step finishes (usually within a couple of minutes).
 
-The agent runs `npm run new-week`, `npm run edit-week`, and `npm run publish-week` for you.
+## Fix or change a past week
 
-## Format
+1. In **Cursor chat**, say: **Edit the week of June 15, 2026** (use the date you need).
+2. Edit **`weekly-update.DRAFT.md`** with your changes.
+3. Say: **Publish**
 
-```markdown
----
-week-of: 2026-06-22
-published-by: mwesolowski@axon.com
----
+## What to edit in the draft
 
-# Section name
+The draft is a simple text file organized like the live updates:
 
-- First bullet
-- Second bullet with **bold**
+- **Section headings** (Program change, Data store, Integrations/Conversions, Senzing, and so on)
+- **Bullet points** under each section
+- **Subsections** under Integrations/Conversions (Warrants, Tech 5, ATF/NESS Import, etc.)
 
-# Section with subsections
+Use a new bullet for each item. You can use **bold** for labels like **Issues:** or **Workaround:**.
 
-## Subsection name
-
-- Bullet text
-  - Nested sub-bullet
-  - Another sub-bullet
-```
-
-- `#` = main section (Program change, Data store, …)
-- `##` = subsection (Warrants, Tech 5, …) — omit when the section has no subsections
-- `-` = bullet point (supports **bold**, nested lists with two-space indent)
-
-You never need to manage IDs — the publish script generates those automatically.
-
-## Each new week
-
-### 1. Start from the previous week
-
-```bash
-npm run new-week
-```
-
-Optional:
-
-```bash
-npm run new-week -- --week-of=2026-06-29 --by=your.name@axon.com
-```
-
-### 2. Edit the draft
-
-Open `content/weekly-update.DRAFT.md` and update the text. Change `week-of` in the frontmatter to the Monday for that week.
-
-### 3. Publish to the site data
-
-```bash
-npm run publish-week
-```
-
-This converts the markdown to JSON, writes `public/data/updates/YYYY-MM-DD.json`, and updates `index.json`. The previous week stays in **Archive**; the new week becomes **Latest**.
-
-### 4. Push to GitHub from Cursor
-
-1. Open **Source Control** (branch icon)
-2. Stage `public/data/updates/YYYY-MM-DD.json` and `public/data/updates/index.json`
-3. Commit, e.g. `Publish weekly update: week of June 29, 2026`
-4. **Sync** / **Push**
-
-GitHub Actions rebuilds and deploys the site. Updates go live when the deploy finishes (usually 1–2 minutes).
+Typical sections each week:
 
 | Section | Subsections |
 |---------|-------------|
-| Program change | (flat bullets) |
-| Data store | (flat bullets) |
+| Program change | (bullets only) |
+| Data store | (bullets only) |
 | Integrations/Conversions | Warrants, Tech 5, ATF/NESS Import, … |
-| Senzing | (flat bullets) |
+| Senzing | (bullets only) |
+
+Copy the structure from the previous week and change only what is new.
+
+## Tips
+
+- Set **published-by** at the top of the draft to your email if you are the author.
+- If a section has no news, keep a bullet such as "No changes".
+- Nested bullets (sub-items under a main bullet) are indented with two spaces in the draft file.
+
+For markdown syntax, scripts, and git details, see **[README.technical.md](README.technical.md)**.
