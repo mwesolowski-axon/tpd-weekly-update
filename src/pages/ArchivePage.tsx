@@ -27,9 +27,7 @@ export function ArchivePage() {
   useEffect(() => {
     async function load() {
       const index = await fetchIndex()
-      const published = index.updates
-        .filter((u) => u.status !== 'draft')
-        .sort((a, b) => b.weekOf.localeCompare(a.weekOf))
+      const published = index.updates.filter((u) => u.status !== 'draft')
 
       const full = await Promise.all(
         published.map(async (entry) => {
@@ -45,25 +43,25 @@ export function ArchivePage() {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
-    let results = q
-      ? searchable.filter((u) => u.body.toLowerCase().includes(q))
-      : searchable
 
-    if (dateFrom) {
-      results = results.filter((u) => u.weekOf >= dateFrom)
-    }
-    if (dateTo) {
-      results = results.filter((u) => u.weekOf <= dateTo)
-    }
+    const results = searchable.filter((entry) => {
+      if (q && !entry.body.toLowerCase().includes(q)) return false
+      if (dateFrom && entry.weekOf < dateFrom) return false
+      if (dateTo && entry.weekOf > dateTo) return false
+      return true
+    })
 
-    results.sort((a, b) =>
+    return [...results].sort((a, b) =>
       sortOrder === 'newest'
         ? b.weekOf.localeCompare(a.weekOf)
         : a.weekOf.localeCompare(b.weekOf),
     )
-
-    return results
   }, [searchable, query, dateFrom, dateTo, sortOrder])
+
+  const latestId = useMemo(() => {
+    if (searchable.length === 0) return null
+    return [...searchable].sort((a, b) => b.weekOf.localeCompare(a.weekOf))[0].id
+  }, [searchable])
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize))
   const currentPage = Math.min(page, totalPages)
@@ -77,7 +75,6 @@ export function ArchivePage() {
     return filtered.slice(start, start + pageSize)
   }, [filtered, currentPage, pageSize])
 
-  const latestId = searchable[0]?.id
   const showingFrom = filtered.length === 0 ? 0 : (currentPage - 1) * pageSize + 1
   const showingTo = Math.min(currentPage * pageSize, filtered.length)
 
