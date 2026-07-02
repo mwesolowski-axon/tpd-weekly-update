@@ -6,8 +6,11 @@ published-by: mwesolowski@axon.com
 # Program change
 
 - Training Only
-  - CID form adjustments made - ready for testing
-  - Motor Fatality form  - New permission team created (TrafficFatality) - granted permissions to Lt Brendehoft, Sgt Bell and Sgt Brotherton. Ready for testing.
+  - Motor Fatality form  - Granted permissions to Olivia Dodge
+  - Added MULTI - Multiple Calibers to Caliber field in Property card on Incident Report 
+
+- Training and Production
+  - Added "ICAC - ICAC HEaT Unit" as a submittal location to external PEP in Incident Report 
 
 # Data store
 
@@ -16,6 +19,8 @@ published-by: mwesolowski@axon.com
 # Integrations/Conversions
 
 ## Warrants
+
+- No New Update
 
 - **Issues:** Integration Ticket entered for issues below
   - Certain charges coming as the correct charge but with DV incorrectly
@@ -36,9 +41,8 @@ published-by: mwesolowski@axon.com
 ## ATF/NESS Import
 
 - Issue: Ease of searchability to tie forms to incident - Still in progress
+  - Had discussion with Solution Architect who will write up recommendations on workarounds and solutions
 
 # MNI Deduplication (Senzing):
 
-- First production test was ingested and validated successfully.
-
-- Second test ingested Friday, June 26. Validation in progress.
+- Pending approval for final dedup effort next week.
