@@ -1,12 +1,12 @@
 ---
-week-of: 2026-06-22
+week-of: 2026-06-29
 published-by: mwesolowski@axon.com
 ---
 
 # Program change
 
 - Training Only
-  - CID form adjustments made - ready for testing 
+  - CID form adjustments made - ready for testing
   - Motor Fatality form  - New permission team created (TrafficFatality) - granted permissions to Lt Brendehoft, Sgt Bell and Sgt Brotherton. Ready for testing.
 
 # Data store
@@ -35,10 +35,10 @@ published-by: mwesolowski@axon.com
 
 ## ATF/NESS Import
 
-- Issue: Ease of searchability to tie forms to incident - Still in progress 
+- Issue: Ease of searchability to tie forms to incident - Still in progress
 
-# MNI Deduplication (Senzing): 
+# MNI Deduplication (Senzing):
 
 - First production test was ingested and validated successfully.
-- Second test ingested Friday, June 26. Validation in progress. 
 
+- Second test ingested Friday, June 26. Validation in progress.

@@ -1,0 +1,105 @@
+{
+  "id": "2026-06-29",
+  "weekOf": "2026-06-29",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-07-02T19:33:19.093Z",
+  "publishedBy": "mwesolowski@axon.com",
+  "sections": [
+    {
+      "id": "cdd54432-c795-4edc-80c0-99317c4dc107",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "cda89fd5-a64b-4dcc-9853-0217ef5c5505",
+          "title": "",
+          "bullets": [
+            {
+              "id": "d99f9e37-a3cd-43f4-b015-cbccc73111b0",
+              "content": "<p>Training Only</p><ul><li>CID form adjustments made - ready for testing</li><li>Motor Fatality form  - New permission team created (TrafficFatality) - granted permissions to Lt Brendehoft, Sgt Bell and Sgt Brotherton. Ready for testing.</li></ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5416cc4b-fd05-4ae4-aa9a-307921946abf",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "854d9cd9-f181-4b72-8f31-e781deec63c1",
+          "title": "",
+          "bullets": [
+            {
+              "id": "0b7f3198-c09c-4951-b76f-a31da27d4e62",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "769285a3-969a-4320-aaab-12d2de64f3fc",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "5fb4c855-6e7f-4b43-a02a-65e43f3743fe",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "238ec5c4-72c3-4a8c-87a8-e976022cc7cb",
+              "content": "<p><strong>Issues:</strong> Integration Ticket entered for issues below</p><ul><li>Certain charges coming as the correct charge but with DV incorrectly</li><li>Shoplifting charges coming in as felony version instead of misdemeanor</li><li>13-1203A1(M1)(DV) coming in as 13-1203A1 (M2)</li></ul>"
+            },
+            {
+              "id": "df9f9173-1d87-43cd-9039-d4b4044d009a",
+              "content": "<p><strong>Workaround:</strong> Records specialist updates warrant to correct charge</p>"
+            }
+          ]
+        },
+        {
+          "id": "72d3a89e-37b0-4b6b-882b-36ae8a226da6",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "1aeda57f-c579-4a8e-8835-0e8994b22946",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "ddb09870-27de-4616-871d-47a24c9211a6",
+              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "6e655781-c44e-4ea8-96cd-0ca8d4639e96",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "cae5ca15-ff6c-4b09-ab78-9e044f82e3eb",
+              "content": "<p>Issue: Ease of searchability to tie forms to incident - Still in progress</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24fb2b85-2201-4494-bd3d-09137df8d820",
+      "title": "MNI Deduplication (Senzing):",
+      "subsections": [
+        {
+          "id": "836b496e-7e81-45c9-9149-37f3fa8603fd",
+          "title": "",
+          "bullets": [
+            {
+              "id": "0bc96c8e-904e-4ee3-86d4-51cbd5c3b4e1",
+              "content": "<p>First production test was ingested and validated successfully.</p>"
+            },
+            {
+              "id": "24974798-fb26-4da3-aa7d-7219f51d8046",
+              "content": "<p>Second test ingested Friday, June 26. Validation in progress.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
