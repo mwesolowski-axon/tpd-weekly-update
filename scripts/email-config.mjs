@@ -30,10 +30,12 @@ export function extractEmails(recipientLine) {
 }
 
 export function getEmailConfig(env = loadEnv()) {
+  const gmailInbox = Number.parseInt(env.EMAIL_GMAIL_INBOX ?? '0', 10)
   return {
     to: env.EMAIL_TO || '',
     cc: env.EMAIL_CC || '',
     subjectTemplate: env.EMAIL_SUBJECT || 'Axon Weekly Update — Week of {weekOf}',
     siteUrl: (env.SITE_URL || 'https://mwesolowski-axon.github.io/tpd-weekly-update').replace(/\/$/, ''),
+    gmailInbox: Number.isNaN(gmailInbox) || gmailInbox < 0 ? 0 : gmailInbox,
   }
 }

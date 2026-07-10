@@ -50,7 +50,7 @@ Copy the structure from the previous week and change only what is new.
 When you say **Publish**, a draft email is also opened with the week's content:
 
 - **Outlook** opens with To, CC, subject, and formatted HTML body (including a link to the live update).
-- **Gmail** opens in your browser with To, CC, and subject; the body is copied to your clipboard — paste with **Ctrl+V**.
+- **Gmail** opens in your browser with To, CC, and subject; formatted HTML is copied to your clipboard — paste with **Ctrl+V**.
 
 Recipients are configured in **`.env`** at the project root (already set up for the TPD distribution list). Edit that file if recipients change.
 

@@ -10,10 +10,12 @@ import {
   updateToEmailHtml,
   updateToEmailPlainText,
 } from './email-body.mjs'
+import { buildCfHtml } from './clipboard-html.mjs'
 
 const execFileAsync = promisify(execFile)
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const OUTLOOK_SCRIPT = path.join(__dirname, 'open-outlook-draft.ps1')
+const CLIPBOARD_SCRIPT = path.join(__dirname, 'set-clipboard-html.ps1')
 
 function writeTempFile(prefix, ext, content) {
   const filePath = path.join(os.tmpdir(), `${prefix}-${Date.now()}${ext}`)
@@ -41,24 +43,27 @@ async function openOutlookDraft({ to, cc, subject, html }) {
   }
 }
 
-async function setClipboard(text) {
-  const plainPath = writeTempFile('tpd-weekly-plain', '.txt', text)
+async function setClipboardHtml(html, plainText) {
+  const htmlPath = writeTempFile('tpd-weekly-cfhtml', '.html', buildCfHtml(html))
+  const plainPath = writeTempFile('tpd-weekly-plain', '.txt', plainText)
   try {
     await execFileAsync(
       'powershell',
-      ['-NoProfile', '-Command', `Set-Clipboard -Value ([System.IO.File]::ReadAllText('${plainPath.replace(/'/g, "''")}'))`],
+      ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', CLIPBOARD_SCRIPT, '-HtmlPath', htmlPath, '-PlainPath', plainPath],
       { windowsHide: true },
     )
   } finally {
-    try {
-      fs.unlinkSync(plainPath)
-    } catch {
-      // temp cleanup is best-effort
+    for (const file of [htmlPath, plainPath]) {
+      try {
+        fs.unlinkSync(file)
+      } catch {
+        // temp cleanup is best-effort
+      }
     }
   }
 }
 
-async function openGmailCompose({ to, cc, subject, plainText }) {
+async function openGmailCompose({ to, cc, subject, html, plainText, gmailInbox = 0 }) {
   const params = new URLSearchParams({
     view: 'cm',
     fs: '1',
@@ -70,10 +75,14 @@ async function openGmailCompose({ to, cc, subject, plainText }) {
     params.set('cc', ccEmails.join(','))
   }
 
-  await setClipboard(plainText)
-  const url = `https://mail.google.com/mail/?${params.toString()}`
-  await execFileAsync('cmd', ['/c', 'start', '', url], { windowsHide: true })
-  console.log('Opened Gmail compose (body copied to clipboard — paste with Ctrl+V).')
+  await setClipboardHtml(html, plainText)
+  const url = `https://mail.google.com/mail/u/${gmailInbox}/?${params.toString()}`
+  await execFileAsync(
+    'powershell',
+    ['-NoProfile', '-Command', `Start-Process '${url.replace(/'/g, "''")}'`],
+    { windowsHide: true },
+  )
+  console.log(`Opened Gmail compose (inbox u/${gmailInbox}; formatted HTML copied — paste with Ctrl+V).`)
 }
 
 export async function openEmailDraft(update) {
@@ -107,7 +116,9 @@ export async function openEmailDraft(update) {
       to: config.to,
       cc: config.cc,
       subject,
+      html,
       plainText,
+      gmailInbox: config.gmailInbox,
     })
   } catch (error) {
     console.warn(`Gmail compose failed: ${error.message}`)
