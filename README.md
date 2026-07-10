@@ -14,6 +14,8 @@ See **[content/README.md](content/README.md)** for step-by-step instructions.
 
 Technical details: **[content/README.technical.md](content/README.technical.md)**.
 
+Project backlog: **[TODO.md](TODO.md)**.
+
 **In Cursor chat:** say *Prepare a new week update* → edit the draft → say *Publish*.
 
 ## Local development
