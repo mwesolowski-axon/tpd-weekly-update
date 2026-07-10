@@ -1,16 +1,12 @@
 ---
-week-of: 2026-06-29
+week-of: 2026-07-06
 published-by: mwesolowski@axon.com
 ---
 
 # Program change
 
 - Training Only
-  - Motor Fatality form  - Granted permissions to Olivia Dodge
-  - Added MULTI - Multiple Calibers to Caliber field in Property card on Incident Report 
-
-- Training and Production
-  - Added "ICAC - ICAC HEaT Unit" as a submittal location to external PEP in Incident Report 
+  - AI Search feature implemented for testing.
 
 # Data store
 
@@ -41,7 +37,7 @@ published-by: mwesolowski@axon.com
 ## ATF/NESS Import
 
 - Issue: Ease of searchability to tie forms to incident - Still in progress
-  - Had discussion with Solution Architect who will write up recommendations on workarounds and solutions
+  - Follow up with Solution Architect next week
 
 # MNI Deduplication (Senzing):
 

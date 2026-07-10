@@ -1,0 +1,105 @@
+{
+  "id": "2026-07-06",
+  "weekOf": "2026-07-06",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-07-10T23:50:47.529Z",
+  "publishedBy": "mwesolowski@axon.com",
+  "sections": [
+    {
+      "id": "3142329e-6c80-4a8b-8a8e-a19b725f33c8",
+      "title": "Program change",
+      "subsections": [
+        {
+          "id": "2b00f466-35d4-4612-819d-f6927bd765b3",
+          "title": "",
+          "bullets": [
+            {
+              "id": "10073f75-a4a5-48b7-a0da-61b5972a345a",
+              "content": "<p>Training Only</p><ul><li>AI Search feature implemented for testing.</li></ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5b3855e2-bc84-42c6-b432-5545cbaf2830",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "08f5ba6d-2928-4786-b292-8acdf8a73c6e",
+          "title": "",
+          "bullets": [
+            {
+              "id": "f410c2f7-74c4-42b1-8f37-e28f8c79ee31",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "745a5477-dbc2-4dfe-9ee7-bda4dd68f223",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "89d97cf7-45d5-4cac-a11e-f90685fe6b5b",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "e6878f7e-6938-41fe-8b22-c51496c2ebd0",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "05eda4c0-84cd-47d7-88cc-6d19bbf47944",
+              "content": "<p><strong>Issues:</strong> Integration Ticket entered for issues below</p><ul><li>Certain charges coming as the correct charge but with DV incorrectly</li><li>Shoplifting charges coming in as felony version instead of misdemeanor</li><li>13-1203A1(M1)(DV) coming in as 13-1203A1 (M2)</li></ul>"
+            },
+            {
+              "id": "f2cb355f-ae3c-4f45-aa10-f2db9e16ca34",
+              "content": "<p><strong>Workaround:</strong> Records specialist updates warrant to correct charge</p>"
+            }
+          ]
+        },
+        {
+          "id": "83150afb-8c49-4256-97b1-39d70b4589ed",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "cca6f1f5-749b-4643-af40-264bbfd6c7f7",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "50647b47-c531-4562-a5ca-77fb2f479e3b",
+              "content": "<p>Luis scheduling meeting with AFIS Leadership to discuss process changes</p><ul><li>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</li><li>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</li><li>Outstanding: Testing for mug shots coming into correct MNI</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "4b48e29a-8145-4b43-803d-d2d1a4b2627e",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "974bec8f-3c15-465f-8b3b-02cd54eccf17",
+              "content": "<p>Issue: Ease of searchability to tie forms to incident - Still in progress</p><ul><li>Follow up with Solution Architect next week</li></ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0fcf05be-5e27-4d1b-a918-6eaa96497328",
+      "title": "MNI Deduplication (Senzing):",
+      "subsections": [
+        {
+          "id": "39297450-937c-4a87-821e-2fceb651bd7d",
+          "title": "",
+          "bullets": [
+            {
+              "id": "713d6420-c6b0-4562-bf5d-d383fb1112d6",
+              "content": "<p>Pending approval for final dedup effort next week.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

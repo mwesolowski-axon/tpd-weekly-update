@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "id": "2026-07-06",
+      "weekOf": "2026-07-06",
+      "title": "Axon Weekly Update",
+      "publishedAt": "2026-07-10T23:50:47.529Z",
+      "publishedBy": "mwesolowski@axon.com"
+    },
+    {
       "id": "2026-06-29",
       "weekOf": "2026-06-29",
       "title": "Axon Weekly Update",
