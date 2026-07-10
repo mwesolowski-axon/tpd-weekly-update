@@ -1,6 +1,7 @@
-import fs from 'fs'
+﻿import fs from 'fs'
 import path from 'path'
 import { parseMarkdownWeek } from './markdown-week.mjs'
+import { openEmailDraft } from './open-email-draft.mjs'
 import {
   DRAFT_PATH,
   INDEX_PATH,
@@ -8,6 +9,8 @@ import {
   formatWeekOf,
   readIndex,
 } from './week-utils.mjs'
+
+const skipEmail = process.argv.includes('--no-email')
 
 if (!fs.existsSync(DRAFT_PATH)) {
   console.error(`Draft not found: ${DRAFT_PATH}`)
@@ -56,3 +59,7 @@ console.log(`  git commit -m "Publish weekly update: week of ${formatWeekOf(publ
 console.log('  git push')
 console.log('')
 console.log('GitHub Actions will rebuild and deploy the site after you push (usually 1–2 minutes).')
+
+if (!skipEmail) {
+  await openEmailDraft(published)
+}

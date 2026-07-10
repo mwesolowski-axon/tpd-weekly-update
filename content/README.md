@@ -1,4 +1,4 @@
-# Weekly update instructions
+﻿# Weekly update instructions
 
 This folder holds the working draft for each week's Axon update. You do not need to use the terminal or know how the site is built.
 
@@ -33,7 +33,7 @@ Typical sections each week:
 |---------|-------------|
 | Program change | (bullets only) |
 | Data store | (bullets only) |
-| Integrations/Conversions | Warrants, Tech 5, ATF/NESS Import, … |
+| Integrations/Conversions | Warrants, Tech 5, ATF/NESS Import, â€¦ |
 | Senzing | (bullets only) |
 
 Copy the structure from the previous week and change only what is new.
@@ -43,5 +43,15 @@ Copy the structure from the previous week and change only what is new.
 - Set **published-by** at the top of the draft to your email if you are the author.
 - If a section has no news, keep a bullet such as "No changes".
 - Nested bullets (sub-items under a main bullet) are indented with two spaces in the draft file.
+
+
+## Email draft on publish
+
+When you say **Publish**, a draft email is also opened with the week's content:
+
+- **Outlook** opens with To, CC, subject, and formatted HTML body (including a link to the live update).
+- **Gmail** opens in your browser with To, CC, and subject; the body is copied to your clipboard — paste with **Ctrl+V**.
+
+Recipients are configured in **`.env`** at the project root (already set up for the TPD distribution list). Edit that file if recipients change.
 
 For markdown syntax, scripts, and git details, see **[README.technical.md](README.technical.md)**.
