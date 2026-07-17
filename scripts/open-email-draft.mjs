@@ -17,15 +17,20 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const OUTLOOK_SCRIPT = path.join(__dirname, 'open-outlook-draft.ps1')
 const CLIPBOARD_SCRIPT = path.join(__dirname, 'set-clipboard-html.ps1')
 
-function writeTempFile(prefix, ext, content) {
+function writeTempFile(prefix, ext, content, { bom = false } = {}) {
   const filePath = path.join(os.tmpdir(), `${prefix}-${Date.now()}${ext}`)
-  fs.writeFileSync(filePath, content, 'utf8')
+  fs.writeFileSync(filePath, bom ? `\uFEFF${content}` : content, 'utf8')
   return filePath
 }
 
 async function openOutlookDraft({ to, cc, subject, html }) {
-  const htmlPath = writeTempFile('tpd-weekly-html', '.html', html)
-  const configPath = writeTempFile('tpd-weekly-outlook', '.json', JSON.stringify({ To: to, Cc: cc, Subject: subject, HtmlPath: htmlPath }))
+  const htmlPath = writeTempFile('tpd-weekly-html', '.html', html, { bom: true })
+  const configPath = writeTempFile(
+    'tpd-weekly-outlook',
+    '.json',
+    JSON.stringify({ To: to, Cc: cc, Subject: subject, HtmlPath: htmlPath }),
+    { bom: true },
+  )
 
   try {
     await execFileAsync(
@@ -97,30 +102,37 @@ export async function openEmailDraft(update) {
   const html = updateToEmailHtml(update, config.siteUrl)
   const plainText = updateToEmailPlainText(update, config.siteUrl)
 
-  console.log('')
-  console.log('Opening email drafts...')
+  const clients =
+    config.emailClient === 'both' ? ['outlook', 'gmail'] : [config.emailClient]
 
-  try {
-    await openOutlookDraft({
-      to: config.to,
-      cc: config.cc,
-      subject,
-      html,
-    })
-  } catch (error) {
-    console.warn(`Outlook draft failed: ${error.message}`)
+  console.log('')
+  console.log(`Opening email draft${clients.length > 1 ? 's' : ''} (${clients.join(', ')})...`)
+
+  if (clients.includes('outlook')) {
+    try {
+      await openOutlookDraft({
+        to: config.to,
+        cc: config.cc,
+        subject,
+        html,
+      })
+    } catch (error) {
+      console.warn(`Outlook draft failed: ${error.message}`)
+    }
   }
 
-  try {
-    await openGmailCompose({
-      to: config.to,
-      cc: config.cc,
-      subject,
-      html,
-      plainText,
-      gmailInbox: config.gmailInbox,
-    })
-  } catch (error) {
-    console.warn(`Gmail compose failed: ${error.message}`)
+  if (clients.includes('gmail')) {
+    try {
+      await openGmailCompose({
+        to: config.to,
+        cc: config.cc,
+        subject,
+        html,
+        plainText,
+        gmailInbox: config.gmailInbox,
+      })
+    } catch (error) {
+      console.warn(`Gmail compose failed: ${error.message}`)
+    }
   }
 }

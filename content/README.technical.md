@@ -54,6 +54,7 @@ After publish, `publish-week.mjs` opens draft emails using settings from `.env` 
 | `EMAIL_CC` | CC recipients (same format) |
 | `EMAIL_SUBJECT` | Subject line; `{weekOf}` is replaced with formatted date |
 | `SITE_URL` | Base URL for the "View online" link in the email body |
+| `EMAIL_CLIENT` | Which draft to open: `outlook`, `gmail`, or `both` (default `both`) |
 | `EMAIL_GMAIL_INBOX` | Gmail account index for compose URL (`0` = first inbox, `1` = second, etc.) |
 
 **Outlook:** full HTML body via COM automation (`scripts/open-outlook-draft.ps1`).

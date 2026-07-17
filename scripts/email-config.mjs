@@ -29,13 +29,24 @@ export function extractEmails(recipientLine) {
     })
 }
 
+const VALID_EMAIL_CLIENTS = new Set(['outlook', 'gmail', 'both'])
+
+export function normalizeEmailClient(value) {
+  const client = (value ?? 'both').trim().toLowerCase()
+  if (!VALID_EMAIL_CLIENTS.has(client)) {
+    throw new Error(`EMAIL_CLIENT must be outlook, gmail, or both (got "${value}")`)
+  }
+  return client
+}
+
 export function getEmailConfig(env = loadEnv()) {
   const gmailInbox = Number.parseInt(env.EMAIL_GMAIL_INBOX ?? '0', 10)
   return {
     to: env.EMAIL_TO || '',
     cc: env.EMAIL_CC || '',
-    subjectTemplate: env.EMAIL_SUBJECT || 'Axon Weekly Update — Week of {weekOf}',
+    subjectTemplate: env.EMAIL_SUBJECT || 'Axon Weekly Update - Week of {weekOf}',
     siteUrl: (env.SITE_URL || 'https://mwesolowski-axon.github.io/tpd-weekly-update').replace(/\/$/, ''),
     gmailInbox: Number.isNaN(gmailInbox) || gmailInbox < 0 ? 0 : gmailInbox,
+    emailClient: normalizeEmailClient(env.EMAIL_CLIENT),
   }
 }

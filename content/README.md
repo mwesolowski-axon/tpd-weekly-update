@@ -52,6 +52,8 @@ When you say **Publish**, a draft email is also opened with the week's content:
 - **Outlook** opens with To, CC, subject, and formatted HTML body (including a link to the live update).
 - **Gmail** opens in your browser with To, CC, and subject; formatted HTML is copied to your clipboard — paste with **Ctrl+V**.
 
+Set **`EMAIL_CLIENT`** in **`.env`** to `outlook`, `gmail`, or `both` (default) to control which client opens.
+
 Recipients are configured in **`.env`** at the project root (already set up for the TPD distribution list). Edit that file if recipients change.
 
 For markdown syntax, scripts, and git details, see **[README.technical.md](README.technical.md)**.
