@@ -1,12 +1,14 @@
 ---
-week-of: 2026-07-06
+week-of: 2026-07-13
 published-by: mwesolowski@axon.com
 ---
 
 # Program change
 
+- Motor Vehicle Fatality form went live in Production.
+
 - Training Only
-  - AI Search feature implemented for testing.
+  - Made several updates to the CID form in training as feedback is being provided.
 
 # Data store
 
@@ -33,10 +35,8 @@ published-by: mwesolowski@axon.com
 
 ## ATF/NESS Import
 
-- Issue: Ease of searchability to tie forms to incident - Still in progress
-  - Follow up with Solution Architect next week
+- Feedback meeting scheduled for Monday, July 27 (2:30pm)
 
 # MNI Deduplication (Senzing):
 
-- Pending approval for final dedup effort next week.
-
+- Approval received for final dedup effort. Work will commence next week.
