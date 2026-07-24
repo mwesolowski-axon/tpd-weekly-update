@@ -2,6 +2,17 @@
 
 This folder holds the working draft for each week's Axon update. You do not need to use the terminal or know how the site is built.
 
+## First time setup
+
+If you are new to this project, do this once before your first week:
+
+1. **Open the repo in Cursor** — open the `tpd-weekly-update` folder (not the parent folder).
+2. **Install dependencies** — in Cursor chat, say: **Run npm install** (or run it yourself in the terminal).
+3. **Check GitHub access** — you need permission to push to the repo, or **Publish** will not update the live site.
+4. **Use Agent mode** — in Cursor chat, switch to Agent mode so the assistant can run scripts and push for you.
+
+Email recipients are already configured in **`.env`** at the project root. You can skip this unless you need to change who receives the weekly email.
+
 ## Create a new week
 
 1. In **Cursor chat**, say: **Prepare a new week update**

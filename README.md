@@ -8,6 +8,17 @@ Public site for Tucson Police Department Axon program weekly updates, hosted on 
 - **Archive** with search and date-range filtering
 - **File-based publishing** — edit a markdown draft in Cursor, push to GitHub
 
+## First time setup
+
+Do this once when you clone the repo or open it on a new machine:
+
+1. **Open the project in Cursor** — use the `tpd-weekly-update` folder as the workspace root.
+2. **Install dependencies** — in the terminal, run `npm install`.
+3. **Confirm GitHub access** — you need push access to this repo so **Publish** can deploy the site.
+4. **Email (optional)** — `.env` at the project root already has the TPD distribution list. Edit it if recipients change, or copy from `.env.example` if the file is missing.
+
+After that, use **Agent mode** in Cursor chat and say *Prepare a new week update* to get started.
+
 ## Publishing a new week
 
 See **[content/README.md](content/README.md)** for step-by-step instructions.

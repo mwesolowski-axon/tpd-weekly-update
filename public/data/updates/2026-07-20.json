@@ -1,0 +1,117 @@
+{
+  "id": "2026-07-20",
+  "weekOf": "2026-07-20",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-07-24T22:04:01.365Z",
+  "publishedBy": "mwesolowski@axon.com",
+  "sections": [
+    {
+      "id": "27f851e0-22ce-49ee-a3f0-82a52e399bfa",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "2d028a13-4c43-403a-bfcd-950cc15d8525",
+          "title": "Motor Vehicle Fatality Form",
+          "bullets": [
+            {
+              "id": "10867599-c830-49fc-8bff-52956e3165d6",
+              "content": "<p>New feedback identified several changes needed:</p><ul><li>Add collision options included in the latest tracking spreadsheet, such as Vehicle vs. Bicycle.</li><li>Add an Unknown option to several fields.</li><li>Support multiple involved people, such as multiple deceased or at-fault parties.</li></ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "278fe2f5-c018-427b-b0cf-bd8bfc24c37e",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "43ea62e1-eaef-484b-840a-50b0a087ddbc",
+          "title": "",
+          "bullets": [
+            {
+              "id": "d0a1841a-e39a-4ee8-b16d-2b93fe0fe39e",
+              "content": "<p>Axon Analytics and Data Store training</p>"
+            },
+            {
+              "id": "9761a126-0d73-45e1-9b31-9dce3b297c9f",
+              "content": "<p>Follow-up resources were provided:</p><ul><li><a href=\"https://my.axon.com/s/records#axon-datastore\">MyAxon Records Datastore v2 Guide</a></li><li><a href=\"https://my.axon.com/s/article/Axon-DataStore-v2-introduction-Axon-Records?language=en_US\">Axon DataStore v2 Introduction</a></li><li><a href=\"https://my.axon.com/s/article/Concepts-in-DataStore-v2-Axon-Records?language=en_US\">Concepts in DataStore v2</a></li><li><a href=\"https://my.axon.com/s/article/Additional-DataStore-v2-features-Axon-Records?language=en_US\">Additional DataStore v2 features</a></li><li><a href=\"https://my.axon.com/s/article/Joining-in-DataStore-v2-Axon-Records?language=en_US\">Joining in DataStore v2</a></li></ul>"
+            },
+            {
+              "id": "84cb3b0d-08d7-407d-9332-3df8c8052beb",
+              "content": "<p>Analytics resources</p><ul><li><a href=\"https://my.axon.com/s/article/Analytics-Administration-Axon-Records?language=en_US\">Analytics Administration - Axon Records</a></li><li><a href=\"https://my.axon.com/s/article/Analytics-Privileges-Axon-Records?language=en_US\">Analytics Privileges - Axon Records</a></li><li><a href=\"https://www.axon.com/help/axon-records/software/rms/analytics/dashboard-management.htm\">Analytics Dashboard Management</a></li><li><a href=\"https://www.axon.com/help/axon-records/software/rms/analytics/dashboards.htm\">Analytics OOTB Dashboards</a></li></ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c7b00f6d-0e2a-4ce0-801c-db14162e0887",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "1a92e5c9-d2f0-40bf-bacc-c84549aa4a7a",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "b9f273f7-8f7a-4bb4-8ae1-7355b192f624",
+              "content": "<p><strong>Issues:</strong> Integration Ticket entered for issues below</p><ul><li>A warrant did not reactivate despite having the same docket number and subject. Differences included the case-number format and the incoming felony charge versus the corrected misdemeanor charge on the existing warrant.</li><li>Certain charges coming as the correct charge but with DV incorrectly</li><li>Shoplifting charges coming in as felony version instead of misdemeanor</li><li>13-1203A1(M1)(DV) coming in as 13-1203A1 (M2)</li></ul>"
+            },
+            {
+              "id": "21534bd1-e829-4fdc-a1b0-4b663a6c891a",
+              "content": "<p><strong>Workaround:</strong> Records specialist updates warrant to correct charge</p>"
+            }
+          ]
+        },
+        {
+          "id": "e7165f9d-3107-4a90-8a22-093a14de9191",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "0836c60f-437d-4084-aee0-029e93540d4f",
+              "content": "<p>Export to Axon disabled</p><ul><li>On July 23, Tech 5 confirmed that the export to Axon had been disabled in its configuration.</li><li>This stops Tech 5 from sending data to the Axon Records API while the agency is not live with the integration.</li></ul>"
+            },
+            {
+              "id": "b94b32bf-b8e7-4e34-89d3-9a1e62bf34b7",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
+            },
+            {
+              "id": "e912b7a2-9a64-41ea-9d00-bbb3230394ed",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</p>"
+            },
+            {
+              "id": "8b304694-d72a-4bee-a4e9-5875dab45549",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI</p>"
+            }
+          ]
+        },
+        {
+          "id": "801f891c-dd2b-4c72-a197-d69eafc677a3",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "1f1c6b61-ac2a-426b-a12e-3d8b94132b10",
+              "content": "<p>Feedback meeting scheduled for Monday, July 27 (2:30pm)</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6832c143-2302-4ccd-b961-786e30da34a4",
+      "title": "MNI Deduplication (Senzing):",
+      "subsections": [
+        {
+          "id": "bb80e88d-e3cc-486a-b405-e95216c26ec1",
+          "title": "",
+          "bullets": [
+            {
+              "id": "2060a259-3ad2-4626-bd00-5d169d6b5864",
+              "content": "<p>No new update</p><ul><li>Approval received</li></ul>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
