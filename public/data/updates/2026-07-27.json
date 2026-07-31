@@ -1,0 +1,112 @@
+{
+  "id": "2026-07-27",
+  "weekOf": "2026-07-27",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-07-31T22:39:48.688996Z",
+  "publishedBy": "alarsh@axon.com",
+  "sections": [
+    {
+      "id": "8e7f291a-7f20-47d0-977c-1a82ce127807",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "25a737ab-4783-447e-a8da-038031858e24",
+          "title": "Motor Vehicle Fatality Form",
+          "bullets": [
+            {
+              "id": "5f0fd9a0-c3b0-44f2-9271-67de83bc1608",
+              "content": "<p>Moved Date of Death, Airbag Deployed (Deceased) and Seatbelt (Deceased) into the People Involved > Deceased section.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c76e9e90-fc1c-4647-8a9b-980a7fe5b487",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "298984f4-4160-4ee8-a227-ccd31b79a2f5",
+          "title": "",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "id": "be67141c-af1e-41a1-9851-1ca2968b4465",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "fd7f2f03-afbe-4afb-a1d6-d68a808182d4",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "3c5c6c74-271e-494c-8525-6c38e3363a69",
+              "content": "<p><strong>Issues:</strong> Integration Ticket entered for issues below</p><ul><li>A warrant did not reactivate despite having the same docket number and subject. Still investigating.</li><li>Certain charges coming in incorrectly.</li><li>This is partly due to the payload. The payload has the charge id and part of the charge description. It does not include the severity.</li><li>The integration picks an active charge on the MCT with the closet match to what is in the payload. Continuing to investigate.</li></ul>"
+            },
+            {
+              "id": "43ced711-9c87-47cc-89fd-36386dc3d0f0",
+              "content": "<p><strong>Workaround:</strong> Records specialist updates warrant to correct charge</p>"
+            }
+          ]
+        },
+        {
+          "id": "1bd0c856-4a61-488a-bf2c-ffd6094f825a",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "06c83251-e84a-4872-bb31-c8a792470f55",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "30dd70c9-7402-477b-bf14-33fb45ded9fb",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
+            },
+            {
+              "id": "02ee2377-bc2b-4b32-a6f0-8030c815c193",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</p>"
+            },
+            {
+              "id": "b8d2b5ca-0e8a-4a89-b0a8-2894c289fe83",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI</p>"
+            }
+          ]
+        },
+        {
+          "id": "413f4370-206f-4ebf-b911-0bdf37e555c5",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "8610b706-7250-42ee-a446-d53642f74e04",
+              "content": "<p>Axon engineering working on changing formatting of the NIBIN LE Case number removing the dashes and entering a P at the beignning.</p>"
+            },
+            {
+              "id": "593a69ac-dbc0-4b5e-9a1d-5bae4009a59b",
+              "content": "<p>If the NIBIN LE number is not available, then the LAB Case ID will be used.</p>"
+            },
+            {
+              "id": "cc6dbff5-0588-4600-b76c-748c72c8c957",
+              "content": "<p>Changes will be completed in this this or the next engineering sprints.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a3bb3116-ceb7-4aaf-92ad-7b375ad8fe7c",
+      "title": "MNI Deduplication (Senzing):",
+      "subsections": [
+        {
+          "id": "3a0fdd5f-ba6b-464c-96a6-71d48bd3c308",
+          "title": "",
+          "bullets": [
+            {
+              "id": "e4b2210d-6a5a-4964-9207-f7019ba38743",
+              "content": "<p>File being divided into smaller chunks for processing/ingestion. Work still in progress.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
