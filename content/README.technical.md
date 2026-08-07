@@ -12,9 +12,16 @@
 
 | Say this | Action |
 |----------|--------|
-| **Prepare a new week update** | `npm run new-week` |
-| **Edit the week of June 15** (any date) | `npm run edit-week -- --week-of=YYYY-MM-DD` |
-| **Publish** | `npm run publish-week` (opens Outlook + Gmail drafts), then commit and push |
+| **Prepare a new week update** | `git pull`, then `npm run new-week` |
+| **Edit the week of June 15** (any date) | `git pull`, then `npm run edit-week -- --week-of=YYYY-MM-DD` |
+| **Publish** | `npm run publish-week` (opens Outlook + Gmail drafts), commit, `git pull --rebase`, push |
+
+### Collaborative workflow
+
+Several teammates may work in this repo. Always sync before starting:
+
+- **Prepare / Edit** — `git pull` ensures `new-week` clones from the latest published week and `edit-week` loads the current on-disk JSON.
+- **Publish** — `git pull --rebase` before `git push` reduces merge conflicts when two people publish close together.
 
 ## Markdown format
 

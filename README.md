@@ -29,6 +29,8 @@ Project backlog: **[TODO.md](TODO.md)**.
 
 **In Cursor chat:** say *Prepare a new week update* → edit the draft → say *Publish*.
 
+Because several people may publish, **Prepare** always pulls the latest from GitHub first so your draft starts from the most recent week.
+
 ## Local development
 
 ```bash

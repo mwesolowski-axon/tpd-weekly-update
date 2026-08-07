@@ -16,8 +16,9 @@ Email recipients are already configured in **`.env`** at the project root. You c
 ## Create a new week
 
 1. In **Cursor chat**, say: **Prepare a new week update**
-2. Open **`weekly-update.DRAFT.md`** in this folder (the agent creates or refreshes it from last week).
-3. Edit the text for the new week. Update the **week-of** date at the top to the Monday for that week.
+   - The agent **pulls the latest from GitHub** first, then creates the draft from the most recent published week.
+2. Open **`weekly-update.DRAFT.md`** in this folder and edit the text for the new week.
+3. Check the **week-of** date at the top is the Monday for that week (the agent sets this automatically).
 4. When you are done, say: **Publish**
 
 The site updates after the publish step finishes (usually within a couple of minutes).
@@ -25,6 +26,7 @@ The site updates after the publish step finishes (usually within a couple of min
 ## Fix or change a past week
 
 1. In **Cursor chat**, say: **Edit the week of June 15, 2026** (use the date you need).
+   - The agent pulls the latest from GitHub before loading that week into the draft.
 2. Edit **`weekly-update.DRAFT.md`** with your changes.
 3. Say: **Publish**
 
@@ -44,7 +46,7 @@ Typical sections each week:
 |---------|-------------|
 | Program change | (bullets only) |
 | Data store | (bullets only) |
-| Integrations/Conversions | Warrants, Tech 5, ATF/NESS Import, â€¦ |
+| Integrations/Conversions | Warrants, Tech 5, ATF/NESS Import, … |
 | Senzing | (bullets only) |
 
 Copy the structure from the previous week and change only what is new.
