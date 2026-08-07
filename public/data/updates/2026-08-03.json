@@ -1,0 +1,151 @@
+{
+  "id": "2026-08-03",
+  "weekOf": "2026-08-03",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-08-07T22:54:44.037Z",
+  "publishedBy": "mwesolowski@axon.com",
+  "sections": [
+    {
+      "id": "70963dc9-76c3-441e-85c4-85111f5fda17",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "ea927199-18b9-4b30-aa21-c0c66376708d",
+          "title": "Training",
+          "bullets": [
+            {
+              "id": "3bfca99e-cb6c-4467-bf3a-92bc05b8acef",
+              "content": "<p>Expanded permissions for AI Search testing.</p>"
+            }
+          ]
+        },
+        {
+          "id": "14fa539e-dbfe-412f-9c67-4e04b2872b09",
+          "title": "Production",
+          "bullets": [
+            {
+              "id": "11543045-c082-4e55-b753-19cf32973807",
+              "content": "<p>Created RAJ Unaccompanied Minors inbox.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "020f3f68-a1c6-4e46-80a2-f523d58fc83a",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "330ab740-1ee3-4f4a-8009-5124c9769b13",
+          "title": "",
+          "bullets": [
+            {
+              "id": "4bba1614-700a-4e90-b210-b8c58004519c",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2ddc1e35-e2ed-44e8-8c5d-6a3e288c97bb",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "348723c1-1aa0-4a7e-af2c-bad0e30cf09a",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "a7d5a17c-74bf-481b-87e1-a0b52c1bf926",
+              "content": "<p><strong>Issues:</strong> Integration Ticket entered for issues below</p><ul><li>A warrant did not reactivate despite having the same docket number and subject. Still investigating.</li></ul>"
+            },
+            {
+              "id": "d0fb9095-2772-4a6d-991a-7b5166f27dd3",
+              "content": "<p>Certain charges coming in incorrectly.</p>"
+            },
+            {
+              "id": "5ae2eb07-96c6-4b43-8b10-9a1013e953fc",
+              "content": "<p>This is partly due to the payload. The payload has the charge id and part of the charge description. It does not include the severity.</p>"
+            },
+            {
+              "id": "115cad19-fe34-46fc-b4ad-634e591597c9",
+              "content": "<p>The integration picks an active charge on the MCT with the closet match to what is in the payload. Continuing to investigate.</p>"
+            },
+            {
+              "id": "84977b9c-c705-4867-b8ec-b0f44392072c",
+              "content": "<p><strong>Workaround:</strong> Records specialist updates warrant to correct charge</p>"
+            }
+          ]
+        },
+        {
+          "id": "06e91fe5-8ee3-4e0f-acb9-59f5de9d5fdc",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "21184a8a-6c47-44b9-ab46-dd309dc2ff73",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "79d851be-8bcc-47de-ae51-33dc3c32eaeb",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
+            },
+            {
+              "id": "7bf144be-3b7e-41ae-997e-1f175c307f51",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</p>"
+            },
+            {
+              "id": "9bd32b8a-6165-4c3c-9a4f-a5184f60afc9",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI</p>"
+            }
+          ]
+        },
+        {
+          "id": "0bbb5e2a-0be1-4d7c-a5db-21b8929ff4f3",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "e02b6663-7274-4004-ae5c-cc3a312bd224",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "67a439a9-a27a-420a-8706-877fcda6e4fb",
+              "content": "<p>Axon engineering working on changing formatting of the NIBIN LE Case number removing the dashes and entering a P at the beignning.</p>"
+            },
+            {
+              "id": "a9465335-6fd9-488c-a260-f680d313a516",
+              "content": "<p>If the NIBIN LE number is not available, then the LAB Case ID will be used.</p>"
+            },
+            {
+              "id": "64217401-02bd-4d35-a64d-65e3b41425e5",
+              "content": "<p>Changes will be completed in this this or the next engineering sprints.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bcf241e6-28bc-4983-be3c-bc793f21f236",
+      "title": "MNI Deduplication (Senzing):",
+      "subsections": [
+        {
+          "id": "a79b357d-801f-4baa-80d2-cda60bfafa11",
+          "title": "",
+          "bullets": [
+            {
+              "id": "546b2dfa-4d99-42e4-8fce-9013d54f745c",
+              "content": "<p>File divided into smaller chunks for processing/ingestion.</p>"
+            },
+            {
+              "id": "b91d6371-446d-49a3-b51e-a1419eb76255",
+              "content": "<p>15 of 16 chunks complete.</p>"
+            },
+            {
+              "id": "9d0123ec-65ea-4f71-8926-2745f2bf9305",
+              "content": "<p>Audit of completed chunks underway.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
