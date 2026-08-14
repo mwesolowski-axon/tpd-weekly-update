@@ -1,0 +1,161 @@
+{
+  "id": "2026-08-10",
+  "weekOf": "2026-08-10",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-08-14T23:28:47.285Z",
+  "publishedBy": "mwesolowski@axon.com",
+  "sections": [
+    {
+      "id": "31af7bde-daca-43d2-814a-a519ebbbff47",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "71f803c4-4a94-4b09-ab91-d207faf1049c",
+          "title": "Training",
+          "bullets": [
+            {
+              "id": "37dce24e-da21-496c-b0d2-22836cebdf2b",
+              "content": "<p>Removed several teams from Records permissions to match the teams used in Production.</p>"
+            },
+            {
+              "id": "87a60afe-3481-4c08-83e6-c7990dd7f8c4",
+              "content": "<p>Turned off Audit Trail V2</p>"
+            }
+          ]
+        },
+        {
+          "id": "d07b426a-47cb-4437-9502-a4238b9e7bfc",
+          "title": "Production",
+          "bullets": [
+            {
+              "id": "69ec748e-b982-4ac8-a60a-f1de480bce2a",
+              "content": "<p>Turned off Audit Trail V2</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8ec0013e-b8a7-4bd7-ab90-30691750e2c5",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "ed4e154d-2c0b-4105-9034-3bd6c8b1f2df",
+          "title": "",
+          "bullets": [
+            {
+              "id": "4916efa5-36b6-4d08-b23f-c3ec72a56f02",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17b49da7-a532-475f-933c-cbdaee57b26b",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "2b1c16db-ecd4-45e5-98de-eed533551db6",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "7d0a45bf-5996-439e-b07c-a0150afa2039",
+              "content": "<p><strong>Issues:</strong> Integration Ticket entered for issues below</p><ul><li>A warrant did not reactivate despite having the same docket number and subject. Still investigating.</li></ul>"
+            },
+            {
+              "id": "a729ec97-be15-40af-87af-2f8e9d14e1d6",
+              "content": "<p>Certain charges coming in incorrectly.</p>"
+            },
+            {
+              "id": "ae9cf592-260f-4fc3-a3e5-eaff4ec5d07e",
+              "content": "<p>This is partly due to the payload. The payload has the charge id and part of the charge description. It does not include the severity.</p>"
+            },
+            {
+              "id": "badab4e7-d02e-4888-bced-838f92379a6f",
+              "content": "<p>The integration picks an active charge on the MCT with the closet match to what is in the payload. Continuing to investigate.</p>"
+            },
+            {
+              "id": "d6a333b8-a932-4608-98af-e96accc8509b",
+              "content": "<p><strong>Workaround:</strong> Records specialist updates warrant to correct charge</p>"
+            }
+          ]
+        },
+        {
+          "id": "14a3aeb5-5645-479c-acef-9046508a248e",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "1db36c08-7ad0-477c-bbcf-898f6d4b9b5e",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "80a630d5-381e-4288-bc45-e421b9200ecd",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
+            },
+            {
+              "id": "9d2eee66-17cb-4389-ae88-1dfe47924d30",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</p>"
+            },
+            {
+              "id": "3f5e57e5-37fc-4c2a-88f3-6ae022b751f0",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI</p>"
+            }
+          ]
+        },
+        {
+          "id": "3c5fa53a-28a1-4015-818c-8c1bb07dbf22",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "85fd64f8-b123-4ec0-b8b2-0d5d0d7fd133",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "96bb2901-561b-450e-9517-d5084d3e18fd",
+              "content": "<p>Axon engineering working on changing formatting of the NIBIN LE Case number removing the dashes and entering a P at the beginning.</p>"
+            },
+            {
+              "id": "d77abc5a-9aeb-49b3-bc33-c41e3aeccc6a",
+              "content": "<p>If the NIBIN LE number is not available, then the LAB Case ID will be used.</p>"
+            },
+            {
+              "id": "fe8d47ba-e83b-4458-8d5b-f5259b25ea5d",
+              "content": "<p>Changes will be completed in this this or the next engineering sprints.</p>"
+            }
+          ]
+        },
+        {
+          "id": "4061db3e-e9c1-43b0-87d9-030f4ffbf9f4",
+          "title": "Standards",
+          "bullets": [
+            {
+              "id": "208b1e91-bb36-4a24-9b17-66e54bb07c3d",
+              "content": "<p>BA has been assigned.</p>"
+            },
+            {
+              "id": "d3d0978f-7107-476e-89c4-4bd6cc529dc6",
+              "content": "<p>Kick-off meeting is scheduled for Tuesday 8/18.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "647962f8-44bd-478e-9d8f-929919f57784",
+      "title": "MNI Deduplication (Senzing):",
+      "subsections": [
+        {
+          "id": "75830859-8c1f-4cb6-89f6-8ca1a41e2966",
+          "title": "",
+          "bullets": [
+            {
+              "id": "3c9d22bb-2b7f-4386-8b30-f041eaa1bf4b",
+              "content": "<p>Audit of completed chunks still underway.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
