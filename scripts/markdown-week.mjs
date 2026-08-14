@@ -4,20 +4,56 @@ import { replaceEmDashes } from './replace-em-dashes.mjs'
 
 marked.setOptions({ gfm: true, breaks: false })
 
+const FRONTMATTER_KEYS = ['week-of', 'published-by']
+
+function readMetaLine(line) {
+  const cleaned = line.replace(/^\s*#{1,6}\s*/, '').trim()
+  const idx = cleaned.indexOf(':')
+  if (idx === -1) return null
+  const key = cleaned.slice(0, idx).trim().toLowerCase()
+  if (!FRONTMATTER_KEYS.includes(key)) return null
+  const value = cleaned.slice(idx + 1).replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').trim()
+  return { key, value }
+}
+
+// Markdown formatters can mangle the YAML block: heading prefixes on the keys,
+// autolinked emails, or a dropped closing ---. Read the keys back out anyway.
+function recoverFrontmatter(text) {
+  const lines = text.split(/\r?\n/)
+  const meta = {}
+  let bodyStart = 0
+
+  for (let i = 0; i < lines.length; i += 1) {
+    const entry = readMetaLine(lines[i])
+    if (entry) {
+      meta[entry.key] = entry.value
+      bodyStart = i + 1
+      continue
+    }
+    const trimmed = lines[i].trim()
+    if (!trimmed || trimmed === '---') {
+      bodyStart = i + 1
+      continue
+    }
+    break
+  }
+
+  return { meta, body: lines.slice(bodyStart).join('\n') }
+}
+
 function parseFrontmatter(text) {
   const match = text.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/)
-  if (!match) {
-    return { meta: {}, body: text }
+  if (match) {
+    const meta = {}
+    for (const line of match[1].split('\n')) {
+      const entry = readMetaLine(line)
+      if (entry) meta[entry.key] = entry.value
+    }
+    if (meta['week-of']) {
+      return { meta, body: text.slice(match[0].length) }
+    }
   }
-  const meta = {}
-  for (const line of match[1].split('\n')) {
-    const idx = line.indexOf(':')
-    if (idx === -1) continue
-    const key = line.slice(0, idx).trim()
-    const value = line.slice(idx + 1).trim()
-    meta[key] = value
-  }
-  return { meta, body: text.slice(match[0].length) }
+  return recoverFrontmatter(text)
 }
 
 function markdownToHtml(markdown) {
