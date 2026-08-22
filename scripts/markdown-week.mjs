@@ -165,6 +165,12 @@ export function parseMarkdownWeek(markdown) {
       continue
     }
 
+    // Divider lines are draft-only readability aids; they carry no content.
+    if (/^(-{3,}|\*{3,}|_{3,})$/.test(trimmed)) {
+      i += 1
+      continue
+    }
+
     if (trimmed.startsWith('## ')) {
       ensureSubsection(trimmed.slice(3).trim())
       i += 1

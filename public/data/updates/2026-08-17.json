@@ -1,0 +1,153 @@
+{
+  "id": "2026-08-17",
+  "weekOf": "2026-08-17",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-08-22T00:28:29.576Z",
+  "publishedBy": "mwesolowski@axon.com",
+  "sections": [
+    {
+      "id": "c10fae1b-7187-4816-bb84-e8cc0c0a0c08",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "f6d2ed07-5ffd-4473-8152-dbd5e7bbad8d",
+          "title": "",
+          "bullets": [
+            {
+              "id": "03bc49ff-b02f-4309-a358-9dec9fe625de",
+              "content": "<p>Mirrored all Permission Teams to match between Training and Production in preparation for Command Hierarchy and Standards</p>"
+            }
+          ]
+        },
+        {
+          "id": "4e7520f9-71e0-4200-b866-88de0d47156f",
+          "title": "Training",
+          "bullets": [
+            {
+              "id": "ec70deb5-ce2b-49c7-a2a9-e90a5ffcaf6a",
+              "content": "<p>Permissions provisioned in Training for Standards</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5a193025-a21d-4a1d-bb64-2b67eb25fd8d",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "3bbd5084-1f85-42e0-9fe5-a1488a1842e6",
+          "title": "",
+          "bullets": [
+            {
+              "id": "a7f31519-0384-4e0f-9258-14c7ee5294a4",
+              "content": "<p>No changes</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "99ad442c-d1d0-4530-83a7-78a04b001a1f",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "d0f3ee31-e291-416b-864a-0b6a10056868",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "5f7c3232-d09e-4df3-ab04-b8b5ac8a3113",
+              "content": "<p><strong>Integration Ticket entered for issues below</strong></p>"
+            },
+            {
+              "id": "e390e685-51f1-49da-b377-e3516ec9db5d",
+              "content": "<p><strong>Issue:</strong> A warrant did not reactivate despite having the same docket number and subject. Still investigating.</p><ul><li>Certain charges coming in incorrectly.</li><li>This is partly due to the payload. The payload has the charge id and part of the charge description. It does not include the severity.</li><li>The integration picks an active charge on the MCT with the closest match to what is in the payload. Continuing to investigate.</li></ul>"
+            },
+            {
+              "id": "ea9dc196-5a4a-46e2-9d5e-c3bed6ccb6eb",
+              "content": "<p><strong>Workaround:</strong> Records specialist updates warrant to correct charge</p>"
+            },
+            {
+              "id": "b660d40f-5145-4d47-ae20-1bfc46c88c40",
+              "content": "<p><strong>Issue:</strong> Warrant charges duplicating on the warrant form in the UI</p><ul><li>This is due to duplicate charges within the payload</li><li>Agency has reached out to the court POC about this with examples to get the issue investigated</li></ul>"
+            },
+            {
+              "id": "73ca8d6a-394b-45f1-99aa-e8da353ac952",
+              "content": "<p><strong>Workaround:</strong> Records team to remove the duplicate charges in the UI so they match the physical warrant</p>"
+            }
+          ]
+        },
+        {
+          "id": "d755cd84-f01a-4c6a-8736-d3045767fa03",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "9dc89ab1-b719-438a-b575-90dbd4eeb2fc",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "a40f9fa9-bfa2-4545-ba95-73aee69d1227",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
+            },
+            {
+              "id": "b9f7d6f4-ed6b-40dc-bf2e-e909a62d8875",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints</p>"
+            },
+            {
+              "id": "03c70393-de47-4152-acde-d3d465e9363a",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI</p>"
+            }
+          ]
+        },
+        {
+          "id": "fa3e52e9-9a1e-4332-bc56-d11fed337017",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "373d5640-49c5-4018-adea-d0b62deaf64d",
+              "content": "<p>P and dash fix was implemented .</p>"
+            },
+            {
+              "id": "b83c44f9-cc1a-4781-8760-94c3d724eec0",
+              "content": "<p>Change scheduled for next week to make this work retroactively.</p>"
+            }
+          ]
+        },
+        {
+          "id": "23ddc69c-2985-4189-8e63-f174a2086bd3",
+          "title": "Standards",
+          "bullets": [
+            {
+              "id": "5908e3e4-bac9-4337-878b-1c44c5efc752",
+              "content": "<p>Kick-off meeting happened on Tuesday 8/18.</p>"
+            },
+            {
+              "id": "e77d0628-b293-4ac8-a713-ee9819da5069",
+              "content": "<p>Discovery meeting scheduled for Tuesday 8/25</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "885819a9-0759-4915-ab63-0a54907baca7",
+      "title": "MNI Deduplication (Senzing):",
+      "subsections": [
+        {
+          "id": "d3acbabb-0d1c-4430-bd6a-0ee0cf392c69",
+          "title": "",
+          "bullets": [
+            {
+              "id": "5d358570-69f7-4574-876c-46615cb02111",
+              "content": "<p>Completed approximately 95% of the MNI dedupe work, successfully processing roughly 430K MNIs. There are approximately 24K MNIs that have not yet been merged in the UI.</p>"
+            },
+            {
+              "id": "6707d91c-ad34-4932-96c2-1245e8f2cfce",
+              "content": "<p>At a high level, the remaining records appear to fall into a couple of scenarios:</p><ul><li>Some MNIs were already been merged into a different primary GUID than the one identified in the Senzing output</li><li>Some of the primary or duplicate GUIDs are associated with reports that are still In Progress or in Records Review, which may prevent the merge from completing.</li></ul>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

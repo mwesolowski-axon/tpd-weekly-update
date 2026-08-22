@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"[markdown]": {
+			"editor.formatOnSave": false,
+			"editor.formatOnPaste": false,
+			"editor.formatOnType": false
+		}
+	}
+}
