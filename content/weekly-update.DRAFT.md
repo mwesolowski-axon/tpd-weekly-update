@@ -20,7 +20,6 @@ published-by: mwesolowski@axon.com
 ## Warrants
 
 - **Integration Ticket entered for issues below**
-
 - **Issue:** A warrant did not reactivate despite having the same docket number and subject. Still investigating.
   - Certain charges coming in incorrectly.
     - This is partly due to the payload. The payload has the charge id and part of the charge description. It does not include the severity.
@@ -55,6 +54,6 @@ published-by: mwesolowski@axon.com
 
 - Completed approximately 95% of the MNI dedupe work, successfully processing roughly 430K MNIs. There are approximately 24K MNIs that have not yet been merged in the UI.
 - At a high level, the remaining records appear to fall into a couple of scenarios:
-  - Some MNIs were already been merged into a different primary GUID than the one identified in the Senzing output
+  - Some MNIs were already merged into a different primary GUID than the one identified in the Senzing output
   - Some of the primary or duplicate GUIDs are associated with reports that are still In Progress or in Records Review, which may prevent the merge from completing.
 
