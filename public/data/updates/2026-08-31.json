@@ -1,0 +1,159 @@
+{
+  "id": "2026-08-31",
+  "weekOf": "2026-08-31",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-09-04T18:21:56.853Z",
+  "publishedBy": "alarsh@axon.com",
+  "sections": [
+    {
+      "id": "24879183-564c-439d-8aa3-e6683b2d0f31",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "c48b0b43-1a15-4820-86f9-5ec95deccbcd",
+          "title": "",
+          "bullets": [
+            {
+              "id": "14e32b23-aa8e-41e6-a775-c38318014449",
+              "content": "<p>Removed Blue Team Case factor in Training and replaced it with Use of Force (Type 1,2,3,4) case factors.</p>"
+            },
+            {
+              "id": "f82c7292-cdc7-42f0-a248-435839f39de0",
+              "content": "<p>Reviewing of all permissions for team members to match between Training and Production continued.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0e2e6efc-2358-4c5d-b438-e1386dacefaf",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "d45cbfa5-3df3-4b27-be8f-b605f154ccd7",
+          "title": "",
+          "bullets": [
+            {
+              "id": "d5c3f2c9-7cf9-4098-98d0-a9f5d4ceaa8b",
+              "content": "<p>No changes.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a436ba0b-37d3-44d4-b382-7b45d1469b39",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "7ca5a2e9-f7bb-4d8e-a2a1-a5608568c704",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "6c36a777-e2a1-408f-b4a0-5c030c7203cd",
+              "content": "<p><strong>Integration Ticket entered for issues below</strong></p>"
+            },
+            {
+              "id": "c43ca661-3d59-4749-a3f5-92e7a4800f92",
+              "content": "<p><strong>Issue:</strong> A warrant did not reactivate despite having the same docket number and subject. Still investigating.</p><ul><li>Certain charges coming in incorrectly.</li><li>This is partly due to the payload. The payload has the charge id and part of the charge description. It does not include the severity.</li><li>The integration picks an active charge on the MCT with the closest match to what is in the payload. Continuing to investigate.</li></ul>"
+            },
+            {
+              "id": "560175e5-8755-4532-96cf-32941cff97b1",
+              "content": "<p><strong>Workaround:</strong> Records specialist updates warrant to correct charge.</p>"
+            },
+            {
+              "id": "95901f1c-d3e8-40f5-9347-2fa02a9b1b90",
+              "content": "<p><strong>Status:</strong> Warrant duplicates are still being sent to Kiet as examples.</p><ul><li>This issue is still being investigated by the courts.</li></ul>"
+            },
+            {
+              "id": "04644a36-a861-4b2d-aa79-42cd7b2ef66d",
+              "content": "<p><strong>Issue:</strong> Warrant charges duplicating on the warrant form in the UI.</p><ul><li>This is due to duplicate charges within the payload.</li><li>Agency has reached out to the court POC about this with examples to get the issue investigated.</li></ul>"
+            },
+            {
+              "id": "9494f293-7e8f-494e-a298-a533a917f053",
+              "content": "<p><strong>Workaround:</strong> Records team to remove the duplicate charges in the UI so they match the physical warrant.</p>"
+            }
+          ]
+        },
+        {
+          "id": "5758381b-1b17-4646-8daa-96e39c231f48",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "396a1b4c-426d-483b-a723-df8b97a0950a",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "61d46cc1-c067-4f06-a303-007f0aeea521",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
+            },
+            {
+              "id": "c095b4f1-81f1-4612-8437-7f712a7743b2",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints.</p>"
+            },
+            {
+              "id": "f42039e0-5410-4582-bdac-4964a92d4931",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI.</p>"
+            }
+          ]
+        },
+        {
+          "id": "6f7963f4-5ed5-44e9-9f52-5b19e386e103",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "5a17dafb-dbeb-4c74-a464-63dfb159c720",
+              "content": "<p><strong>Update:</strong> ATF received permission to add in the &quot;Time To First Shooting&quot; field in the API .</p><ul><li>This is being investigated.</li></ul>"
+            },
+            {
+              "id": "996a648e-f3b6-4af3-98a3-278eadeba052",
+              "content": "<p><strong>Status:</strong> Reprocessing of files to add retroactive functionality completed.</p>"
+            },
+            {
+              "id": "8ab64a94-2767-4db7-bb25-50119449c63e",
+              "content": "<p><strong>Issue:</strong> There are multiple related cases where the NIBIN LE number only appears once for Tucson, AZ cases. This is currently under investigation.</p>"
+            }
+          ]
+        },
+        {
+          "id": "5612223a-7a5e-40f2-aa59-885aa134eff4",
+          "title": "Standards",
+          "bullets": [
+            {
+              "id": "55974099-664b-45d0-aea2-e798b77fe58a",
+              "content": "<p>Discovery meeting occurred for Tuesday 8/25</p>"
+            },
+            {
+              "id": "643a670d-b97a-4e6f-9340-8d335bd28810",
+              "content": "<p>Weekly meetings planned for Tuesdays</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2ac013e7-89a4-43db-a876-e757392cf465",
+      "title": "MNI Deduplication (Senzing):",
+      "subsections": [
+        {
+          "id": "fb531a68-ed61-4a51-b4be-60d806a3898b",
+          "title": "",
+          "bullets": [
+            {
+              "id": "c7dec2e9-a175-4e87-8401-480fb885e682",
+              "content": "<p><strong>Update:</strong> Remaining records with errors are being analyzed.</p>"
+            },
+            {
+              "id": "abd850e5-37b8-4d18-8d61-65a8d8ead773",
+              "content": "<p>Completed approximately 95% of the MNI dedupe work, successfully processing roughly 430K MNIs. There are approximately 24K MNIs that have not yet been merged in the UI.</p>"
+            },
+            {
+              "id": "a3479a0d-c539-413c-a072-b509ef88c8ef",
+              "content": "<p>At a high level, the remaining records appear to fall into a couple of scenarios:</p><ul><li>Some MNIs were already merged into a different primary GUID than the one identified in the Senzing output</li><li>Some of the primary or duplicate GUIDs are associated with reports that are still In Progress or in Records Review, which may prevent the merge from completing.</li></ul>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 ---
-week-of: 2026-08-24
-published-by: mwesolowski@axon.com
+week-of: 2026-08-31
+published-by: alarsh@axon.com
 ---
 
 # Program changes
 
 - Removed Blue Team Case factor in Training and replaced it with Use of Force (Type 1,2,3,4) case factors.
 
-- Review of all permissions for team members to match between Training and Production.
+- Reviewing of all permissions for team members to match between Training and Production continued.
 
 # Data store
 
@@ -35,10 +35,8 @@ published-by: mwesolowski@axon.com
 
 - **Workaround:** Records team to remove the duplicate charges in the UI so they match the physical warrant.
 
-## Tech 5
-
-- No New Update.
-
+## Tech 5 
+- No New Update 
 - Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.
 
 - Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints.
@@ -47,13 +45,12 @@ published-by: mwesolowski@axon.com
 
 ## ATF/NESS Import
 
-- **Update:** ATF received permission to add in the "Time To First Shooting" field in the API .
+- **Update:** ATF received permission to add in the &quot;Time To First Shooting&quot; field in the API .
   - This is being investigated.
 
 - **Status:** Reprocessing of files to add retroactive functionality completed.
 
 - **Issue:** There are multiple related cases where the NIBIN LE number only appears once for Tucson, AZ cases. This is currently under investigation.
-
 
 ## Standards
 
