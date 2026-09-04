@@ -35,8 +35,10 @@ published-by: alarsh@axon.com
 
 - **Workaround:** Records team to remove the duplicate charges in the UI so they match the physical warrant.
 
-## Tech 5 
-- No New Update 
+## Tech 5
+
+- No New Update
+
 - Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.
 
 - Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints.
