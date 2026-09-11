@@ -238,9 +238,12 @@ export function htmlToMarkdown(html) {
   text = text.replace(/<br\s*\/?>/gi, '\n')
   text = text.replace(/<[^>]+>/g, '')
   text = text.replace(/&nbsp;/g, ' ')
-  text = text.replace(/&amp;/g, '&')
+  text = text.replace(/&quot;/g, '"')
+  text = text.replace(/&#3[49];/g, (entity) => (entity === '&#39;' ? "'" : '"'))
   text = text.replace(/&lt;/g, '<')
   text = text.replace(/&gt;/g, '>')
+  // Decode &amp; last so entities like &amp;quot; survive as literal text.
+  text = text.replace(/&amp;/g, '&')
   text = text.replace(/\n{3,}/g, '\n\n')
 
   return text.trim()

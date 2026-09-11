@@ -1,13 +1,13 @@
 ---
-week-of: 2026-08-31
-published-by: alarsh@axon.com
+week-of: 2026-09-07
+published-by: mwesolowski@axon.com
 ---
 
 # Program changes
 
-- Removed Blue Team Case factor in Training and replaced it with Use of Force (Type 1,2,3,4) case factors.
+- Multiple changes to Training Incident Report json to replicate Production version.
 
-- Reviewing of all permissions for team members to match between Training and Production continued.
+- Disabled Warrant Import feature in an Incident Report.
 
 # Data store
 
@@ -16,6 +16,8 @@ published-by: alarsh@axon.com
 # Integrations/Conversions
 
 ## Warrants
+
+- No New Update
 
 - **Integration Ticket entered for issues below**
 
@@ -47,25 +49,30 @@ published-by: alarsh@axon.com
 
 ## ATF/NESS Import
 
-- **Update:** ATF received permission to add in the &quot;Time To First Shooting&quot; field in the API .
-  - This is being investigated.
+- No New Update
 
-- **Status:** Reprocessing of files to add retroactive functionality completed.
+- **Status:** ATF received permission to add in the "Time To First Shooting" field in the API .
+  - This is being investigated.
 
 - **Issue:** There are multiple related cases where the NIBIN LE number only appears once for Tucson, AZ cases. This is currently under investigation.
 
 ## Standards
 
-- Discovery meeting occurred for Tuesday 8/25
+- No New Update
 
 - Weekly meetings planned for Tuesdays
 
 # MNI Deduplication (Senzing):
 
-- **Update:** Remaining records with errors are being analyzed.
+- **Status:** Customer review is needed for the remaining MNI deduplication exceptions.
 
-- Completed approximately 95% of the MNI dedupe work, successfully processing roughly 430K MNIs. There are approximately 24K MNIs that have not yet been merged in the UI.
+- Approximately 95% of the MNI deduplication work has been completed, with roughly 430K MNIs successfully processed. Approximately 24K MNIs remain unmerged in the UI.
 
-- At a high level, the remaining records appear to fall into a couple of scenarios:
-  - Some MNIs were already merged into a different primary GUID than the one identified in the Senzing output
-  - Some of the primary or duplicate GUIDs are associated with reports that are still In Progress or in Records Review, which may prevent the merge from completing.
+- An updated review workbook was provided to help the customer evaluate the remaining exceptions. The workbook includes searchable Person IDs, associated Draft, In Progress, or Records Review report numbers, and confirmation of whether each Person is active in Axon.
+
+- The remaining failures are categorized as:
+  - Duplicate Person not found as an active record
+  - Primary Person not found as an active record
+  - Duplicate Person already associated with a different surviving MNI than the one identified by Senzing
+
+- Once the review is returned, Axon will clean up the remaining exceptions and perform one final automated MNI deduplication run.
