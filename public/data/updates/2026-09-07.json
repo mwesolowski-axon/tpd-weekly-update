@@ -2,23 +2,23 @@
   "id": "2026-09-07",
   "weekOf": "2026-09-07",
   "title": "Axon Weekly Update",
-  "publishedAt": "2026-09-11T23:58:32.485Z",
+  "publishedAt": "2026-09-12T00:01:09.664Z",
   "publishedBy": "mwesolowski@axon.com",
   "sections": [
     {
-      "id": "e855e664-28b2-46f5-96d4-100128ec69b5",
+      "id": "fa8fd01a-20dc-488d-9471-91aaffe6eac5",
       "title": "Program changes",
       "subsections": [
         {
-          "id": "d0067741-d3ac-457d-a63d-e69934e0fa13",
+          "id": "123b09ec-ede3-4516-9d79-4a138871f02f",
           "title": "",
           "bullets": [
             {
-              "id": "2f30c7d2-9dd4-4a9a-836f-c1a80072ebc4",
+              "id": "f96caa5b-6f9f-44b6-8bdc-7f3697013cc0",
               "content": "<p>Multiple changes to Training Incident Report json to replicate Production version.</p>"
             },
             {
-              "id": "a94a3d26-1e14-4e85-844f-fb51d04f2566",
+              "id": "22b7bf4f-9da3-4a69-a758-1cb08ad2e0cb",
               "content": "<p>Disabled Warrant Import feature in an Incident Report.</p>"
             }
           ]
@@ -26,15 +26,15 @@
       ]
     },
     {
-      "id": "0b023b6b-99fb-49b7-94e7-beab2d3d1456",
+      "id": "dba92fa5-2ef6-4481-9462-c437097e61c3",
       "title": "Data store",
       "subsections": [
         {
-          "id": "4406f974-2616-452e-884a-b695dfcfa273",
+          "id": "eae36917-cd0c-4595-8545-0543f33882bc",
           "title": "",
           "bullets": [
             {
-              "id": "254da2e8-47af-40b4-86fe-cec2c72dc9b2",
+              "id": "17880753-f64e-40b4-9364-a334d253383e",
               "content": "<p>No changes.</p>"
             }
           ]
@@ -42,93 +42,93 @@
       ]
     },
     {
-      "id": "9fec5466-f202-46ec-9e0e-a51acc17467c",
+      "id": "ce339f0f-00ca-4c38-b6e9-dd9dfa20cdbe",
       "title": "Integrations/Conversions",
       "subsections": [
         {
-          "id": "cf33403b-cef8-4c66-a49f-ad08f8e5c39c",
+          "id": "663b3c31-61e6-4c72-b2bb-0c5a1bd7191a",
           "title": "Warrants",
           "bullets": [
             {
-              "id": "55400cdb-18e9-4db8-8e91-f8629f0f1560",
+              "id": "091c876d-0318-4566-872c-3e48e6c241fa",
               "content": "<p>No New Update</p>"
             },
             {
-              "id": "5d09fc8b-6bbc-4024-9726-5df94789a655",
+              "id": "9b957205-3263-4c8f-948d-e07a816bfd5d",
               "content": "<p><strong>Integration Ticket entered for issues below</strong></p>"
             },
             {
-              "id": "e8cb7ade-27cd-4034-a370-14246d9db1d8",
+              "id": "44acdc9e-e598-4e8f-9d16-9c1c7deccbd0",
               "content": "<p><strong>Issue:</strong> A warrant did not reactivate despite having the same docket number and subject. Still investigating.</p><ul><li>Certain charges coming in incorrectly.</li><li>This is partly due to the payload. The payload has the charge id and part of the charge description. It does not include the severity.</li><li>The integration picks an active charge on the MCT with the closest match to what is in the payload. Continuing to investigate.</li></ul>"
             },
             {
-              "id": "83051aa9-2d0d-440e-98db-8cf852ba87bc",
+              "id": "d3520434-61a7-4f63-867d-04b05a61c133",
               "content": "<p><strong>Workaround:</strong> Records specialist updates warrant to correct charge.</p>"
             },
             {
-              "id": "c2d4098b-ba5a-4f9e-b0e7-6477d61fb95c",
+              "id": "eb1c6dc6-76dc-45df-8ac2-74037b0c575a",
               "content": "<p><strong>Status:</strong> Warrant duplicates are still being sent to Kiet as examples.</p><ul><li>This issue is still being investigated by the courts.</li></ul>"
             },
             {
-              "id": "f5f06a93-58bd-421f-962d-6b44793bfb61",
+              "id": "3475d74a-3533-4ecc-8592-88789f118405",
               "content": "<p><strong>Issue:</strong> Warrant charges duplicating on the warrant form in the UI.</p><ul><li>This is due to duplicate charges within the payload.</li><li>Agency has reached out to the court POC about this with examples to get the issue investigated.</li></ul>"
             },
             {
-              "id": "534f8fbd-ef38-47d6-8547-d9c2a897a6fd",
+              "id": "5b35de73-45b7-4325-9335-a59c6951548e",
               "content": "<p><strong>Workaround:</strong> Records team to remove the duplicate charges in the UI so they match the physical warrant.</p>"
             }
           ]
         },
         {
-          "id": "2280b85d-7f79-487d-9216-fb8ed3977bc2",
+          "id": "0c3b18d4-2818-4610-8be1-7859157f3579",
           "title": "Tech 5",
           "bullets": [
             {
-              "id": "8780b61f-975f-4b60-a207-7ebae36c706f",
+              "id": "118fb046-cdf9-463b-83b8-6ac884e60eb6",
               "content": "<p>No New Update</p>"
             },
             {
-              "id": "6ac945d8-7bab-41e1-8723-4ac74d79d0fc",
+              "id": "f73f954e-6592-43e9-aa53-4acd334821ff",
               "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
             },
             {
-              "id": "4c623e7d-47de-4c4f-88de-39aad6eed792",
+              "id": "1b560134-80ad-45bc-bd0d-d3e041c68835",
               "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints.</p>"
             },
             {
-              "id": "bb2a1843-7c78-4671-bfe4-f2c974e15ba3",
+              "id": "025db593-7561-4b3a-b050-2d2ba5b1f307",
               "content": "<p>Outstanding: Testing for mug shots coming into correct MNI.</p>"
             }
           ]
         },
         {
-          "id": "50740852-1967-40a4-aa64-296d04b7e371",
+          "id": "86f2432f-df9a-4518-932d-c7031571b1e9",
           "title": "ATF/NESS Import",
           "bullets": [
             {
-              "id": "5614f1d0-9e6c-42a5-900c-a6cd63a54dd5",
+              "id": "e909de58-57af-4209-847f-acd8d60b8665",
               "content": "<p>No New Update</p>"
             },
             {
-              "id": "0c58412b-6dc7-4284-b001-f0e45e139596",
+              "id": "855d8a0b-5da3-48a9-8252-0195cb37c7cc",
               "content": "<p><strong>Status:</strong> ATF received permission to add in the &quot;Time To First Shooting&quot; field in the API .</p><ul><li>This is being investigated.</li></ul>"
             },
             {
-              "id": "a7b16043-3cb3-4aa3-9198-7652bc942fc0",
+              "id": "bb2c8509-9ef7-430a-8e24-d44b4b743c64",
               "content": "<p><strong>Issue:</strong> There are multiple related cases where the NIBIN LE number only appears once for Tucson, AZ cases. This is currently under investigation.</p>"
             }
           ]
         },
         {
-          "id": "9809943c-d1cc-48c2-af33-8d17283049f4",
+          "id": "965ef9d4-9335-44cc-892d-5fc83cca24a8",
           "title": "Standards",
           "bullets": [
             {
-              "id": "a0d34497-04eb-4d9e-9df3-3d6f0bb4eeb7",
+              "id": "86743858-76b8-40fc-8339-34fceb475696",
               "content": "<p>No New Update</p>"
             },
             {
-              "id": "54d7d538-7f0e-4209-96a6-88fd1729ea80",
+              "id": "92f2c65d-ee5b-4ac1-b874-94ac867e9125",
               "content": "<p>Weekly meetings planned for Tuesdays</p>"
             }
           ]
@@ -136,31 +136,31 @@
       ]
     },
     {
-      "id": "47afadc9-1775-46fa-831d-ea42a680c923",
+      "id": "d2fdf8bd-5488-430c-a7bf-13cb83239768",
       "title": "MNI Deduplication (Senzing):",
       "subsections": [
         {
-          "id": "03d7b982-1b0e-4c7c-b519-5976b20d7321",
+          "id": "49f21722-fd8a-4db1-9c10-a86d7c43ae91",
           "title": "",
           "bullets": [
             {
-              "id": "10b777ee-c8b5-4575-9730-3b7c342fc0dc",
-              "content": "<p><strong>Status:</strong> Customer review is needed for the remaining MNI deduplication exceptions.</p>"
+              "id": "ae8c273b-1eee-4e1a-8045-8c3a19eb5a90",
+              "content": "<p><strong>Status:</strong> Agency review is needed for the remaining MNI deduplication exceptions.</p>"
             },
             {
-              "id": "796de3a6-33c8-4186-83a2-558de3c0ea1a",
+              "id": "75004ece-a6e1-48be-82ca-08030d449092",
               "content": "<p>Approximately 95% of the MNI deduplication work has been completed, with roughly 430K MNIs successfully processed. Approximately 24K MNIs remain unmerged in the UI.</p>"
             },
             {
-              "id": "edd9d4cd-d47e-4ce5-89d4-4e4be509dce3",
-              "content": "<p>An updated review workbook was provided to help the customer evaluate the remaining exceptions. The workbook includes searchable Person IDs, associated Draft, In Progress, or Records Review report numbers, and confirmation of whether each Person is active in Axon.</p>"
+              "id": "29b9f15b-9c30-45fd-8501-92fb3800e13a",
+              "content": "<p>An updated review workbook was provided to help the Agency evaluate the remaining exceptions. The workbook includes searchable Person IDs, associated Draft, In Progress, or Records Review report numbers, and confirmation of whether each Person is active in Axon.</p>"
             },
             {
-              "id": "3df0235a-b061-42bb-84e9-52f35f804644",
+              "id": "89c86511-dce6-4351-8b71-070358149b6f",
               "content": "<p>The remaining failures are categorized as:</p><ul><li>Duplicate Person not found as an active record</li><li>Primary Person not found as an active record</li><li>Duplicate Person already associated with a different surviving MNI than the one identified by Senzing</li></ul>"
             },
             {
-              "id": "bed152bf-66c3-45c3-8297-5311449572bb",
+              "id": "bd7415d1-ca4d-484a-be06-696c310fe31b",
               "content": "<p>Once the review is returned, Axon will clean up the remaining exceptions and perform one final automated MNI deduplication run.</p>"
             }
           ]

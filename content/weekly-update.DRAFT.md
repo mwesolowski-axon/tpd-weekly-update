@@ -64,11 +64,11 @@ published-by: mwesolowski@axon.com
 
 # MNI Deduplication (Senzing):
 
-- **Status:** Customer review is needed for the remaining MNI deduplication exceptions.
+- **Status:** Agency review is needed for the remaining MNI deduplication exceptions.
 
 - Approximately 95% of the MNI deduplication work has been completed, with roughly 430K MNIs successfully processed. Approximately 24K MNIs remain unmerged in the UI.
 
-- An updated review workbook was provided to help the customer evaluate the remaining exceptions. The workbook includes searchable Person IDs, associated Draft, In Progress, or Records Review report numbers, and confirmation of whether each Person is active in Axon.
+- An updated review workbook was provided to help the Agency evaluate the remaining exceptions. The workbook includes searchable Person IDs, associated Draft, In Progress, or Records Review report numbers, and confirmation of whether each Person is active in Axon.
 
 - The remaining failures are categorized as:
   - Duplicate Person not found as an active record
