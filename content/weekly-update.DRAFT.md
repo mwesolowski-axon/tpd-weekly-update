@@ -1,13 +1,17 @@
 ---
-week-of: 2026-09-07
-published-by: mwesolowski@axon.com
+week-of: 2026-09-14
+published-by: alarsh@axon.com
 ---
 
 # Program changes
 
-- Multiple changes to Training Incident Report json to replicate Production version.
 
-- Disabled Warrant Import feature in an Incident Report.
+- Enabled Warrant Import feature in an Incident Report in Training
+- Updated Training Incident Schema with the import warrant JSON
+- Made changes to the CID form in Training / notified LASO of the changes
+- Archived multiple draft forms in Training to match Production 
+- Enabled ability to move charges to previous reports in Training (new Preview feature in Sept release)
+- Enabled BOLO module in Training (new Preview feature)
 
 # Data store
 
@@ -17,25 +21,12 @@ published-by: mwesolowski@axon.com
 
 ## Warrants
 
-- No New Update
-
-- **Integration Ticket entered for issues below**
-
-- **Issue:** A warrant did not reactivate despite having the same docket number and subject. Still investigating.
-  - Certain charges coming in incorrectly.
-  - This is partly due to the payload. The payload has the charge id and part of the charge description. It does not include the severity.
-  - The integration picks an active charge on the MCT with the closest match to what is in the payload. Continuing to investigate.
-
-- **Workaround:** Records specialist updates warrant to correct charge.
-
-- **Status:** Warrant duplicates are still being sent to Kiet as examples.
-  - This issue is still being investigated by the courts.
-
 - **Issue:** Warrant charges duplicating on the warrant form in the UI.
-  - This is due to duplicate charges within the payload.
-  - Agency has reached out to the court POC about this with examples to get the issue investigated.
+  - UPDATE: Duplicate charges are no longer appearing in the payload and is resolved.
 
-- **Workaround:** Records team to remove the duplicate charges in the UI so they match the physical warrant.
+- **Issue:** Failure to Appear charges not in payload 
+  - UPDATE: Kiet was able to determine this is because the Prosecutor's office creates a new citation for it and the file has a restriction not to pull these.
+  - Another meeting will be scheduled to discuss pros and cons of removing this restriction in the court's query. 
 
 ## Tech 5
 
@@ -49,22 +40,21 @@ published-by: mwesolowski@axon.com
 
 ## ATF/NESS Import
 
-- No New Update
 
 - **Status:** ATF received permission to add in the "Time To First Shooting" field in the API .
-  - This is being investigated.
+  - UPDATE: Axon is working on adding this to the API and coordinating with ATF for testing. 
 
 - **Issue:** There are multiple related cases where the NIBIN LE number only appears once for Tucson, AZ cases. This is currently under investigation.
+  - UPDATE: Axon was able to determine that the specific cases that were missing were not in the payload sent from ATF. 
 
 ## Standards
 
-- No New Update
-
-- Weekly meetings planned for Tuesdays
+- Use of Force form review completed. 
+- Next meeting will focus on Vehicle Collision. 
 
 # MNI Deduplication (Senzing):
 
-- **Status:** Agency review is needed for the remaining MNI deduplication exceptions.
+- **Status:** NO NEW UPDATE: Agency review still in progress.
 
 - Approximately 95% of the MNI deduplication work has been completed, with roughly 430K MNIs successfully processed. Approximately 24K MNIs remain unmerged in the UI.
 

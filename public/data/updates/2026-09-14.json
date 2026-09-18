@@ -1,0 +1,163 @@
+{
+  "id": "2026-09-14",
+  "weekOf": "2026-09-14",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-09-18T17:57:11.985Z",
+  "publishedBy": "alarsh@axon.com",
+  "sections": [
+    {
+      "id": "5c378d85-fb8c-4587-9017-98088a2c40f4",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "799dffe1-b88f-45d4-9aed-556848468178",
+          "title": "",
+          "bullets": [
+            {
+              "id": "2ff4affa-2212-4354-8f4f-00da579c6698",
+              "content": "<p>Enabled Warrant Import feature in an Incident Report in Training</p>"
+            },
+            {
+              "id": "65727061-9ede-4ece-a8d2-d7941ac16dec",
+              "content": "<p>Updated Training Incident Schema with the import warrant JSON</p>"
+            },
+            {
+              "id": "9495dd02-bfb9-4e29-b6fc-499c9f7b1f65",
+              "content": "<p>Made changes to the CID form in Training / notified LASO of the changes</p>"
+            },
+            {
+              "id": "c64fb09e-9622-4eb6-a7d5-97773175a101",
+              "content": "<p>Archived multiple draft forms in Training to match Production</p>"
+            },
+            {
+              "id": "ee51704b-05f0-4a7b-b8c1-8835b47d1a33",
+              "content": "<p>Enabled ability to move charges to previous reports in Training (new Preview feature in Sept release)</p>"
+            },
+            {
+              "id": "2e8edcf6-16bc-4fc1-a51c-dfd3d3b8d595",
+              "content": "<p>Enabled BOLO module in Training (new Preview feature)</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ace8dc5d-6507-429f-82d0-198207ad4c22",
+      "title": "Data store",
+      "subsections": [
+        {
+          "id": "c5847175-0133-4423-9615-2a414425a9b2",
+          "title": "",
+          "bullets": [
+            {
+              "id": "d8d971d5-c882-41bb-a486-124073a5d0ed",
+              "content": "<p>No changes.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c5e211bf-0c02-47dc-a1ed-512ca7471381",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "e37d3d40-e691-4054-b70f-fe2945ca5781",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "e50286a8-376d-436a-aa3e-cd71a79e3f06",
+              "content": "<p><strong>Issue:</strong> Warrant charges duplicating on the warrant form in the UI.</p><ul><li>UPDATE: Duplicate charges are no longer appearing in the payload and is resolved.</li></ul>"
+            },
+            {
+              "id": "5998e620-a616-42df-918e-01c6bcfcb9d8",
+              "content": "<p><strong>Issue:</strong> Failure to Appear charges not in payload</p><ul><li>UPDATE: Kiet was able to determine this is because the Prosecutor&#39;s office creates a new citation for it and the file has a restriction not to pull these.</li><li>Another meeting will be scheduled to discuss pros and cons of removing this restriction in the court&#39;s query.</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "fe1f4620-ae38-45d8-9a04-08891f2eb9fb",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "2c7de16c-5e35-4bb4-b44c-cc9c7ff17318",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "9219fed3-4862-4649-bb35-f19117a06c1c",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
+            },
+            {
+              "id": "b7ba5431-e8bb-4a11-883f-0523c74cf7e0",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints.</p>"
+            },
+            {
+              "id": "676ca840-f88f-4ac7-918f-8e9114f0223f",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI.</p>"
+            }
+          ]
+        },
+        {
+          "id": "8e666e7c-122b-493d-ac7c-746d7f10aad8",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "77b96a1f-c4ee-48ba-89ec-7f9dfde3ecef",
+              "content": "<p><strong>Status:</strong> ATF received permission to add in the &quot;Time To First Shooting&quot; field in the API .</p><ul><li>UPDATE: Axon is working on adding this to the API and coordinating with ATF for testing.</li></ul>"
+            },
+            {
+              "id": "65023e8c-e5b7-438e-b5f7-d51603942c51",
+              "content": "<p><strong>Issue:</strong> There are multiple related cases where the NIBIN LE number only appears once for Tucson, AZ cases. This is currently under investigation.</p><ul><li>UPDATE: Axon was able to determine that the specific cases that were missing were not in the payload sent from ATF.</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "05a71f32-ee19-422e-b48c-cc745d6211ca",
+          "title": "Standards",
+          "bullets": [
+            {
+              "id": "115907d1-49b7-4999-852a-98064da6090d",
+              "content": "<p>Use of Force form review completed.</p>"
+            },
+            {
+              "id": "b032bfa9-cbe5-45ae-a5be-53feef4cc5b2",
+              "content": "<p>Next meeting will focus on Vehicle Collision.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7b9d2103-af01-4892-bd10-950b918a265c",
+      "title": "MNI Deduplication (Senzing):",
+      "subsections": [
+        {
+          "id": "fce2efe6-5482-46fc-986a-bb081ef4ca1f",
+          "title": "",
+          "bullets": [
+            {
+              "id": "04b2cb97-10e7-4e76-8c87-05813572de2d",
+              "content": "<p><strong>Status:</strong> NO NEW UPDATE: Agency review still in progress.</p>"
+            },
+            {
+              "id": "a93b43f3-fd76-4717-9f2a-98087ecd5e5e",
+              "content": "<p>Approximately 95% of the MNI deduplication work has been completed, with roughly 430K MNIs successfully processed. Approximately 24K MNIs remain unmerged in the UI.</p>"
+            },
+            {
+              "id": "4d54bc9a-2e41-49e5-a209-05a5734f09ea",
+              "content": "<p>An updated review workbook was provided to help the Agency evaluate the remaining exceptions. The workbook includes searchable Person IDs, associated Draft, In Progress, or Records Review report numbers, and confirmation of whether each Person is active in Axon.</p>"
+            },
+            {
+              "id": "0b8dccee-eb27-4fdf-93a1-dd1f7208b60d",
+              "content": "<p>The remaining failures are categorized as:</p><ul><li>Duplicate Person not found as an active record</li><li>Primary Person not found as an active record</li><li>Duplicate Person already associated with a different surviving MNI than the one identified by Senzing</li></ul>"
+            },
+            {
+              "id": "8a054a76-975c-4330-851a-f9b95e6d94c5",
+              "content": "<p>Once the review is returned, Axon will clean up the remaining exceptions and perform one final automated MNI deduplication run.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
