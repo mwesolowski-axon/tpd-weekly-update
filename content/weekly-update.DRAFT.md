@@ -6,13 +6,9 @@ published-by: alarsh@axon.com
 # Program changes
 
 
-- Enabled Warrant Import feature in an Incident Report in Training
-- Updated Training Incident Schema with the import warrant JSON
-- Made changes to the CID form in Training / notified LASO of the changes
-- Archived multiple draft forms in Training to match Production 
-- Enabled ability to move charges to previous reports in Training (new Preview feature in Sept release)
-- Enabled BOLO module in Training (new Preview feature)
-
+- Made multiple changes to the CID Form in Training for SIS and VSC
+- Updated Vehicle Status field for NONE to show Recovery Details for the Record Dept in Training 
+- SVS has requested to have their own form created and work will begin next week.
 # Data store
 
 - No changes.
@@ -20,6 +16,8 @@ published-by: alarsh@axon.com
 # Integrations/Conversions
 
 ## Warrants
+
+- No New Update - Meeting with Kiet still needs to be scheduled
 
 - **Issue:** Warrant charges duplicating on the warrant form in the UI.
   - UPDATE: Duplicate charges are no longer appearing in the payload and is resolved.
@@ -40,6 +38,7 @@ published-by: alarsh@axon.com
 
 ## ATF/NESS Import
 
+- No New Update - Update to API and testing still in progress
 
 - **Status:** ATF received permission to add in the "Time To First Shooting" field in the API .
   - UPDATE: Axon is working on adding this to the API and coordinating with ATF for testing. 
@@ -49,13 +48,25 @@ published-by: alarsh@axon.com
 
 ## Standards
 
-- Use of Force form review completed. 
-- Next meeting will focus on Vehicle Collision. 
+- Project team to test out Use of Force with Sgt power users.
+- Vehicle Collision almost complete. Finshing next meeting. 
+- Following meeting will focus on Vehicle Pursuit. 
+- Axon waiting on Customer Complaint fields & dropdown options to incorporate into the form
+- Axon waiting on Subject actions and department restraint types for Use of Force form from Sgt Jahnke
+- Outstanding questions /decisions needed on the Vehicle Collision form:
+  - Should shift information be automatically pulled from Personnel, manually maintained, or preserved in each finalized report? 
+  - Should bureau and division values be fixed at the time of the incident or reflect current Personnel data? 
+  - Is Chief review required for all vehicle collisions or only certain incidents? 
+  - Should Code 3 status be recorded per unit or at the incident level? 
+  - What fields must be required before an author can submit the report? 
+  - What fields are in the legacy system that need to be entered into the Use of Force and Vehicle Collision form for data migration purposes?
+
 
 # MNI Deduplication (Senzing):
 
-- **Status:** NO NEW UPDATE: Agency review still in progress.
+- **Status:** 
 
+- **UPDATE:** Decision Makers (Derrick, Luis and Molly) have determined as of Sept 24 that the 24K MNIS that were not successfully de-duped are good to leave as is and will be tackled by the Department over time.
 - Approximately 95% of the MNI deduplication work has been completed, with roughly 430K MNIs successfully processed. Approximately 24K MNIs remain unmerged in the UI.
 
 - An updated review workbook was provided to help the Agency evaluate the remaining exceptions. The workbook includes searchable Person IDs, associated Draft, In Progress, or Records Review report numbers, and confirmation of whether each Person is active in Axon.
