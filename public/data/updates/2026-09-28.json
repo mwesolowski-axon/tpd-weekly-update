@@ -1,0 +1,175 @@
+{
+  "id": "2026-09-28",
+  "weekOf": "2026-09-28",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-10-02T23:55:01.228Z",
+  "publishedBy": "mwesolowski@axon.com",
+  "sections": [
+    {
+      "id": "4f0f3577-84cb-42c1-906b-523e1181d81a",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "2895d140-8e18-48d3-a743-18bb4735a786",
+          "title": "",
+          "bullets": [
+            {
+              "id": "f01bc1d6-8113-441d-a1c0-ad882abf9516",
+              "content": "<p>Change location of case factor so the Use of Force shows in search case factors</p>"
+            },
+            {
+              "id": "6e3ed61b-8716-43df-846d-762b3e053c6a",
+              "content": "<p>Updated Validation rule for Vehicle ROLE / TWX Notified field and Recover Details section visiblity</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eac0edc9-722b-4847-8e83-9ee10fa42cba",
+      "title": "Data Store",
+      "subsections": [
+        {
+          "id": "67865831-a0d7-492f-9fd7-0082abd0816f",
+          "title": "",
+          "bullets": [
+            {
+              "id": "9c04135f-1a29-462f-8837-0876875dc23e",
+              "content": "<p>Turned on Standards Data Store access in Training for both Admin and Analysis Team. Turned it on for the Analysis Team in Production.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3ea16f57-9a8f-4e9e-b243-37b6ef141ef2",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "146e8cee-f592-4114-a5cc-170d21cc2a49",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "f6e43cc3-b881-4b6a-8489-df155509ecf4",
+              "content": "<p>No New Update - Meeting with Kiet still needs to be scheduled</p>"
+            },
+            {
+              "id": "4bc7f076-cdb5-4fc7-8829-dbae9795fc02",
+              "content": "<p><strong>Issue:</strong> Warrant charges duplicating on the warrant form in the UI.</p><ul><li>UPDATE: Duplicate charges are no longer appearing in the payload and is resolved.</li></ul>"
+            },
+            {
+              "id": "9be1b70d-1ed0-484b-8248-aeb1126972d7",
+              "content": "<p><strong>Issue:</strong> Failure to Appear charges not in payload</p><ul><li>UPDATE: Kiet was able to determine this is because the Prosecutor&#39;s office creates a new citation for it and the file has a restriction not to pull these.</li><li>Another meeting will be scheduled to discuss pros and cons of removing this restriction in the court&#39;s query.</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "c34d2c7f-bebd-42d8-ac47-14fcb5da2776",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "eb9f7336-7c5a-4fd7-8660-9fdf97a8ee0a",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "50b7f573-f7fb-426c-99c6-44ca383d375e",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
+            },
+            {
+              "id": "474fcab6-d692-4350-b7ad-061e0a8db77b",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints.</p>"
+            },
+            {
+              "id": "cc4466be-c04a-4e29-87b4-5a506fd2ecc0",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI.</p>"
+            }
+          ]
+        },
+        {
+          "id": "bb881aac-339e-4eae-9077-5e274708c6cf",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "e211c4c1-8160-4bea-ac14-4a68903ddc70",
+              "content": "<p>No New Update - Update to API and testing still in progress</p>"
+            },
+            {
+              "id": "54e582fd-4836-4897-a5ed-cd9825771cd4",
+              "content": "<p><strong>Status:</strong> ATF received permission to add in the &quot;Time To First Shooting&quot; field in the API .</p><ul><li>UPDATE: Axon is working on adding this to the API and coordinating with ATF for testing.</li></ul>"
+            },
+            {
+              "id": "db6f8774-9c9a-4ac7-b96c-49b43992c4ab",
+              "content": "<p><strong>Issue:</strong> There are multiple related cases where the NIBIN LE number only appears once for Tucson, AZ cases. This is currently under investigation.</p><ul><li>UPDATE: Axon was able to determine that the specific cases that were missing were not in the payload sent from ATF.</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "d3cb03bf-564d-45c5-b3d3-df85dd482ec7",
+          "title": "Standards",
+          "bullets": [
+            {
+              "id": "6a837fc1-4fe7-481d-8631-15f3c1aa2cdc",
+              "content": "<p>Project team to continue testing Use of Force with SGT power users.</p>"
+            },
+            {
+              "id": "31100c6b-d7be-4b47-823c-bbf5b78008ad",
+              "content": "<p>Customer Complaint form meeting scheduled.</p>"
+            },
+            {
+              "id": "60a8ac02-8c56-4138-b531-a875bf8e8180",
+              "content": "<p>Pending Subject actions and department restraint types for the Use of Force form.</p>"
+            },
+            {
+              "id": "cd17290d-c1da-46ee-acee-2b47baf59d31",
+              "content": "<p>Department plans to use the Personnel module, with supervisors maintaining officer information.</p>"
+            },
+            {
+              "id": "370b8d10-91ba-40f9-b19a-b831888b78e5",
+              "content": "<p>Department will use Trends.</p><ul><li>TASER 7 option is not needed.</li></ul>"
+            },
+            {
+              "id": "b87f6f72-3e89-4e69-8569-e5eab62ec3ae",
+              "content": "<p>Outstanding questions / decisions needed:</p><ul><li>What fields must be required before submitting the forms?</li><li>What legacy fields are needed for data migration?</li><li>What are the final review roles and workflows?</li><li>How should officer demographics and offense information be captured?</li></ul>"
+            },
+            {
+              "id": "cf20ee80-fbdd-4286-a078-f3876cd08360",
+              "content": "<p>Project team to test out Use of Force with Sgt power users.</p>"
+            },
+            {
+              "id": "c81066eb-f2ec-49ae-8ec0-7f54d5a10bf5",
+              "content": "<p>Vehicle Collision almost complete. Finshing next meeting.</p>"
+            },
+            {
+              "id": "ea99cfa7-5cc0-48b0-a446-aca6c3c68abb",
+              "content": "<p>Following meeting will focus on Vehicle Pursuit.</p>"
+            },
+            {
+              "id": "dd92ffa4-6393-4cf2-8cc9-cdaaee07c0a9",
+              "content": "<p>Axon waiting on Customer Complaint fields &amp; dropdown options to incorporate into the form</p>"
+            },
+            {
+              "id": "4fea69b0-df2c-4055-a58d-075c98bbabe1",
+              "content": "<p>Axon waiting on Subject actions and department restraint types for Use of Force form from Sgt Jahnke</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8d4c5e59-af95-4b90-b68f-a78297ce464a",
+      "title": "MNI Deduplication (Senzing):",
+      "subsections": [
+        {
+          "id": "cae0e0ca-e248-41bd-8580-e5a781bc34ad",
+          "title": "",
+          "bullets": [
+            {
+              "id": "e7a53de3-1f59-464e-bf23-3190bcbb8c39",
+              "content": "<p><strong>UPDATE:</strong> Decision Makers (Derrick, Luis and Molly) have determined as of Sept 24 that the 24K MNIS that were not successfully de-duped are good to leave as is and will be tackled by the Department over time.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
