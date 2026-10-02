@@ -7,7 +7,7 @@ published-by: mwesolowski@axon.com
 
 - Change location of case factor so the Use of Force shows in search case factors
 
-- Updated Validation rule for Vehicle ROLE / TWX Notified field and Recover Details section visiblity
+- Updated Validation rule for Vehicle ROLE / TWX Notified field and Recover Details section visibility
 
 # Data Store
 
@@ -66,7 +66,7 @@ published-by: mwesolowski@axon.com
 
 - Project team to test out Use of Force with Sgt power users.
 
-- Vehicle Collision almost complete. Finshing next meeting.
+- Vehicle Collision almost complete. Finishing next meeting.
 
 - Following meeting will focus on Vehicle Pursuit.
 
