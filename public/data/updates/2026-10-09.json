@@ -1,0 +1,110 @@
+{
+  "id": "2026-10-09",
+  "weekOf": "2026-10-09",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-10-09T21:52:22.287Z",
+  "publishedBy": "alarsh@axon.com",
+  "sections": [
+    {
+      "id": "a37f73d5-dd07-4d5e-ac28-d8ac48d1e21d",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "993f9ec4-af47-4d67-b377-e334fb0023f4",
+          "title": "",
+          "bullets": [
+            {
+              "id": "b22b0b91-64f9-4a8f-8018-a28ecbb27ce5",
+              "content": "<p>Turned on feature flag for Enable Dynamic Special Unit Inbox States in both Training and Production to fix Supervisor Review task box issue</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dd0bfa1b-d967-414b-a5ba-d4f9eccba4f0",
+      "title": "Data Store",
+      "subsections": [
+        {
+          "id": "5f369f75-c811-4dfe-834a-bd623933216f",
+          "title": "",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "id": "6b432dea-0344-4605-9382-92593337b929",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "daf081fe-9e8d-4c46-bbb4-f3f35b1e064a",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "f2bd0580-cddc-4861-b159-eb9aac91dadf",
+              "content": "<p>No New Update - Meeting with Kiet still needs to be scheduled</p>"
+            },
+            {
+              "id": "22ae6435-70c6-4a33-979e-b974fa951331",
+              "content": "<p><strong>Issue:</strong> Warrant charges duplicating on the warrant form in the UI.</p><ul><li>UPDATE: Duplicate charges are no longer appearing in the payload and is resolved.</li></ul>"
+            },
+            {
+              "id": "7e7845a5-9f89-4422-b0f6-d5dfd30f32ed",
+              "content": "<p><strong>Issue:</strong> Failure to Appear charges not in payload</p><ul><li>UPDATE: Kiet was able to determine this is because the Prosecutor&#39;s office creates a new citation for it and the file has a restriction not to pull these.</li><li>Another meeting will be scheduled to discuss pros and cons of removing this restriction in the court&#39;s query.</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "23c020b7-93d8-48d8-836e-a291f7816a2b",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "29e7dca5-2059-4e87-81c0-89f84a7747d7",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "982fe61d-f88f-4bc9-9aa8-92530c5e5797",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
+            },
+            {
+              "id": "9db45609-f9ec-4116-85bf-d79cb03dfb43",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints.</p>"
+            },
+            {
+              "id": "3fd447fa-2e8b-49d7-afae-e2912e7f40c8",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI.</p>"
+            }
+          ]
+        },
+        {
+          "id": "da5dd493-f155-4331-a98f-d02f38856ac5",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "1ba08c4f-cf1a-47f7-833c-fe9ec4d56a8c",
+              "content": "<p><strong>Status:</strong> ATF received permission to add in the &quot;Time To First Shooting&quot; field in the API .</p><ul><li>UPDATE: ATF will have TTFS available in their endpoint on Oct 22 for testing.</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "a8233152-6e5e-4943-9900-b5151df275c7",
+          "title": "Standards",
+          "bullets": [
+            {
+              "id": "3da0d482-5d83-4bd1-a16b-04677f7564e7",
+              "content": "<p>Revised certain fields on Use of Force and Vehicle Collision forms and began work on the Vehicle Pursuit form in regular weekly meeting on Tuesday.</p>"
+            },
+            {
+              "id": "8fe8ff8e-8f65-4bd1-b7c4-e377cbc42b75",
+              "content": "<p>Customer Complaint form work began on Thursday with OPS.</p>"
+            },
+            {
+              "id": "f7f8aac7-1ea7-4f41-81e7-52e70aa822ca",
+              "content": "<p>After form work is complete, we will begin work on Workflows and Permissions</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

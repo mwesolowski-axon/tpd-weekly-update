@@ -1,17 +1,15 @@
 ---
-week-of: 2026-09-28
-published-by: mwesolowski@axon.com
+week-of: 2026-10-09
+published-by: alarsh@axon.com
 ---
 
 # Program changes
 
-- Change location of case factor so the Use of Force shows in search case factors
-
-- Updated Validation rule for Vehicle ROLE / TWX Notified field and Recover Details section visibility
+- Turned on feature flag for Enable Dynamic Special Unit Inbox States in both Training and Production to fix Supervisor Review task box issue
 
 # Data Store
 
-- Turned on Standards Data Store access in Training for both Admin and Analysis Team. Turned it on for the Analysis Team in Production.  
+
 
 # Integrations/Conversions
 
@@ -38,44 +36,16 @@ published-by: mwesolowski@axon.com
 
 ## ATF/NESS Import
 
-- No New Update - Update to API and testing still in progress
 
 - **Status:** ATF received permission to add in the "Time To First Shooting" field in the API .
-  - UPDATE: Axon is working on adding this to the API and coordinating with ATF for testing.
-
-- **Issue:** There are multiple related cases where the NIBIN LE number only appears once for Tucson, AZ cases. This is currently under investigation.
-  - UPDATE: Axon was able to determine that the specific cases that were missing were not in the payload sent from ATF.
+  - UPDATE: ATF will have TTFS available in their endpoint on Oct 22 for testing. 
 
 ## Standards
-- Project team to continue testing Use of Force with SGT power users.
 
-- Customer Complaint form meeting scheduled.
+- Revised certain fields on Use of Force and Vehicle Collision forms and began work on the Vehicle Pursuit form in regular weekly meeting on Tuesday.
 
-- Pending Subject actions and department restraint types for the Use of Force form.
+- Customer Complaint form work began on Thursday with OPS.
 
-- Department plans to use the Personnel module, with supervisors maintaining officer information.
+- After form work is complete, we will begin work on Workflows and Permissions
 
-- Department will use Trends. 
-  - TASER 7 option is not needed.
-
-- Outstanding questions / decisions needed:
-  - What fields must be required before submitting the forms?
-  - What legacy fields are needed for data migration?
-  - What are the final review roles and workflows?
-  - How should officer demographics and offense information be captured?
-
-- Project team to test out Use of Force with Sgt power users.
-
-- Vehicle Collision almost complete. Finishing next meeting.
-
-- Following meeting will focus on Vehicle Pursuit.
-
-- Axon waiting on Customer Complaint fields & dropdown options to incorporate into the form
-
-- Axon waiting on Subject actions and department restraint types for Use of Force form from Sgt Jahnke
-
-
-# MNI Deduplication (Senzing):
-
-- **UPDATE:** Decision Makers (Derrick, Luis and Molly) have determined as of Sept 24 that the 24K MNIS that were not successfully de-duped are good to leave as is and will be tackled by the Department over time.
 
