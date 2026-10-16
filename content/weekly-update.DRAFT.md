@@ -1,28 +1,25 @@
 ---
-week-of: 2026-10-09
+week-of: 2026-10-16
 published-by: alarsh@axon.com
 ---
 
 # Program changes
 
-- Turned on feature flag for Enable Dynamic Special Unit Inbox States in both Training and Production to fix Supervisor Review task box issue
+- Turned Audit Trail Dashboard off in Production to be able to use the older audit trail version. Left on in Training. 
+- 14 Charge additions and 1 UCR addition to the MCT in both Training and Production.
+- Permissioned ISB Detectives and PSI to utilize AI Search in Training and Production. 
 
 # Data Store
+- An incident happened on Thurs, Oct 15 that affected the V1 tables. Root cause was identified and engineering began mitigation immediately. 
 
-
+- TPD glue jobs and integrations ran successfully Friday, Oct 16. 
 
 # Integrations/Conversions
 
 ## Warrants
 
-- No New Update - Meeting with Kiet still needs to be scheduled
-
-- **Issue:** Warrant charges duplicating on the warrant form in the UI.
-  - UPDATE: Duplicate charges are no longer appearing in the payload and is resolved.
-
 - **Issue:** Failure to Appear charges not in payload
-  - UPDATE: Kiet was able to determine this is because the Prosecutor's office creates a new citation for it and the file has a restriction not to pull these.
-  - Another meeting will be scheduled to discuss pros and cons of removing this restriction in the court's query.
+  - Update: Molly made the decision to NOT have Kiet remove the restriction in the query due to the unknown impacts to warrants. As of now, we are leaving as is and the Records team will manually enter the Failure to Appear from the Prosecutors office. 
 
 ## Tech 5
 
@@ -36,16 +33,18 @@ published-by: alarsh@axon.com
 
 ## ATF/NESS Import
 
-
 - **Status:** ATF received permission to add in the "Time To First Shooting" field in the API .
-  - UPDATE: ATF will have TTFS available in their endpoint on Oct 22 for testing. 
+
+  - Update: The "Time to First Shooting" field was added to the form in Training for testing. 
+
+  - ATF will have TTFS available in their endpoint on Oct 22 for testing.
 
 ## Standards
 
-- Revised certain fields on Use of Force and Vehicle Collision forms and began work on the Vehicle Pursuit form in regular weekly meeting on Tuesday.
+- Continued work on the Customer Complaint form.
 
-- Customer Complaint form work began on Thursday with OPS.
+- Identified 2 additional forms that OPS needs created. 
 
-- After form work is complete, we will begin work on Workflows and Permissions
+- OPS to send the form information to Axon for creation. We will also look to see if the info can be incorporated into existing forms. 
 
-
+- Next week, we meet on Tues and Thurs again. 

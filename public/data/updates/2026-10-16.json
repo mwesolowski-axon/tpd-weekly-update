@@ -1,0 +1,131 @@
+{
+  "id": "2026-10-16",
+  "weekOf": "2026-10-16",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-10-16T21:56:24.445Z",
+  "publishedBy": "alarsh@axon.com",
+  "sections": [
+    {
+      "id": "252da0a5-9591-4247-9abe-bc06f28fa2ca",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "e3fcb677-0ade-4fc4-8f51-dee161347311",
+          "title": "",
+          "bullets": [
+            {
+              "id": "14462d19-e672-4b6e-83fc-afc5b617e842",
+              "content": "<p>Turned Audit Trail Dashboard off in Production to be able to use the older audit trail version. Left on in Training.</p>"
+            },
+            {
+              "id": "df2f55a0-c33a-41f3-af8f-c0c7afc2884d",
+              "content": "<p>14 Charge additions and 1 UCR addition to the MCT in both Training and Production.</p>"
+            },
+            {
+              "id": "61ed6881-8019-4826-8d26-da672f81c22e",
+              "content": "<p>Permissioned ISB Detectives and PSI to utilize AI Search in Training and Production.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0add1890-1fd0-474d-8209-ba7faa1c95c1",
+      "title": "Data Store",
+      "subsections": [
+        {
+          "id": "c72e7d4a-16c3-4994-8cad-e294a54fec15",
+          "title": "",
+          "bullets": [
+            {
+              "id": "566c6b86-b92b-4ada-a3eb-a869ae5dc76e",
+              "content": "<p>An incident happened on Thurs, Oct 15 that affected the V1 tables. Root cause was identified and engineering began mitigation immediately.</p>"
+            },
+            {
+              "id": "cdcdadef-21d1-436a-8e1d-54438ebe2fa0",
+              "content": "<p>TPD glue jobs and integrations ran successfully Friday, Oct 16.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9ba52ba9-7194-48fd-a1db-8bbe01bff25a",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "5e53e1c6-696d-4388-bd2d-50f70f5d412b",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "6fee06f6-a7ee-4e50-bf0e-ed0df684c1cd",
+              "content": "<p><strong>Issue:</strong> Failure to Appear charges not in payload</p><ul><li>Update: Molly made the decision to NOT have Kiet remove the restriction in the query due to the unknown impacts to warrants. As of now, we are leaving as is and the Records team will manually enter the Failure to Appear from the Prosecutors office.</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "887ec2fd-b9b0-446e-97fc-9497e0342496",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "c4b86bb0-dcdf-4d82-be72-7dcf5788d8f7",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "419384a9-b130-454a-891a-aa92b12c0846",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
+            },
+            {
+              "id": "2c53bbd7-d073-4ac8-af1c-f70709073601",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints.</p>"
+            },
+            {
+              "id": "0b99d654-6d85-4e89-b6ed-931a46950c30",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI.</p>"
+            }
+          ]
+        },
+        {
+          "id": "77327b53-b515-4b36-b73b-f7e417f3fe81",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "c0ad612b-af97-4daf-b5a9-7694de0f14fd",
+              "content": "<p><strong>Status:</strong> ATF received permission to add in the &quot;Time To First Shooting&quot; field in the API .</p>"
+            },
+            {
+              "id": "16d2f2ae-ca55-4dc6-ba90-774e03081fcf",
+              "content": "<p>Update: The &quot;Time to First Shooting&quot; field was added to the form in Training for testing.</p>"
+            },
+            {
+              "id": "145644f0-89ff-4b81-aa76-f5bd2a155b18",
+              "content": "<p>ATF will have TTFS available in their endpoint on Oct 22 for testing.</p>"
+            }
+          ]
+        },
+        {
+          "id": "ca0a9d52-70cd-40eb-8ad4-f2305db81160",
+          "title": "Standards",
+          "bullets": [
+            {
+              "id": "74885d59-a80f-4e69-b10f-1074526c81af",
+              "content": "<p>Continued work on the Customer Complaint form.</p>"
+            },
+            {
+              "id": "4caef097-b31e-49d2-b973-6f8fc28ff8e0",
+              "content": "<p>Identified 2 additional forms that OPS needs created.</p>"
+            },
+            {
+              "id": "73d6c0be-afb9-4aeb-811a-9f900b0bed73",
+              "content": "<p>OPS to send the form information to Axon for creation. We will also look to see if the info can be incorporated into existing forms.</p>"
+            },
+            {
+              "id": "0017bd02-1575-470a-861f-574ae5850bf1",
+              "content": "<p>Next week, we meet on Tues and Thurs again.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
