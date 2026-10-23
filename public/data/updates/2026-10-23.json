@@ -1,0 +1,135 @@
+{
+  "id": "2026-10-23",
+  "weekOf": "2026-10-23",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-10-23T23:31:43.342Z",
+  "publishedBy": "mwesolowski@axon.com",
+  "sections": [
+    {
+      "id": "3f059e7c-b8cc-4d47-bd93-afd8dc630c55",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "2644641f-7f1c-48cd-a29c-99b7ee4eb1b2",
+          "title": "",
+          "bullets": [
+            {
+              "id": "bd7fb97e-50bf-450b-9d4e-26fdbae0c959",
+              "content": "<p>Update the TWX Notified field to be visible based on Vehicle Involvement Role versus the Vehicle Status field.</p>"
+            },
+            {
+              "id": "5f57c33b-d9f9-4516-8a27-a3818de719e8",
+              "content": "<p>Offense field stays visible when Focus Officer - PRCIT is selected.</p>"
+            },
+            {
+              "id": "e4ab7968-11d2-47fa-af7b-3e459ff11fde",
+              "content": "<p>Medical field stays visible when Focus Officer - PRCIT is selected.</p>"
+            },
+            {
+              "id": "f5f38367-de6f-404e-bbc4-88eb00caf8b8",
+              "content": "<p>13-1805 (M) SHOPLIFTING added to MCT</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "29bbea0e-5e50-45ad-a715-4f55b5b771cc",
+      "title": "Data Store",
+      "subsections": [
+        {
+          "id": "64a43c45-3f0f-403f-939a-a2af7e5493f3",
+          "title": "",
+          "bullets": [
+            {
+              "id": "19714a96-85e5-4654-9272-4bab2757caa1",
+              "content": "<p>No New Update</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7550a99f-380b-48da-b62a-3653f87dc3a6",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "e60819b4-70ce-4d75-9d7f-9ae80a34cdc8",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "2c27197a-8d08-4c26-b83a-9f82e5e65859",
+              "content": "<p><strong>Issue:</strong> Failure to Appear charges not in payload</p><ul><li>Update: Molly made the decision to NOT have Kiet remove the restriction in the query due to the unknown impacts to warrants. As of now, we are leaving as is and the Records team will manually enter the Failure to Appear from the Prosecutor&#39;s office.</li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "67be7c94-7426-4b29-a5c3-3bcef4c57dbd",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "02234f63-9f87-4533-9db1-838763868d69",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "e2a76907-d8b1-4c5f-bb38-0adadaa5130c",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
+            },
+            {
+              "id": "f646c089-27b3-4bcc-8d37-000865fe45a2",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints.</p>"
+            },
+            {
+              "id": "66a7ef79-2b8d-418e-a4a1-52292c754e42",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI.</p>"
+            }
+          ]
+        },
+        {
+          "id": "fcd4a353-98e0-4345-909a-4c02f70b17e4",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "74aa8026-d375-4f01-97d3-b3acfae08e85",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "8bfdd154-99ce-4cba-9871-fd5688a374f6",
+              "content": "<p><strong>Status:</strong> ATF received permission to add in the &quot;Time To First Shooting&quot; field in the API .</p>"
+            },
+            {
+              "id": "27d98857-6bdc-4770-829f-197793336423",
+              "content": "<p>Update: The &quot;Time to First Shooting&quot; field was added to the form in Training for testing.</p>"
+            },
+            {
+              "id": "891e631f-d29e-4dc1-9019-89944d27dbda",
+              "content": "<p>ATF will have TTFS available in their endpoint on Oct 22 for testing.</p>"
+            }
+          ]
+        },
+        {
+          "id": "223e6fce-7dc8-4f1e-82f4-f6024e5a8248",
+          "title": "Standards",
+          "bullets": [
+            {
+              "id": "4da4ad84-fe19-46ec-b3c6-59065e41f4a4",
+              "content": "<p>Finalized proposed updates for the Vehicle Pursuit, Vehicle Collision, and Use of Force forms.</p>"
+            },
+            {
+              "id": "b3b2b4fa-7e7a-461a-9159-f29cf29d5898",
+              "content": "<p>Aligned on using a standardized case document as the primary running log for OPS investigations.</p>"
+            },
+            {
+              "id": "005149ee-91f7-4ea6-b5b0-29d939d68f24",
+              "content": "<p>Reviewed OPS permissions, analytics, terminology, and public-records redaction requirements.</p>"
+            },
+            {
+              "id": "831a0f3d-4721-4e9e-bfc5-2ac301dd1fd0",
+              "content": "<p>Next step is to test case documents versus case tasks before finalizing the workflow.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
