@@ -1,0 +1,139 @@
+{
+  "id": "2026-10-30",
+  "weekOf": "2026-10-30",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-10-30T23:12:49.590Z",
+  "publishedBy": "alarsh@axon.com",
+  "sections": [
+    {
+      "id": "32977c88-9287-4b81-ae29-1fa1a321d1f7",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "bbea7865-f1eb-466a-9b5c-862c5454608a",
+          "title": "",
+          "bullets": [
+            {
+              "id": "d71b5ba9-5be3-4120-8ec2-515de959ef99",
+              "content": "<p>CID Tracking Form live in Production.</p>"
+            },
+            {
+              "id": "358d7716-43da-4460-b025-38cf00eea6c7",
+              "content": "<p>Created new permission team for the CID form called CIDTracking.</p>"
+            },
+            {
+              "id": "cfd7f36f-c0b1-4cf1-bf3d-a03f0a755ee8",
+              "content": "<p>Gave ISB Detectives and the Analysis Team permission to the form. No other groups will be able to search or view these forms.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bcbd6773-8027-46e4-bcda-0b325cebcab9",
+      "title": "Data Store",
+      "subsections": [
+        {
+          "id": "fb9c95c4-5fc1-4358-8ff5-3ac0b0334073",
+          "title": "",
+          "bullets": [
+            {
+              "id": "6c6ed117-6c58-4f14-abdc-203cf6833ea7",
+              "content": "<p>No New Update</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab296fa3-5c6c-4786-a6c9-c5c6fa53ee05",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "3484dea9-f6fe-4fd6-9642-ba9f6776f77d",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "e53128ec-388d-40ee-b381-fe9b8841bd90",
+              "content": "<p><strong>Issue:</strong> When a charge is missing from the MCT, the warrant fails out. When the charge is entered and the warrant is reprocessed, it creates a duplicate.</p>"
+            },
+            {
+              "id": "ac391e69-e434-4cf7-9090-cbe87946d1bf",
+              "content": "<p>This is because when the warrant fails out, it is not ingested. Records creates the warrant manually. Engineering notifies us of what charge is missing or incorrect. Once RTU researches the charge specifics, the MCT is updated. Engineering will then reprocess the warrant. When it is, the warrant is not recognized as being ingested from the payload, thus, it sees it as a new one and effectively creates a duplicate in the UI.</p>"
+            },
+            {
+              "id": "dbf385dc-f8d9-42ce-9919-8d9cc85d3543",
+              "content": "<p>Recommendation: Once the warrant is reprocessed, quash the manually entered one so that if the warrant is ever updated by the court, it will be recognized as being in a payload and update it as the integration intended.</p>"
+            },
+            {
+              "id": "52e56482-82e9-48e9-8f9f-893aea9b8ad2",
+              "content": "<p>We will also work with Records and RTU to see what processes we can have in identifying missing charges more quickly versus relying on engineering to send the failures over potentially slowing down the correction process.</p>"
+            },
+            {
+              "id": "7714389b-5507-43f6-8dad-53562f75b2b3",
+              "content": "<p>We are also checking to see if and how the integration could accomodate for checking both the payload and for manually entered warrants.</p>"
+            }
+          ]
+        },
+        {
+          "id": "22bc1d54-c2ba-4cbd-a5eb-ad0cdeee4f13",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "284fbd62-f341-465c-a3b3-2407a421191d",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "d8686f8b-d675-41ba-9183-a5d4e91bc642",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
+            },
+            {
+              "id": "587c9803-8a63-4444-9027-ed188083802a",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints.</p>"
+            },
+            {
+              "id": "2ef6d5cf-a527-4b47-8502-72a583d5a217",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI.</p>"
+            }
+          ]
+        },
+        {
+          "id": "a30c841d-29ac-4226-adcd-1aaed16a2c16",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "69de194a-ab16-4814-836b-bc44c9bb36d2",
+              "content": "<p><strong>Status:</strong> ATF received permission to add in the &quot;Time To First Shooting&quot; field in the API .</p>"
+            },
+            {
+              "id": "260a074b-77ba-41bb-b333-7d26ecec1688",
+              "content": "<p>Update: The &quot;Time to First Shooting&quot; field was tested this week. The field did not populate as expected. More testing is required.</p>"
+            }
+          ]
+        },
+        {
+          "id": "d85a7283-65c7-42c2-876d-9ff72ecd500b",
+          "title": "Standards",
+          "bullets": [
+            {
+              "id": "334fd709-5897-417c-b6b2-88d9dffbb1e2",
+              "content": "<p>Began conversations around Command Heirarchy and workflows.</p>"
+            },
+            {
+              "id": "3f14bf5f-97d1-4656-84fb-7b6ee64e0bd0",
+              "content": "<p>Administrative Inspection form is still in progress.</p>"
+            },
+            {
+              "id": "96dbab7b-6f05-464c-b5cc-e38b42b15ac3",
+              "content": "<p>Agency testing is still needed for the Use of Force form.</p>"
+            },
+            {
+              "id": "debd0e8b-e662-4734-b968-6f38865d6270",
+              "content": "<p>Next steps will be diving further into Command Heirarchy, workflows and permissions.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

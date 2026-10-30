@@ -1,14 +1,13 @@
 ---
-week-of: 2026-10-23
-published-by: mwesolowski@axon.com
+week-of: 2026-10-30
+published-by: alarsh@axon.com
 ---
 
 # Program changes
 
-- Update the TWX Notified field to be visible based on Vehicle Involvement Role versus the Vehicle Status field. 
-- Offense field stays visible when Focus Officer - PRCIT is selected. 
-- Medical field stays visible when Focus Officer - PRCIT is selected.
-- 13-1805 (M) SHOPLIFTING added to MCT
+- CID Tracking Form live in Production. 
+- Created new permission team for the CID form called CIDTracking.
+- Gave ISB Detectives and the Analysis Team permission to the form. No other groups will be able to search or view these forms.
 
 # Data Store
 
@@ -18,8 +17,11 @@ published-by: mwesolowski@axon.com
 
 ## Warrants
 
-- **Issue:** Failure to Appear charges not in payload
-  - Update: Molly made the decision to NOT have Kiet remove the restriction in the query due to the unknown impacts to warrants. As of now, we are leaving as is and the Records team will manually enter the Failure to Appear from the Prosecutor's office.
+- **Issue:** When a charge is missing from the MCT, the warrant fails out. When the charge is entered and the warrant is reprocessed, it creates a duplicate. 
+- This is because when the warrant fails out, it is not ingested. Records creates the warrant manually. Engineering notifies us of what charge is missing or incorrect. Once RTU researches the charge specifics, the MCT is updated. Engineering will then reprocess the warrant. When it is, the warrant is not recognized as being ingested from the payload, thus, it sees it as a new one and effectively creates a duplicate in the UI. 
+- Recommendation: Once the warrant is reprocessed, quash the manually entered one so that if the warrant is ever updated by the court, it will be recognized as being in a payload and update it as the integration intended. 
+- We will also work with Records and RTU to see what processes we can have in identifying missing charges more quickly versus relying on engineering to send the failures over potentially slowing down the correction process.  
+- We are also checking to see if and how the integration could accomodate for checking both the payload and for manually entered warrants.
 
 
 
@@ -34,17 +36,15 @@ published-by: mwesolowski@axon.com
 
 ## ATF/NESS Import
 
-- No New Update
 - **Status:** ATF received permission to add in the "Time To First Shooting" field in the API .
-- Update: The "Time to First Shooting" field was added to the form in Training for testing.
-- ATF will have TTFS available in their endpoint on Oct 22 for testing.
+- Update: The "Time to First Shooting" field was tested this week. The field did not populate as expected. More testing is required.
 
 
 
 ## Standards
 
-- Finalized proposed updates for the Vehicle Pursuit, Vehicle Collision, and Use of Force forms.
-- Aligned on using a standardized case document as the primary running log for OPS investigations.
-- Reviewed OPS permissions, analytics, terminology, and public-records redaction requirements.
-- Next step is to test case documents versus case tasks before finalizing the workflow.
+- Began conversations around Command Heirarchy and workflows.
+- Administrative Inspection form is still in progress.
+- Agency testing is still needed for the Use of Force form. 
+- Next steps will be diving further into Command Heirarchy, workflows and permissions.
 
