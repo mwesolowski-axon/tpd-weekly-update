@@ -1,0 +1,135 @@
+{
+  "id": "2026-11-13",
+  "weekOf": "2026-11-13",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-11-14T00:18:40.902Z",
+  "publishedBy": "mwesolowski@axon.com",
+  "sections": [
+    {
+      "id": "66259343-1d8d-4d78-9083-828d940de63d",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "75d2305e-78bf-4272-8b94-216709ecea7b",
+          "title": "",
+          "bullets": [
+            {
+              "id": "fd67357f-26e8-412b-9b5e-855d978a5303",
+              "content": "<p>None</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "94280640-e2d3-425c-892e-ce6df2b0bda0",
+      "title": "Data Store",
+      "subsections": [
+        {
+          "id": "53a06c64-0a23-4b74-a6d1-11a247b921c1",
+          "title": "",
+          "bullets": [
+            {
+              "id": "d8bc1a5b-a55e-4178-8316-00d11d2ed6d3",
+              "content": "<p>All axon.* views have been mapped.</p>"
+            },
+            {
+              "id": "e152078e-49db-49b8-895a-f024692d4dd7",
+              "content": "<p>Pending dw.* mapping.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "001cc59e-c799-4cf0-aeb2-17512e0953c3",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "8fc022be-19fd-4a71-860b-58843d6e6882",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "34336ede-e8cd-492a-9259-726d99d2c92f",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "9c96a9f7-409f-4309-9c2e-3f72c22c3111",
+              "content": "<p><strong>Issue:</strong> When a charge is missing from the MCT, the warrant fails out. When the charge is entered and the warrant is reprocessed, it creates a duplicate.</p>"
+            },
+            {
+              "id": "2c7a2e48-a215-49e4-ba9c-9c146cfa67e7",
+              "content": "<p>This is because when the warrant fails out, it is not ingested. Records creates the warrant manually. Engineering notifies us of what charge is missing or incorrect. Once RTU researches the charge specifics, the MCT is updated. Engineering will then reprocess the warrant. When it is, the warrant is not recognized as being ingested from the payload, thus, it sees it as a new one and effectively creates a duplicate in the UI.</p>"
+            },
+            {
+              "id": "f7f90b89-2608-4f47-98fe-bcc6dfaffebc",
+              "content": "<p>Recommendation: Once the warrant is reprocessed, quash the manually entered one so that if the warrant is ever updated by the court, it will be recognized as being in a payload and update it as the integration intended.</p>"
+            },
+            {
+              "id": "b253c243-221d-4fe1-b7d1-bed40a15ad31",
+              "content": "<p>We will also work with Records and RTU to see what processes we can have in identifying missing charges more quickly versus relying on engineering to send the failures over potentially slowing down the correction process.</p>"
+            },
+            {
+              "id": "e472aeeb-4c14-4c27-b738-7db190e39f05",
+              "content": "<p>We are also checking to see if and how the integration could accommodate for checking both the payload and for manually entered warrants.</p>"
+            }
+          ]
+        },
+        {
+          "id": "5e0ef8bc-d309-4b23-8ae6-6ef771925891",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "d465735d-8a5a-4184-96ca-254fefc5a9ed",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "ddc45cce-7272-42ff-969c-ca24b46c1625",
+              "content": "<p>Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.</p>"
+            },
+            {
+              "id": "5e1732ed-2bae-47c7-9a7c-d3e38c1cef7b",
+              "content": "<p>Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints.</p>"
+            },
+            {
+              "id": "8f1bc817-dbae-4433-8211-592f85abf773",
+              "content": "<p>Outstanding: Testing for mug shots coming into correct MNI.</p>"
+            }
+          ]
+        },
+        {
+          "id": "ebe207ac-99fc-4403-b1bf-1895ed809aee",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "330d1bd1-f208-44e4-8cd5-2d74bc59bee7",
+              "content": "<p>No New Update</p>"
+            },
+            {
+              "id": "a7dbac35-9598-438a-a6d8-52d5772e007f",
+              "content": "<p><strong>Status:</strong> ATF received permission to add in the &quot;Time To First Shooting&quot; field in the API.</p>"
+            },
+            {
+              "id": "60a54d46-8d54-42ad-831d-67ae5d31528c",
+              "content": "<p>Update: The &quot;Time to First Shooting&quot; field was tested this week. The field did not populate as expected. More testing is required.</p>"
+            }
+          ]
+        },
+        {
+          "id": "db26dfb2-b0e2-4af9-95b0-c219dc334431",
+          "title": "Standards",
+          "bullets": [
+            {
+              "id": "5b635c4c-f235-4553-b031-6a351179df83",
+              "content": "<p>Weekly meeting was cancelled.</p>"
+            },
+            {
+              "id": "6731d00c-273f-4312-a205-48db5cfa8a8b",
+              "content": "<p>Regularly scheduled meeting set for Tuesday.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
