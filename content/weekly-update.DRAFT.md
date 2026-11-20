@@ -1,50 +1,46 @@
 ---
-week-of: 2026-11-13
-published-by: mwesolowski@axon.com
+week-of: 2026-11-20
+published-by: alarsh@axon.com
 ---
 
 # Program changes
-- None
+
+- Implemented Cause of Death options to the Child Fatality Form in Training (still being tested).
+- Several Cold Case form changes completed and being reviewed in Training.
+- Made Recovered Date and Time fields required when the role of a Vehicle is selected as "Recovered Outside Agency Stolen". 
+- Combined 6 routing rules together as the program can now have multiple UCRs routed to a district on the same rule. Testing on Rule 335 for UCRs 5503, 5504, 5505, 5506, 5507 in both Training and Production. Rule combination will be staggered over the next several weeks to watch for any routing failures.
+- Alpha testing Flag Permissions in Training.
 
 # Data Store
 
-- All axon.* views have been mapped. 
-- Pending dw.* mapping. 
+- Field-level mapping for the agency’s Data Store V1 to V2 migration is complete.
+
+- Luis is reviewing the information. 
+
+- After rewview, next steps will be in scheduling moving V2 views / tables into Snowflake. 
 
 # Integrations/Conversions
 
 ## Warrants
-- No New Update
 
-- **Issue:** When a charge is missing from the MCT, the warrant fails out. When the charge is entered and the warrant is reprocessed, it creates a duplicate.
-
-- This is because when the warrant fails out, it is not ingested. Records creates the warrant manually. Engineering notifies us of what charge is missing or incorrect. Once RTU researches the charge specifics, the MCT is updated. Engineering will then reprocess the warrant. When it is, the warrant is not recognized as being ingested from the payload, thus, it sees it as a new one and effectively creates a duplicate in the UI.
-
-- Recommendation: Once the warrant is reprocessed, quash the manually entered one so that if the warrant is ever updated by the court, it will be recognized as being in a payload and update it as the integration intended.
-
-- We will also work with Records and RTU to see what processes we can have in identifying missing charges more quickly versus relying on engineering to send the failures over potentially slowing down the correction process.
-
-- We are also checking to see if and how the integration could accommodate for checking both the payload and for manually entered warrants.
+- After testing the new process for when Warrants fail and are not ingested, Records has decided to go back to entering manually on the day received. Once the charges are identified, updated and the warrants reprocessed, Records will quash the manually entered one. 
 
 ## Tech 5
 
-- No New Update
-
-- Outstanding: Tech 5 change in endpoint configuration: we export to Tech 5.
-
-- Outstanding: Pending on confirmation Tech 5 only sends offenders and not civilian fingerprints.
-
-- Outstanding: Testing for mug shots coming into correct MNI.
+- Removing Tech 5 going forward. We will bring back when needed. 
 
 ## ATF/NESS Import
-- No New Update
 
 - **Status:** ATF received permission to add in the "Time To First Shooting" field in the API.
-
-- Update: The "Time to First Shooting" field was tested this week. The field did not populate as expected. More testing is required.
+- Update: The "Time to First Shooting" field is further being looked into by Engineering.
 
 ## Standards
 
-- Weekly meeting was cancelled.
-- Regularly scheduled meeting set for Tuesday.
-
+- Use of Force form completed.
+- Testing has begun for the Civilian Compliant. 
+- Administrative Inspection form is being reviewed. 
+- Once final signoff on the forms are received, we will begin data migration conversations. 
+- We have requested testing scenarios from the project team for User Acceptance Testing (UAT).
+- We will begin to move on to permissions and workflows. 
+- We are looking at scheduling UAT for the second week of December.
+- We also will be starting to discuss Training plans for Jan.  
