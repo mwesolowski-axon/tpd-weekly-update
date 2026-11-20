@@ -1,0 +1,143 @@
+{
+  "id": "2026-11-20",
+  "weekOf": "2026-11-20",
+  "title": "Axon Weekly Update",
+  "publishedAt": "2026-11-20T17:50:28.553Z",
+  "publishedBy": "alarsh@axon.com",
+  "sections": [
+    {
+      "id": "edd16beb-7104-44a7-8af7-4761068647a1",
+      "title": "Program changes",
+      "subsections": [
+        {
+          "id": "69011f1d-b9d1-4ca7-a2d1-cd3d8b4b2d9c",
+          "title": "",
+          "bullets": [
+            {
+              "id": "3ecca0a8-5a9b-479a-8662-2bb86e68a10d",
+              "content": "<p>Implemented Cause of Death options to the Child Fatality Form in Training (still being tested).</p>"
+            },
+            {
+              "id": "fe8f2166-513b-4905-90ed-eab2d89fb0f4",
+              "content": "<p>Several Cold Case form changes completed and being reviewed in Training.</p>"
+            },
+            {
+              "id": "70a59cf1-34c3-4f88-bd59-113131bd9c6e",
+              "content": "<p>Made Recovered Date and Time fields required when the role of a Vehicle is selected as &quot;Recovered Outside Agency Stolen&quot;.</p>"
+            },
+            {
+              "id": "11b1e10e-3678-4b70-a68c-23ffcb31d50e",
+              "content": "<p>Combined 6 routing rules together as the program can now have multiple UCRs routed to a district on the same rule. Testing on Rule 335 for UCRs 5503, 5504, 5505, 5506, 5507 in both Training and Production. Rule combination will be staggered over the next several weeks to watch for any routing failures.</p>"
+            },
+            {
+              "id": "7808fcdc-e6e8-44f5-a4d0-0859b6b16cc6",
+              "content": "<p>Alpha testing Flag Permissions in Training.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d1490a85-799b-4ab1-8b1d-6501004c63f5",
+      "title": "Data Store",
+      "subsections": [
+        {
+          "id": "9522954f-5e4d-413c-bcf3-f696aa05ccfa",
+          "title": "",
+          "bullets": [
+            {
+              "id": "cd391d23-5ee4-4cbc-ab3d-096348054f37",
+              "content": "<p>Field-level mapping for the agency’s Data Store V1 to V2 migration is complete.</p>"
+            },
+            {
+              "id": "77cc28c5-fcfa-4c0a-a00a-6e729f08987d",
+              "content": "<p>Luis is reviewing the information.</p>"
+            },
+            {
+              "id": "392d46d8-c83d-4da6-b35b-1cce6732e4fd",
+              "content": "<p>After rewview, next steps will be in scheduling moving V2 views / tables into Snowflake.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16a4091d-ec01-486e-8791-fdb58a34df57",
+      "title": "Integrations/Conversions",
+      "subsections": [
+        {
+          "id": "1d43b781-bf78-48b8-b1f5-b99c1ac1b085",
+          "title": "Warrants",
+          "bullets": [
+            {
+              "id": "f94f8b74-674d-413f-adaa-b4d884910e25",
+              "content": "<p>After testing the new process for when Warrants fail and are not ingested, Records has decided to go back to entering manually on the day received. Once the charges are identified, updated and the warrants reprocessed, Records will quash the manually entered one.</p>"
+            }
+          ]
+        },
+        {
+          "id": "a59056b0-2776-4fda-b5a4-62a37240505d",
+          "title": "Tech 5",
+          "bullets": [
+            {
+              "id": "410e55d5-2155-4c36-b2c1-9f0fbf09c258",
+              "content": "<p>Removing Tech 5 going forward. We will bring back when needed.</p>"
+            }
+          ]
+        },
+        {
+          "id": "401f6c1f-58df-4d61-8f52-f7c7cf3be881",
+          "title": "ATF/NESS Import",
+          "bullets": [
+            {
+              "id": "6b22684d-0205-4e17-a234-f22ec2a35a5d",
+              "content": "<p><strong>Status:</strong> ATF received permission to add in the &quot;Time To First Shooting&quot; field in the API.</p>"
+            },
+            {
+              "id": "723de2b3-69f7-4cb6-a7f4-578c32d3dd87",
+              "content": "<p>Update: The &quot;Time to First Shooting&quot; field is further being looked into by Engineering.</p>"
+            }
+          ]
+        },
+        {
+          "id": "a401f5ea-1888-44ab-94e0-59ead0b98b58",
+          "title": "Standards",
+          "bullets": [
+            {
+              "id": "4c788187-0f5c-4a8f-85f6-378a2de7a8e8",
+              "content": "<p>Use of Force form completed.</p>"
+            },
+            {
+              "id": "df63ed35-ca2e-45d6-ba69-5b6986beeada",
+              "content": "<p>Testing has begun for the Civilian Compliant.</p>"
+            },
+            {
+              "id": "de0a0ad1-d747-4f83-9b7d-009376524921",
+              "content": "<p>Administrative Inspection form is being reviewed.</p>"
+            },
+            {
+              "id": "684996c8-f99b-4ff1-b86e-e1f76dd859bb",
+              "content": "<p>Once final signoff on the forms are received, we will begin data migration conversations.</p>"
+            },
+            {
+              "id": "bb9b088c-9f0e-463d-b25d-c639a1c09dec",
+              "content": "<p>We have requested testing scenarios from the project team for User Acceptance Testing (UAT).</p>"
+            },
+            {
+              "id": "67e6808e-14c9-432b-845a-a2df7567e5ac",
+              "content": "<p>We will begin to move on to permissions and workflows.</p>"
+            },
+            {
+              "id": "98ec51a2-4b72-4dbc-ac9c-497d2272aa06",
+              "content": "<p>We are looking at scheduling UAT for the second week of December.</p>"
+            },
+            {
+              "id": "e537de53-a279-410b-be5e-5510b32ba28e",
+              "content": "<p>We also will be starting to discuss Training plans for Jan.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
